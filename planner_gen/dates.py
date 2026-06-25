@@ -154,7 +154,19 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
             am = (y, m)
             pages.append(Page(kind="month", anchor=a_month(y, m),
                               master=MASTER["month"], month=(y, m), active_month=am))
-            for monday in weeks_of_month(y, m):
+            month_mondays = weeks_of_month(y, m)  # sorted list
+            month_mondays_set = set(month_mondays)
+            # Days at the start of the month whose week Monday is in the prior month
+            if cfg.include.get("days", True):
+                for d in range(1, dim(y, m) + 1):
+                    dd = date(y, m, d)
+                    if mon_monday(dd) not in month_mondays_set:
+                        pages.append(Page(kind="day", anchor=a_day(dd),
+                                          master=MASTER["day"], day=dd, month=(y, m),
+                                          active_month=am))
+                    else:
+                        break  # remaining days are covered inside the week loop
+            for monday in month_mondays:
                 if cfg.include.get("block", True):
                     pages.append(Page(kind="week-block", anchor=a_week(monday, "b"),
                                       master=MASTER["week-block"], monday=monday,
@@ -163,12 +175,13 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                     pages.append(Page(kind="week-schedule", anchor=a_week(monday, "s"),
                                       master=MASTER["week-schedule"], monday=monday,
                                       month=(y, m), active_month=am))
-            if cfg.include.get("days", True):
-                for d in range(1, dim(y, m) + 1):
-                    dd = date(y, m, d)
-                    pages.append(Page(kind="day", anchor=a_day(dd),
-                                      master=MASTER["day"], day=dd, month=(y, m),
-                                      active_month=am))
+                if cfg.include.get("days", True):
+                    for offset in range(7):
+                        dd = monday + timedelta(days=offset)
+                        if dd.month == m:
+                            pages.append(Page(kind="day", anchor=a_day(dd),
+                                              master=MASTER["day"], day=dd, month=(y, m),
+                                              active_month=am))
             for slot in range(1, 5):
                 for nn in range(1, cfg.pages_per_category + 1):
                     pages.append(Page(kind="category", anchor=a_cat(y, m, slot, nn),

@@ -3,5 +3,11 @@ __pycache__/
 *.py[cod]
 .venv/
 
-# Generated output (PDFs + preview/blank PNGs)
+# Generated output — produced client-side at build time, never committed.
+# (PDFs + blank/preview PNGs.)
 out/
+*.pdf
+*.png
+
+# NOTE: the SVG masters in templates/ ARE tracked (they are the source of
+# truth / generator input) — .svg is intentionally not ignored.

@@ -36,6 +36,12 @@ The header is a **shared component** across all dated pages, so:
 These are one-line changes in `fill.py` if the owner wants the spec behaviour
 instead — the architecture makes repointing trivial.
 
+## Known bugs
+
+Tracked as GitHub issues on the main repo (`Etsum/remarkable-diary`), issues
+**#1–#7** — all code-owned (Figma masters need no changes). They map onto the
+pending fill / blanks / dot-grid / renderer work below.
+
 ## Status
 
 Done & tested:

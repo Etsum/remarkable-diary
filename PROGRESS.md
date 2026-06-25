@@ -1,89 +1,115 @@
-# Progress / build notes — reMarkable planner generator
+# Progress — reMarkable planner generator
 
-Implements `PIPELINE_SPEC.md` (the build contract): six Figma master SVGs →
-deterministic hyperlinked PDF + blank write-on PNGs, for any date range.
+Implements `PIPELINE_SPEC.md`: six Figma master SVGs → deterministic hyperlinked PDF
++ blank write-on PNGs for any date range. See `SPEC.md` / `HANDOVER.md` for design
+intent; `PIPELINE_SPEC.md` for the build contract.
 
-## Decisions made this session
+---
 
-- **Renderer: Playwright/Chromium** (spec D7), chosen for fidelity. Verified by
-  rendering all six masters — IBM Plex Mono numerals, Noto Sans, and mixed
-  Latin+kanji nodes (e.g. day `MON · 月`, footers like `2月 16, 2026`) all shape
-  correctly via per-glyph fallback. Kept as a **swappable module** so a future
-  pure-Python (cairosvg + pypdf) backend can drop in without touching date
-  logic / fill / links. (Owner accepts this may be revisited later.)
-- **Python tooling: uv** (`pyproject.toml`, `uv run`). Deps: `playwright`, `lxml`.
-  Chromium installed via `uv run playwright install chromium`.
-- **Masters live in `templates/`** (not `uploads/` as the spec text says) and the
-  id contract re-export is **clean**: no duplicate ids, `#background`/`#var-ink`
-  split on all six, `rail-section-1..4` slot-numbered on **every** page (spec F9
-  resolved), `mini-NN-label`/`-label-jp` ×12 present, counts all match
-  (`mini-*-d` ×504, `mcell` ×42, `mrow` ×6, `day-mini` ×42, `ws-hour` ×18, etc).
-- **Fonts** are bundled in `fonts/` (IBM Plex Mono Regular/Bold; Noto Sans
-  static Regular/Bold; Noto Sans JP static Regular/Bold) and served via
-  `@font-face` from `file://` URIs.
+## Status: MVP complete ✓ — bug-fix phase
 
-## Design-intent notes (faithful to masters — differ from older spec §8, confirm)
+All eight generator modules are implemented and the end-to-end pipeline works.
+Active work is closing the open GitHub issues (see below).
 
-The header is a **shared component** across all dated pages, so:
-- **Day page** `hdr-big` = the **month number** (label "MONTH"), *not* the
-  day-of-month. The day is identified by the big weekday (`MON · 月`), the footer
-  (`2月 16, 2026`) and the mini-cal highlight. (Spec §8.5 expected day-of-month.)
-- **Week pages** `hdr-big` = month number; the ISO week number is in the footer
-  (`WEEK 8 · …`) + the SCHEDULE/BLOCK toggle. (Spec §8.3/8.4 expected week #.)
-- **Category page** `hdr-big` = first letter of the category name ("L" for
-  Lists); title = name; datebox = month/year.
+### Module map
 
-These are one-line changes in `fill.py` if the owner wants the spec behaviour
-instead — the architecture makes repointing trivial.
+| File | Purpose |
+|------|---------|
+| `planner_gen/dates.py` | Date helpers + page model + anchor scheme (§6/§7) |
+| `planner_gen/config.py` | Config load/validate (§5) |
+| `planner_gen/fonts.py` | @font-face CSS + CJK fallback chain |
+| `planner_gen/svgutil.py` | lxml mutate helpers + `bbox()` |
+| `planner_gen/background.py` | Dot-grid injection (§10) |
+| `planner_gen/fill.py` | Per-page fill (§8) + link geometry (§9) |
+| `planner_gen/render.py` | Playwright PDF + blank PNGs (§11/§12) |
+| `planner_gen/build.py` | CLI + pre-flight validator (§13.1) |
 
-## Known bugs
-
-Tracked as GitHub issues on the main repo (`Etsum/remarkable-diary`), issues
-**#1–#7** — all code-owned (Figma masters need no changes). They map onto the
-pending fill / blanks / dot-grid / renderer work below.
-
-## Status — MVP COMPLETE ✓
-
-All modules implemented and tested end-to-end:
-
-- `planner_gen/dates.py` — §6 date helpers + §7 page model + anchor scheme.
-- `planner_gen/config.py` — §5 config load/validate.
-- `planner_gen/fonts.py` — `@font-face` CSS + CJK fallback chain.
-- `planner_gen/svgutil.py` — lxml mutate helpers + `bbox()` for rect/path/group.
-- `planner_gen/background.py` — §10 dot-grid injection (shared by PDF + blanks).
-- `planner_gen/fill.py` — §8 per-page fill contract + §9 link geometry. Fills all
-  var-ink nodes (dates, week numbers, mini-cal, hour labels, categories, active rail
-  tab). Returns (svg_str, links) where links = [(x,y,w,h,target_anchor), ...].
-  Link geometry uses `svgutil.bbox()` for rects/paths and font-size approximation
-  for text nodes — accurate enough for click targets.
-- `planner_gen/render.py` — §11.1 single-HTML assembly + Playwright PDF print.
-  Also §12 blank write-on PNGs (one per master type). Blanks: var-ink removed,
-  category tabs + nav arrows + footer-right stripped, hdr-meta text cleared,
-  dot-grid present.
-- `planner_gen/build.py` — CLI + §13.1 pre-flight validator + full orchestration.
-  Validates masters (duplicate ids, required nodes, counts) before any build.
-
-### Verified output
-
-- Feb-2026 (1 month, 2 cat pages): 46 pages → 21 MB PDF in ~16s
-- All 6 blank write-on PNGs at 1404×1872 with dot-grid, no dates, no category tabs
-- Pre-flight validator passes all six masters
-
-## Running the generator
+### Quick start
 
 ```bash
-# Pre-flight validation only
-uv run python -m planner_gen.build --validate-only
+uv sync
+uv run playwright install chromium
+uv run playwright install-deps chromium   # one-time system libs
 
-# Generate a 1-month PDF (fast test)
-uv run python -m planner_gen.build --start 2026-02 --months 1 --output out/feb2026.pdf
-
-# Full year PDF + blank PNGs
+uv run python -m planner_gen.build --validate-only          # pre-flight check
+uv run python -m planner_gen.build --start 2026-02 --months 1 --output out/test.pdf
 uv run python -m planner_gen.build --start 2026-01 --months 12 --output out/planner-2026.pdf
-
-# Blank PNGs only
-uv run python -m planner_gen.build --blanks-only --output out/foo.pdf
-
-# Via JSON config
-uv run python -m planner_gen.build --config config.json
+uv run python -m planner_gen.build --blanks-only --output out/x.pdf
 ```
+
+---
+
+## Confirmed design decisions
+
+| Decision | Value |
+|----------|-------|
+| Templates | `templates/` (not `uploads/`) |
+| Renderer | Playwright/Chromium (swappable module) |
+| `hdr-big` on week pages | Month number (label says "MONTH") |
+| `hdr-big` on day page | **Currently month number** — issue #10 will change to day-of-month |
+| `hdr-big` on category page | First letter of category name |
+| Link geometry | `svgutil.bbox()` for rects/paths; font-size approximation for text nodes |
+| Background-prepped SVGs | Written to temp dir during build; fill.py reads dot-grid-ready masters |
+| Rail month links | Keyed on `active_month[0]` (year) — correct for 1-year ranges |
+
+---
+
+## Open issues (GitHub `Etsum/remarkable-diary`)
+
+### Code-owned — ready to fix
+
+| # | Title | Effort | File |
+|---|-------|--------|------|
+| [#10](https://github.com/Etsum/remarkable-diary/issues/10) | Day page: hdr-big should be day-of-month, not month | 1 line | `fill.py` `_fill_day()` |
+| [#12](https://github.com/Etsum/remarkable-diary/issues/12) | Category footer-left shows "LISTS" not section name | 1 line | `fill.py` `_fill_category()` |
+| [#13](https://github.com/Etsum/remarkable-diary/issues/13) | footer-right on category pages not linked | ~5 lines | `fill.py` `_fill_category()` |
+| [#8](https://github.com/Etsum/remarkable-diary/issues/8) | Year overview always 12 months from start date | Medium | `dates.py` + `fill.py` |
+| [#1](https://github.com/Etsum/remarkable-diary/issues/1) | Year overview: rail shows active month (should be neutral) | Small | `fill.py` `_fill_rail()` — skip active-month restyle on year page |
+| [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | Small | `fill.py` — clear unused row cells explicitly |
+| [#5](https://github.com/Etsum/remarkable-diary/issues/5) | Month page: 6th week-number row shows 'W-' placeholder | Small | `fill.py` `_fill_month()` — clear unused mrow nodes |
+| [#7](https://github.com/Etsum/remarkable-diary/issues/7) | All renders use serif fallback instead of correct fonts | Medium | `render.py` / `fonts.py` — font loading path |
+| [#2](https://github.com/Etsum/remarkable-diary/issues/2) | Blank PNGs: strip hdr-nav arrows | Small | `render.py` `_BLANK_REMOVE_IDS` already includes `hdr-nav` — verify |
+| [#4](https://github.com/Etsum/remarkable-diary/issues/4) | Blank PNGs: strip footer-right link text | Small | `render.py` `_BLANK_REMOVE_IDS` already includes `footer-right` — verify |
+
+### Design-owned (waiting on Figma re-export)
+
+| # | Title |
+|---|-------|
+| [#9](https://github.com/Etsum/remarkable-diary/issues/9) | Year page: mini-cal day numbers misaligned — set text-anchor:middle in Figma |
+| [#11](https://github.com/Etsum/remarkable-diary/issues/11) | Category hdr-meta-top overflows right — fix tspan x position in Figma |
+
+### Recently closed
+
+| # | Title | Commit |
+|---|-------|--------|
+| [#14](https://github.com/Etsum/remarkable-diary/issues/14) | Page order: days interleaved with weeks | `0855634` |
+| [#6](https://github.com/Etsum/remarkable-diary/issues/6) | Dot-grid backgrounds | `5e8306f` |
+
+---
+
+## Architecture notes for next agent
+
+**Page order** (as of `0855634`):
+```
+[cover]  Year overview
+For each month M:
+  Month overview
+  [orphan day pages: days in M whose week-Monday is in prior month]
+  For each week W with Monday in M:
+    Week block → Week schedule → Day pages for days in W that belong to M
+  Category pages (slot 1–4, N pages each)
+```
+
+**fill.py entry point:** `fill_page(page, cfg, anchors, templates_dir) → (svg_str, links)`
+- Links = `[(x, y, w, h, target_anchor), ...]` in SVG user units (1 unit = 1 px)
+- Called from `build.py` with background-prepped SVGs in a temp dir
+
+**build.py pipeline:**
+1. `validate_masters()` — pre-flight, fails loudly
+2. `build_pages(cfg)` → page list + anchor set
+3. `prepare_background(tree)` per master → write to temp dir
+4. `fill_page()` per page → `(svg_str, links)`
+5. `render_pdf()` — one HTML doc, Playwright prints PDF
+6. `render_blanks()` — one PNG per master type
+
+**Quick wins for next session:** fix #10, #12, #13 in one commit (all in `_fill_category` / `_fill_day` in `fill.py`) — the issue descriptions contain the exact code.

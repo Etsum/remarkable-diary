@@ -1,0 +1,775 @@
+<svg width="1404" height="1872" viewBox="0 0 1404 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1404" height="1872" fill="#1E1E1E"/>
+<g id="01-year" clip-path="url(#clip0_0_1)">
+<path id="page-bg" d="M1404 0H0V1872H1404V0Z" fill="white"/>
+<g id="background">
+<g id="rail">
+<g id="rail-months-bg">
+<rect id="rail-month-01-bg" x="25" y="148" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-02-bg" x="25" y="256.417" width="66" height="108.417" fill="#8F9298"/>
+<rect id="rail-month-03-bg" x="25" y="364.833" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-04-bg" x="25" y="473.25" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-05-bg" x="25" y="581.667" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-06-bg" x="25" y="690.083" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-07-bg" x="25" y="798.5" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-08-bg" x="25" y="906.917" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-09-bg" x="25" y="1015.33" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-10-bg" x="25" y="1123.75" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-11-bg" x="25" y="1232.17" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-12-bg" x="25" y="1340.58" width="66" height="108.417" fill="#D9D9D9"/>
+</g>
+<g id="rail-months">
+<text id="rail-month-01" transform="matrix(0 -1 1 0 25 256.417)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JAN</tspan></text>
+<text id="rail-month-02" transform="matrix(0 -1 1 0 25 364.833)" fill="white" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">FEB</tspan></text>
+<text id="rail-month-03" transform="matrix(0 -1 1 0 25 473.25)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAR</tspan></text>
+<text id="rail-month-04" transform="matrix(0 -1 1 0 25 581.667)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">APR</tspan></text>
+<text id="rail-month-05" transform="matrix(0 -1 1 0 25 690.083)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAY</tspan></text>
+<text id="rail-month-06" transform="matrix(0 -1 1 0 25 798.5)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUN</tspan></text>
+<text id="rail-month-07" transform="matrix(0 -1 1 0 25 906.917)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUL</tspan></text>
+<text id="rail-month-08" transform="matrix(0 -1 1 0 25 1015.33)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">AUG</tspan></text>
+<text id="rail-month-09" transform="matrix(0 -1 1 0 25 1123.75)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">SEP</tspan></text>
+<text id="rail-month-10" transform="matrix(0 -1 1 0 25 1232.17)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">OCT</tspan></text>
+<text id="rail-month-11" transform="matrix(0 -1 1 0 25 1340.58)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">NOV</tspan></text>
+<text id="rail-month-12" transform="matrix(0 -1 1 0 25 1449)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">DEC</tspan></text>
+</g>
+<g id="rail-index-chip">
+<g id="Vector">
+<path d="M25 148L58 160.5V54H37.5C31 54 25 59.5 25 67V148Z" fill="#2C2C2C"/>
+<path d="M91 148L58 160.5V54H78.5C85 54 91 59.5 91 67V148Z" fill="#2C2C2C"/>
+</g>
+<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
+</g>
+<path id="Vector_2" d="M25 1449H91" stroke="#E2DFDA"/>
+<g id="rail-sections-bg">
+<rect id="rail-section-4-bg" opacity="0.2" x="25" y="1740" width="66" height="97" fill="#D9D9D9"/>
+<rect id="rail-section-3-bg" opacity="0.2" x="25" y="1643" width="66" height="97" fill="#D9D9D9"/>
+<rect id="rail-section-2-bg" opacity="0.2" x="25" y="1546" width="66" height="97" fill="#D9D9D9"/>
+<rect id="rail-section-1-bg" opacity="0.2" x="25" y="1449" width="66" height="97" fill="#D9D9D9"/>
+</g>
+<g id="rail-sections">
+<text id="rail-section-1" transform="matrix(0 -1 1 0 25 1546)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="32.6914" y="37.656">LISTS</tspan></text>
+<text id="rail-section-2" transform="matrix(0 -1 1 0 25 1643)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="20.0527" y="37.656">PROJECTS</tspan></text>
+<text id="rail-section-3" transform="matrix(0 -1 1 0 25 1740)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="17.791" y="37.656">MEETINGS</tspan></text>
+<text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.875" y="37.656">SCRATCHPAD</tspan></text>
+</g>
+</g>
+<g id="hdr-nav">
+<path id="hdr-nav-prev-bg" d="M586 86H568C563.582 86 560 89.5817 560 94V112C560 116.418 563.582 120 568 120H586C590.418 120 594 116.418 594 112V94C594 89.5817 590.418 86 586 86Z" stroke="#D6E0EE"/>
+<text id="&#226;&#128;&#185;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="574.133" y="108.424">&#x2039;</tspan></text>
+<path id="hdr-nav-next-bg" d="M630 86H612C607.582 86 604 89.5817 604 94V112C604 116.418 607.582 120 612 120H630C634.418 120 638 116.418 638 112V94C638 89.5817 634.418 86 630 86Z" stroke="#D6E0EE"/>
+<text id="&#226;&#128;&#186;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="618.133" y="108.424">&#x203a;</tspan></text>
+</g>
+<g id="year-grid">
+<g id="mini-01">
+<text id="mini-01-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="200.9">1&#x6708;</tspan></text>
+<text id="mini-01-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="197.648">Jan</tspan></text>
+<path id="Vector_3" d="M132 208H498" stroke="#E2DFDA"/>
+<text id="M" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="226.768">M</tspan></text>
+<text id="T" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="226.768">T</tspan></text>
+<text id="W" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="257.896" y="226.768">W</tspan></text>
+<text id="T_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="312.116" y="226.768">T</tspan></text>
+<text id="F" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="364.584" y="226.768">F</tspan></text>
+<text id="S" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="226.768">S</tspan></text>
+<text id="S_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="226.768">S</tspan></text>
+<path id="mini-01-weekend-cols" d="M498 230H393.429V557.5H498V230Z" fill="#DDE0E5"/>
+</g>
+<g id="mini-02">
+<text id="mini-02-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="200.9">2&#x6708;</tspan></text>
+<text id="mini-02-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="197.648">Feb</tspan></text>
+<path id="Vector_4" d="M558 208H924" stroke="#E2DFDA"/>
+<text id="M_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="226.768">M</tspan></text>
+<text id="T_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="226.768">T</tspan></text>
+<text id="W_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="683.896" y="226.768">W</tspan></text>
+<text id="T_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="738.116" y="226.768">T</tspan></text>
+<text id="F_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="790.584" y="226.768">F</tspan></text>
+<text id="S_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="226.768">S</tspan></text>
+<text id="S_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="226.768">S</tspan></text>
+<path id="mini-02-weekend-cols" d="M924 230H819.429V557.5H924V230Z" fill="#DDE0E5"/>
+</g>
+<g id="mini-03">
+<text id="mini-03-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="197.648">Mar</tspan></text>
+<path id="Vector_5" d="M984 208H1350" stroke="#E2DFDA"/>
+<text id="M_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="226.768">M</tspan></text>
+<text id="T_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="226.768">T</tspan></text>
+<text id="W_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1109.9" y="226.768">W</tspan></text>
+<text id="T_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1164.12" y="226.768">T</tspan></text>
+<text id="F_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1216.58" y="226.768">F</tspan></text>
+<text id="S_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="226.768">S</tspan></text>
+<text id="S_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="226.768">S</tspan></text>
+<path id="mini-03-weekend-cols" d="M1350 230H1245.43V557.5H1350V230Z" fill="#DDE0E5"/>
+<text id="mini-03-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="200.9">3&#x6708;</tspan></text>
+</g>
+<g id="mini-04">
+<text id="mini-04-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="611.148">Apr</tspan></text>
+<path id="Vector_6" d="M132 621.5H498" stroke="#E2DFDA"/>
+<text id="M_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="640.268">M</tspan></text>
+<text id="T_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="640.268">T</tspan></text>
+<text id="W_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="257.896" y="640.268">W</tspan></text>
+<text id="T_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="312.116" y="640.268">T</tspan></text>
+<text id="F_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="364.584" y="640.268">F</tspan></text>
+<text id="S_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="640.268">S</tspan></text>
+<text id="S_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="640.268">S</tspan></text>
+<path id="mini-04-weekend-cols" d="M498 643.5H393.429V971H498V643.5Z" fill="#DDE0E5"/>
+<text id="mini-04-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="613.9">4&#x6708;</tspan></text>
+</g>
+<g id="mini-05">
+<text id="mini-05-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="611.148">May</tspan></text>
+<path id="Vector_7" d="M558 621.5H924" stroke="#E2DFDA"/>
+<text id="M_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="640.268">M</tspan></text>
+<text id="T_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="640.268">T</tspan></text>
+<text id="W_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="683.896" y="640.268">W</tspan></text>
+<text id="T_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="738.116" y="640.268">T</tspan></text>
+<text id="F_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="790.584" y="640.268">F</tspan></text>
+<text id="S_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="640.268">S</tspan></text>
+<text id="S_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="640.268">S</tspan></text>
+<path id="mini-05-weekend-cols" d="M924 643.5H819.429V971H924V643.5Z" fill="#DDE0E5"/>
+<text id="mini-05-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="613.9">5&#x6708;</tspan></text>
+</g>
+<g id="mini-06">
+<text id="mini-06-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="611.148">Jun</tspan></text>
+<path id="Vector_8" d="M984 621.5H1350" stroke="#E2DFDA"/>
+<text id="M_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="640.268">M</tspan></text>
+<text id="T_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="640.268">T</tspan></text>
+<text id="W_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1109.9" y="640.268">W</tspan></text>
+<text id="T_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1164.12" y="640.268">T</tspan></text>
+<text id="F_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1216.58" y="640.268">F</tspan></text>
+<text id="S_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="640.268">S</tspan></text>
+<text id="S_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="640.268">S</tspan></text>
+<path id="mini-06-weekend-cols" d="M1350 643.5H1245.43V971H1350V643.5Z" fill="#DDE0E5"/>
+<text id="mini-06-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="613.9">6&#x6708;</tspan></text>
+</g>
+<g id="mini-07">
+<text id="mini-07-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1024.65">Jul</tspan></text>
+<path id="Vector_9" d="M132 1035H498" stroke="#E2DFDA"/>
+<text id="M_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="1053.77">M</tspan></text>
+<text id="T_13" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="1053.77">T</tspan></text>
+<text id="W_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="257.896" y="1053.77">W</tspan></text>
+<text id="T_14" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="312.116" y="1053.77">T</tspan></text>
+<text id="F_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="364.584" y="1053.77">F</tspan></text>
+<text id="S_13" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="1053.77">S</tspan></text>
+<text id="S_14" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="1053.77">S</tspan></text>
+<path id="mini-07-weekend-cols" d="M498 1057H393.429V1384.5H498V1057Z" fill="#DDE0E5"/>
+<text id="mini-07-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="1027.9">7&#x6708;</tspan></text>
+</g>
+<g id="mini-08">
+<text id="mini-08-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1024.65">Aug</tspan></text>
+<path id="Vector_10" d="M558 1035H924" stroke="#E2DFDA"/>
+<text id="M_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="1053.77">M</tspan></text>
+<text id="T_15" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="1053.77">T</tspan></text>
+<text id="W_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="683.896" y="1053.77">W</tspan></text>
+<text id="T_16" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="738.116" y="1053.77">T</tspan></text>
+<text id="F_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="790.584" y="1053.77">F</tspan></text>
+<text id="S_15" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="1053.77">S</tspan></text>
+<text id="S_16" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="1053.77">S</tspan></text>
+<path id="mini-08-weekend-cols" d="M924 1057H819.429V1384.5H924V1057Z" fill="#DDE0E5"/>
+<text id="mini-08-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="901.062" y="1027.9">8&#x6708;</tspan></text>
+</g>
+<g id="mini-09">
+<text id="mini-09-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1024.65">Sep</tspan></text>
+<path id="Vector_11" d="M984 1035H1350" stroke="#E2DFDA"/>
+<text id="M_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="1053.77">M</tspan></text>
+<text id="T_17" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="1053.77">T</tspan></text>
+<text id="W_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1109.9" y="1053.77">W</tspan></text>
+<text id="T_18" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1164.12" y="1053.77">T</tspan></text>
+<text id="F_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1216.58" y="1053.77">F</tspan></text>
+<text id="S_17" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="1053.77">S</tspan></text>
+<text id="S_18" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="1053.77">S</tspan></text>
+<path id="mini-09-weekend-cols" d="M1350 1057H1245.43V1384.5H1350V1057Z" fill="#DDE0E5"/>
+<text id="mini-09-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="1027.9">9&#x6708;</tspan></text>
+</g>
+<g id="mini-10">
+<text id="mini-10-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1438.15">Oct</tspan></text>
+<path id="Vector_12" d="M132 1448.5H498" stroke="#E2DFDA"/>
+<text id="M_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="1467.27">M</tspan></text>
+<text id="T_19" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="1467.27">T</tspan></text>
+<text id="W_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="257.896" y="1467.27">W</tspan></text>
+<text id="T_20" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="312.116" y="1467.27">T</tspan></text>
+<text id="F_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="364.584" y="1467.27">F</tspan></text>
+<text id="S_19" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="1467.27">S</tspan></text>
+<text id="S_20" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="1467.27">S</tspan></text>
+<path id="mini-10-weekend-cols" d="M498 1470.5H393.429V1798H498V1470.5Z" fill="#DDE0E5"/>
+<text id="mini-10-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="464.125" y="1441.9">10&#x6708;</tspan></text>
+</g>
+<g id="mini-11">
+<text id="mini-11-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1438.15">Nov</tspan></text>
+<path id="Vector_13" d="M558 1448.5H924" stroke="#E2DFDA"/>
+<text id="M_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="1467.27">M</tspan></text>
+<text id="T_21" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="1467.27">T</tspan></text>
+<text id="W_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="683.896" y="1467.27">W</tspan></text>
+<text id="T_22" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="738.116" y="1467.27">T</tspan></text>
+<text id="F_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="790.584" y="1467.27">F</tspan></text>
+<text id="S_21" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="1467.27">S</tspan></text>
+<text id="S_22" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="1467.27">S</tspan></text>
+<path id="mini-11-weekend-cols" d="M924 1470.5H819.429V1798H924V1470.5Z" fill="#DDE0E5"/>
+<text id="mini-11-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="890.125" y="1441.9">11&#x6708;</tspan></text>
+</g>
+<g id="mini-12">
+<text id="mini-12-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1438.15">Dec</tspan></text>
+<path id="Vector_14" d="M984 1448.5H1350" stroke="#E2DFDA"/>
+<text id="M_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="1467.27">M</tspan></text>
+<text id="T_23" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="1467.27">T</tspan></text>
+<text id="W_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1109.9" y="1467.27">W</tspan></text>
+<text id="T_24" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1164.12" y="1467.27">T</tspan></text>
+<text id="F_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1216.58" y="1467.27">F</tspan></text>
+<text id="S_23" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="1467.27">S</tspan></text>
+<text id="S_24" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="1467.27">S</tspan></text>
+<path id="mini-12-weekend-cols" d="M1350 1470.5H1245.43V1798H1350V1470.5Z" fill="#DDE0E5"/>
+<text id="mini-12-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1316.12" y="1441.9">12&#x6708;</tspan></text>
+</g>
+</g>
+<g id="footer-rule">
+<path id="Vector_15" d="M132 1812H1350" stroke="#DCD9D4"/>
+</g>
+</g>
+<g id="var-ink">
+<text id="hdr-big" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="32" letter-spacing="0em"><tspan x="143.125" y="97">2026</tspan></text>
+<text id="hdr-month-name" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="23" font-weight="bold" letter-spacing="0em"><tspan x="266.336" y="111.625">Overview</tspan></text>
+<g id="year-days">
+<g id="mini-01-days">
+<text id="mini-01-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="263.062">.</tspan></text>
+<text id="mini-01-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="263.062">.</tspan></text>
+<text id="mini-01-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="263.062">.</tspan></text>
+<text id="mini-01-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="263.062">1</tspan></text>
+<text id="mini-01-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="263.062">2</tspan></text>
+<text id="mini-01-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="263.062">3</tspan></text>
+<text id="mini-01-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="263.062">4</tspan></text>
+<text id="mini-01-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="316.396">5</tspan></text>
+<text id="mini-01-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="316.396">6</tspan></text>
+<text id="mini-01-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="316.396">7</tspan></text>
+<text id="mini-01-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="316.396">8</tspan></text>
+<text id="mini-01-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="316.396">9</tspan></text>
+<text id="mini-01-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="316.396">10</tspan></text>
+<text id="mini-01-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="316.396">11</tspan></text>
+<text id="mini-01-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="369.729">12</tspan></text>
+<text id="mini-01-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="369.729">13</tspan></text>
+<text id="mini-01-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="369.729">14</tspan></text>
+<text id="mini-01-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="369.729">15</tspan></text>
+<text id="mini-01-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="369.729">16</tspan></text>
+<text id="mini-01-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="369.729">17</tspan></text>
+<text id="mini-01-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="369.729">18</tspan></text>
+<text id="mini-01-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="423.062">19</tspan></text>
+<text id="mini-01-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="423.062">20</tspan></text>
+<text id="mini-01-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="423.062">21</tspan></text>
+<text id="mini-01-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="423.062">22</tspan></text>
+<text id="mini-01-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="423.062">23</tspan></text>
+<text id="mini-01-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="423.062">24</tspan></text>
+<text id="mini-01-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="423.062">25</tspan></text>
+<text id="mini-01-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="476.396">26</tspan></text>
+<text id="mini-01-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="476.396">27</tspan></text>
+<text id="mini-01-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="476.396">28</tspan></text>
+<text id="mini-01-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="476.396">29</tspan></text>
+<text id="mini-01-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="476.396">30</tspan></text>
+<text id="mini-01-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="476.396">31</tspan></text>
+<text id="mini-01-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="476.396">.</tspan></text>
+<text id="mini-01-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="529.729">26</tspan></text>
+<text id="mini-01-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="529.729">27</tspan></text>
+<text id="mini-01-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="529.729">28</tspan></text>
+<text id="mini-01-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="529.729">29</tspan></text>
+<text id="mini-01-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="529.729">30</tspan></text>
+<text id="mini-01-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="529.729">31</tspan></text>
+<text id="mini-01-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="529.729">.</tspan></text>
+</g>
+<g id="mini-02-days">
+<text id="mini-02-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="263.062">.</tspan></text>
+<text id="mini-02-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="263.062">1</tspan></text>
+<text id="mini-02-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="316.396">2</tspan></text>
+<text id="mini-02-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="316.396">3</tspan></text>
+<text id="mini-02-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="316.396">4</tspan></text>
+<text id="mini-02-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="316.396">5</tspan></text>
+<text id="mini-02-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="316.396">6</tspan></text>
+<text id="mini-02-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="316.396">7</tspan></text>
+<text id="mini-02-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="316.396">8</tspan></text>
+<text id="mini-02-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="369.729">9</tspan></text>
+<text id="mini-02-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="369.729">10</tspan></text>
+<text id="mini-02-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="369.729">11</tspan></text>
+<text id="mini-02-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="369.729">12</tspan></text>
+<text id="mini-02-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="369.729">13</tspan></text>
+<text id="mini-02-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="369.729">14</tspan></text>
+<text id="mini-02-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="369.729">15</tspan></text>
+<text id="mini-02-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="574.977" y="423.062">16</tspan></text>
+<text id="mini-02-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="423.062">17</tspan></text>
+<text id="mini-02-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="423.062">18</tspan></text>
+<text id="mini-02-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="423.062">19</tspan></text>
+<text id="mini-02-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="423.062">20</tspan></text>
+<text id="mini-02-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="423.062">21</tspan></text>
+<text id="mini-02-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="423.062">22</tspan></text>
+<text id="mini-02-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="574.977" y="476.396">23</tspan></text>
+<text id="mini-02-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="476.396">24</tspan></text>
+<text id="mini-02-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="476.396">25</tspan></text>
+<text id="mini-02-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="476.396">26</tspan></text>
+<text id="mini-02-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="476.396">27</tspan></text>
+<text id="mini-02-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="476.396">28</tspan></text>
+<text id="mini-02-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="476.396">.</tspan></text>
+<text id="mini-02-d-r6c1" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c2" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c3" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c4" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c5" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c6" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="529.729">.</tspan></text>
+<text id="mini-02-d-r6c7" fill="black" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="529.729">.</tspan></text>
+</g>
+<g id="mini-03-days">
+<text id="mini-03-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="263.062">.</tspan></text>
+<text id="mini-03-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="263.062">1</tspan></text>
+<text id="mini-03-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="316.396">2</tspan></text>
+<text id="mini-03-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="316.396">3</tspan></text>
+<text id="mini-03-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="316.396">4</tspan></text>
+<text id="mini-03-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="316.396">5</tspan></text>
+<text id="mini-03-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="316.396">6</tspan></text>
+<text id="mini-03-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="316.396">7</tspan></text>
+<text id="mini-03-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="316.396">8</tspan></text>
+<text id="mini-03-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="369.729">9</tspan></text>
+<text id="mini-03-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="369.729">10</tspan></text>
+<text id="mini-03-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="369.729">11</tspan></text>
+<text id="mini-03-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="369.729">12</tspan></text>
+<text id="mini-03-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="369.729">13</tspan></text>
+<text id="mini-03-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="369.729">14</tspan></text>
+<text id="mini-03-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="369.729">15</tspan></text>
+<text id="mini-03-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="423.062">16</tspan></text>
+<text id="mini-03-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="423.062">17</tspan></text>
+<text id="mini-03-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="423.062">18</tspan></text>
+<text id="mini-03-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="423.062">19</tspan></text>
+<text id="mini-03-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="423.062">20</tspan></text>
+<text id="mini-03-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="423.062">21</tspan></text>
+<text id="mini-03-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="423.062">22</tspan></text>
+<text id="mini-03-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="476.396">23</tspan></text>
+<text id="mini-03-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="476.396">24</tspan></text>
+<text id="mini-03-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="476.396">25</tspan></text>
+<text id="mini-03-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="476.396">26</tspan></text>
+<text id="mini-03-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="476.396">27</tspan></text>
+<text id="mini-03-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="476.396">28</tspan></text>
+<text id="mini-03-d-r5c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="476.396">29</tspan></text>
+<text id="mini-03-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="529.729">30</tspan></text>
+<text id="mini-03-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="529.729">31</tspan></text>
+<text id="mini-03-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="529.729">.</tspan></text>
+<text id="mini-03-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="529.729">.</tspan></text>
+<text id="mini-03-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="529.729">.</tspan></text>
+<text id="mini-03-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="529.729">.</tspan></text>
+<text id="mini-03-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="529.729">.</tspan></text>
+</g>
+<g id="mini-04-days">
+<text id="mini-04-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="677.062">.</tspan></text>
+<text id="mini-04-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="677.062">.</tspan></text>
+<text id="mini-04-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="677.062">1</tspan></text>
+<text id="mini-04-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="677.062">2</tspan></text>
+<text id="mini-04-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="677.062">3</tspan></text>
+<text id="mini-04-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="677.062">4</tspan></text>
+<text id="mini-04-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="677.062">5</tspan></text>
+<text id="mini-04-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="730.062">6</tspan></text>
+<text id="mini-04-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="730.062">7</tspan></text>
+<text id="mini-04-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="730.062">8</tspan></text>
+<text id="mini-04-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="730.062">9</tspan></text>
+<text id="mini-04-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="730.062">10</tspan></text>
+<text id="mini-04-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="730.062">11</tspan></text>
+<text id="mini-04-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="730.062">12</tspan></text>
+<text id="mini-04-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="783.062">13</tspan></text>
+<text id="mini-04-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="783.062">14</tspan></text>
+<text id="mini-04-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="783.062">15</tspan></text>
+<text id="mini-04-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="783.062">16</tspan></text>
+<text id="mini-04-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="783.062">17</tspan></text>
+<text id="mini-04-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="783.062">18</tspan></text>
+<text id="mini-04-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="783.062">19</tspan></text>
+<text id="mini-04-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="836.062">20</tspan></text>
+<text id="mini-04-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="836.062">21</tspan></text>
+<text id="mini-04-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="836.062">22</tspan></text>
+<text id="mini-04-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="836.062">23</tspan></text>
+<text id="mini-04-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="836.062">24</tspan></text>
+<text id="mini-04-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="836.062">25</tspan></text>
+<text id="mini-04-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="836.062">26</tspan></text>
+<text id="mini-04-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="889.062">27</tspan></text>
+<text id="mini-04-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="889.062">28</tspan></text>
+<text id="mini-04-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="889.062">29</tspan></text>
+<text id="mini-04-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="889.062">30</tspan></text>
+<text id="mini-04-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="889.062">.</tspan></text>
+<text id="mini-04-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="889.062">.</tspan></text>
+<text id="mini-04-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="889.062">.</tspan></text>
+<text id="mini-04-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="942.062">.</tspan></text>
+<text id="mini-04-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="942.062">.</tspan></text>
+</g>
+<g id="mini-05-days">
+<text id="mini-05-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="677.062">.</tspan></text>
+<text id="mini-05-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="677.062">.</tspan></text>
+<text id="mini-05-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="677.062">.</tspan></text>
+<text id="mini-05-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="677.062">.</tspan></text>
+<text id="mini-05-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="677.062">1</tspan></text>
+<text id="mini-05-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="677.062">2</tspan></text>
+<text id="mini-05-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="677.062">3</tspan></text>
+<text id="mini-05-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="730.396">4</tspan></text>
+<text id="mini-05-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="730.396">5</tspan></text>
+<text id="mini-05-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="730.396">6</tspan></text>
+<text id="mini-05-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="730.396">7</tspan></text>
+<text id="mini-05-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="730.396">8</tspan></text>
+<text id="mini-05-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="730.396">9</tspan></text>
+<text id="mini-05-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="730.396">10</tspan></text>
+<text id="mini-05-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="574.977" y="783.729">11</tspan></text>
+<text id="mini-05-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="783.729">12</tspan></text>
+<text id="mini-05-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="783.729">13</tspan></text>
+<text id="mini-05-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="783.729">14</tspan></text>
+<text id="mini-05-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="783.729">15</tspan></text>
+<text id="mini-05-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="783.729">16</tspan></text>
+<text id="mini-05-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="783.729">17</tspan></text>
+<text id="mini-05-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="574.977" y="837.062">18</tspan></text>
+<text id="mini-05-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="837.062">19</tspan></text>
+<text id="mini-05-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="837.062">20</tspan></text>
+<text id="mini-05-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="837.062">21</tspan></text>
+<text id="mini-05-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="837.062">22</tspan></text>
+<text id="mini-05-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="837.062">23</tspan></text>
+<text id="mini-05-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="837.062">24</tspan></text>
+<text id="mini-05-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="574.977" y="890.396">25</tspan></text>
+<text id="mini-05-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="627.12" y="890.396">26</tspan></text>
+<text id="mini-05-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="679.262" y="890.396">27</tspan></text>
+<text id="mini-05-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="731.405" y="890.396">28</tspan></text>
+<text id="mini-05-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="783.548" y="890.396">29</tspan></text>
+<text id="mini-05-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="835.691" y="890.396">30</tspan></text>
+<text id="mini-05-d-r5c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="887.834" y="890.396">31</tspan></text>
+<text id="mini-05-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="579.024" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="631.167" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="683.31" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="735.453" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="787.595" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="839.738" y="943.729">.&#10;</tspan></text>
+<text id="mini-05-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="891.881" y="943.729">.&#10;</tspan></text>
+</g>
+<g id="mini-06-days">
+<text id="mini-06-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="677.062">1</tspan></text>
+<text id="mini-06-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="677.062">2</tspan></text>
+<text id="mini-06-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="677.062">3</tspan></text>
+<text id="mini-06-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="677.062">4</tspan></text>
+<text id="mini-06-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="677.062">5</tspan></text>
+<text id="mini-06-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="677.062">6</tspan></text>
+<text id="mini-06-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="677.062">7</tspan></text>
+<text id="mini-06-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="730.396">8</tspan></text>
+<text id="mini-06-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="730.396">9</tspan></text>
+<text id="mini-06-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="730.396">10</tspan></text>
+<text id="mini-06-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="730.396">11</tspan></text>
+<text id="mini-06-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="730.396">12</tspan></text>
+<text id="mini-06-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="730.396">13</tspan></text>
+<text id="mini-06-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="730.396">14</tspan></text>
+<text id="mini-06-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="783.729">15</tspan></text>
+<text id="mini-06-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="783.729">16</tspan></text>
+<text id="mini-06-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="783.729">17</tspan></text>
+<text id="mini-06-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="783.729">18</tspan></text>
+<text id="mini-06-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="783.729">19</tspan></text>
+<text id="mini-06-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="783.729">20</tspan></text>
+<text id="mini-06-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="783.729">21</tspan></text>
+<text id="mini-06-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="837.062">22</tspan></text>
+<text id="mini-06-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="837.062">23</tspan></text>
+<text id="mini-06-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="837.062">24</tspan></text>
+<text id="mini-06-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="837.062">25</tspan></text>
+<text id="mini-06-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="837.062">26</tspan></text>
+<text id="mini-06-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="837.062">27</tspan></text>
+<text id="mini-06-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="837.062">28</tspan></text>
+<text id="mini-06-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="890.396">29</tspan></text>
+<text id="mini-06-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="890.396">30</tspan></text>
+<text id="mini-06-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="890.396">.</tspan></text>
+<text id="mini-06-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="890.396">.</tspan></text>
+<text id="mini-06-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="890.396">.</tspan></text>
+<text id="mini-06-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="890.396">.</tspan></text>
+<text id="mini-06-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="890.396">.</tspan></text>
+<text id="mini-06-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="943.729">.</tspan></text>
+<text id="mini-06-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="943.729">.</tspan></text>
+</g>
+<g id="mini-07-days">
+<text id="mini-07-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1090.06">.</tspan></text>
+<text id="mini-07-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1090.06">.</tspan></text>
+<text id="mini-07-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1090.06">1</tspan></text>
+<text id="mini-07-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1090.06">2</tspan></text>
+<text id="mini-07-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="1090.06">3</tspan></text>
+<text id="mini-07-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="1090.06">4</tspan></text>
+<text id="mini-07-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1090.06">5</tspan></text>
+<text id="mini-07-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1143.4">6</tspan></text>
+<text id="mini-07-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1143.4">7</tspan></text>
+<text id="mini-07-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1143.4">8</tspan></text>
+<text id="mini-07-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1143.4">9</tspan></text>
+<text id="mini-07-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1143.4">10</tspan></text>
+<text id="mini-07-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1143.4">11</tspan></text>
+<text id="mini-07-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1143.4">12</tspan></text>
+<text id="mini-07-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1196.73">13</tspan></text>
+<text id="mini-07-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1196.73">14</tspan></text>
+<text id="mini-07-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1196.73">15</tspan></text>
+<text id="mini-07-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1196.73">16</tspan></text>
+<text id="mini-07-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1196.73">17</tspan></text>
+<text id="mini-07-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1196.73">18</tspan></text>
+<text id="mini-07-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1196.73">19</tspan></text>
+<text id="mini-07-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1250.06">20</tspan></text>
+<text id="mini-07-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1250.06">21</tspan></text>
+<text id="mini-07-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1250.06">22</tspan></text>
+<text id="mini-07-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1250.06">23</tspan></text>
+<text id="mini-07-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1250.06">24</tspan></text>
+<text id="mini-07-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1250.06">25</tspan></text>
+<text id="mini-07-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1250.06">26</tspan></text>
+<text id="mini-07-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1303.4">27</tspan></text>
+<text id="mini-07-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1303.4">28</tspan></text>
+<text id="mini-07-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1303.4">29</tspan></text>
+<text id="mini-07-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1303.4">30</tspan></text>
+<text id="mini-07-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1303.4">31</tspan></text>
+<text id="mini-07-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="1303.4">.</tspan></text>
+<text id="mini-07-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1303.4">.</tspan></text>
+<text id="mini-07-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="1356.73">.</tspan></text>
+<text id="mini-07-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1356.73">.</tspan></text>
+</g>
+<g id="mini-08-days">
+<text id="mini-08-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1090.06">.</tspan></text>
+<text id="mini-08-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1090.06">.</tspan></text>
+<text id="mini-08-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1090.06">.</tspan></text>
+<text id="mini-08-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1090.06">.</tspan></text>
+<text id="mini-08-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1090.06">.</tspan></text>
+<text id="mini-08-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1090.06">1</tspan></text>
+<text id="mini-08-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1090.06">2</tspan></text>
+<text id="mini-08-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1143.4">3</tspan></text>
+<text id="mini-08-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1143.4">4</tspan></text>
+<text id="mini-08-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1143.4">5</tspan></text>
+<text id="mini-08-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1143.4">6</tspan></text>
+<text id="mini-08-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1143.4">7</tspan></text>
+<text id="mini-08-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1143.4">8</tspan></text>
+<text id="mini-08-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1143.4">9</tspan></text>
+<text id="mini-08-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1196.73">10</tspan></text>
+<text id="mini-08-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1196.73">11</tspan></text>
+<text id="mini-08-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1196.73">12</tspan></text>
+<text id="mini-08-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1196.73">13</tspan></text>
+<text id="mini-08-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1196.73">14</tspan></text>
+<text id="mini-08-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1196.73">15</tspan></text>
+<text id="mini-08-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1196.73">16</tspan></text>
+<text id="mini-08-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1250.06">17</tspan></text>
+<text id="mini-08-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1250.06">18</tspan></text>
+<text id="mini-08-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1250.06">19</tspan></text>
+<text id="mini-08-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1250.06">20</tspan></text>
+<text id="mini-08-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1250.06">21</tspan></text>
+<text id="mini-08-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1250.06">22</tspan></text>
+<text id="mini-08-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1250.06">23</tspan></text>
+<text id="mini-08-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1303.4">24</tspan></text>
+<text id="mini-08-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1303.4">25</tspan></text>
+<text id="mini-08-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1303.4">26</tspan></text>
+<text id="mini-08-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1303.4">27</tspan></text>
+<text id="mini-08-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1303.4">28</tspan></text>
+<text id="mini-08-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1303.4">29</tspan></text>
+<text id="mini-08-d-r5c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1303.4">30</tspan></text>
+<text id="mini-08-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1356.73">.</tspan></text>
+<text id="mini-08-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1356.73">.</tspan></text>
+</g>
+<g id="mini-09-days">
+<text id="mini-09-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1090.06">.</tspan></text>
+<text id="mini-09-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1090.06">1</tspan></text>
+<text id="mini-09-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1090.06">2</tspan></text>
+<text id="mini-09-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="1090.06">3</tspan></text>
+<text id="mini-09-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1090.06">4</tspan></text>
+<text id="mini-09-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1090.06">5</tspan></text>
+<text id="mini-09-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1090.06">6</tspan></text>
+<text id="mini-09-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1143.4">7</tspan></text>
+<text id="mini-09-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1143.4">8</tspan></text>
+<text id="mini-09-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1143.4">9</tspan></text>
+<text id="mini-09-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1143.4">10</tspan></text>
+<text id="mini-09-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1143.4">11</tspan></text>
+<text id="mini-09-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1143.4">12</tspan></text>
+<text id="mini-09-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1143.4">13</tspan></text>
+<text id="mini-09-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1196.73">14</tspan></text>
+<text id="mini-09-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1196.73">15</tspan></text>
+<text id="mini-09-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1196.73">16</tspan></text>
+<text id="mini-09-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1196.73">17</tspan></text>
+<text id="mini-09-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1196.73">18</tspan></text>
+<text id="mini-09-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1196.73">19</tspan></text>
+<text id="mini-09-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1196.73">20</tspan></text>
+<text id="mini-09-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1250.06">21</tspan></text>
+<text id="mini-09-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1250.06">22</tspan></text>
+<text id="mini-09-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1250.06">23</tspan></text>
+<text id="mini-09-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1250.06">24</tspan></text>
+<text id="mini-09-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1250.06">25</tspan></text>
+<text id="mini-09-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1250.06">26</tspan></text>
+<text id="mini-09-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1250.06">27</tspan></text>
+<text id="mini-09-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1303.4">28</tspan></text>
+<text id="mini-09-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1303.4">29</tspan></text>
+<text id="mini-09-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1303.4">30</tspan></text>
+<text id="mini-09-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="1303.4">.</tspan></text>
+<text id="mini-09-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1303.4">.</tspan></text>
+<text id="mini-09-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1303.4">.</tspan></text>
+<text id="mini-09-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1303.4">.</tspan></text>
+<text id="mini-09-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1356.73">.</tspan></text>
+<text id="mini-09-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1356.73">.</tspan></text>
+</g>
+<g id="mini-10-days">
+<text id="mini-10-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1503.06">.</tspan></text>
+<text id="mini-10-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1503.06">.</tspan></text>
+<text id="mini-10-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1503.06">.</tspan></text>
+<text id="mini-10-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1503.06">1</tspan></text>
+<text id="mini-10-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="1503.06">2</tspan></text>
+<text id="mini-10-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="1503.06">3</tspan></text>
+<text id="mini-10-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1503.06">4</tspan></text>
+<text id="mini-10-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1556.4">5</tspan></text>
+<text id="mini-10-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1556.4">6</tspan></text>
+<text id="mini-10-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1556.4">7</tspan></text>
+<text id="mini-10-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1556.4">8</tspan></text>
+<text id="mini-10-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="1556.4">9</tspan></text>
+<text id="mini-10-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1556.4">10</tspan></text>
+<text id="mini-10-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1556.4">11</tspan></text>
+<text id="mini-10-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1609.73">12</tspan></text>
+<text id="mini-10-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1609.73">13</tspan></text>
+<text id="mini-10-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1609.73">14</tspan></text>
+<text id="mini-10-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1609.73">15</tspan></text>
+<text id="mini-10-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1609.73">16</tspan></text>
+<text id="mini-10-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1609.73">17</tspan></text>
+<text id="mini-10-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1609.73">18</tspan></text>
+<text id="mini-10-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1663.06">19</tspan></text>
+<text id="mini-10-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1663.06">20</tspan></text>
+<text id="mini-10-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1663.06">21</tspan></text>
+<text id="mini-10-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1663.06">22</tspan></text>
+<text id="mini-10-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1663.06">23</tspan></text>
+<text id="mini-10-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1663.06">24</tspan></text>
+<text id="mini-10-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="462.834" y="1663.06">25</tspan></text>
+<text id="mini-10-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="149.977" y="1716.4">26</tspan></text>
+<text id="mini-10-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="202.12" y="1716.4">27</tspan></text>
+<text id="mini-10-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="254.262" y="1716.4">28</tspan></text>
+<text id="mini-10-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="306.405" y="1716.4">29</tspan></text>
+<text id="mini-10-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="358.548" y="1716.4">30</tspan></text>
+<text id="mini-10-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="410.691" y="1716.4">31</tspan></text>
+<text id="mini-10-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1716.4">.</tspan></text>
+<text id="mini-10-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="154.024" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="206.167" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="258.31" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="310.453" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="362.595" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="414.738" y="1769.73">.</tspan></text>
+<text id="mini-10-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="466.881" y="1769.73">.</tspan></text>
+</g>
+<g id="mini-11-days">
+<text id="mini-11-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1503.06">.</tspan></text>
+<text id="mini-11-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1503.06">1</tspan></text>
+<text id="mini-11-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1556.4">2</tspan></text>
+<text id="mini-11-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1556.4">3</tspan></text>
+<text id="mini-11-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1556.4">4</tspan></text>
+<text id="mini-11-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1556.4">5</tspan></text>
+<text id="mini-11-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1556.4">6</tspan></text>
+<text id="mini-11-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1556.4">7</tspan></text>
+<text id="mini-11-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1556.4">8</tspan></text>
+<text id="mini-11-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="581.024" y="1609.73">9</tspan></text>
+<text id="mini-11-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1609.73">10</tspan></text>
+<text id="mini-11-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1609.73">11</tspan></text>
+<text id="mini-11-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1609.73">12</tspan></text>
+<text id="mini-11-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1609.73">13</tspan></text>
+<text id="mini-11-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1609.73">14</tspan></text>
+<text id="mini-11-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1609.73">15</tspan></text>
+<text id="mini-11-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1663.06">16</tspan></text>
+<text id="mini-11-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1663.06">17</tspan></text>
+<text id="mini-11-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1663.06">18</tspan></text>
+<text id="mini-11-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1663.06">19</tspan></text>
+<text id="mini-11-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1663.06">20</tspan></text>
+<text id="mini-11-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1663.06">21</tspan></text>
+<text id="mini-11-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1663.06">22</tspan></text>
+<text id="mini-11-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1716.4">23</tspan></text>
+<text id="mini-11-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="629.12" y="1716.4">24</tspan></text>
+<text id="mini-11-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="681.262" y="1716.4">25</tspan></text>
+<text id="mini-11-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="733.405" y="1716.4">26</tspan></text>
+<text id="mini-11-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="785.548" y="1716.4">27</tspan></text>
+<text id="mini-11-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="837.691" y="1716.4">28</tspan></text>
+<text id="mini-11-d-r5c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="889.834" y="1716.4">29</tspan></text>
+<text id="mini-11-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="576.977" y="1769.73">30</tspan></text>
+<text id="mini-11-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="633.167" y="1769.73">.</tspan></text>
+<text id="mini-11-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="685.31" y="1769.73">.</tspan></text>
+<text id="mini-11-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="737.453" y="1769.73">.</tspan></text>
+<text id="mini-11-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="789.595" y="1769.73">.</tspan></text>
+<text id="mini-11-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="841.738" y="1769.73">.</tspan></text>
+<text id="mini-11-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="893.881" y="1769.73">.</tspan></text>
+</g>
+<g id="mini-12-days">
+<text id="mini-12-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1503.06">.</tspan></text>
+<text id="mini-12-d-r1c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1503.06">1</tspan></text>
+<text id="mini-12-d-r1c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1503.06">2</tspan></text>
+<text id="mini-12-d-r1c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="1503.06">3</tspan></text>
+<text id="mini-12-d-r1c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1503.06">4</tspan></text>
+<text id="mini-12-d-r1c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1503.06">5</tspan></text>
+<text id="mini-12-d-r1c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1503.06">6</tspan></text>
+<text id="mini-12-d-r2c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1556.4">7</tspan></text>
+<text id="mini-12-d-r2c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1556.4">8</tspan></text>
+<text id="mini-12-d-r2c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1556.4">9</tspan></text>
+<text id="mini-12-d-r2c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1556.4">10</tspan></text>
+<text id="mini-12-d-r2c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1556.4">11</tspan></text>
+<text id="mini-12-d-r2c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1556.4">12</tspan></text>
+<text id="mini-12-d-r2c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1556.4">13</tspan></text>
+<text id="mini-12-d-r3c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1609.73">14</tspan></text>
+<text id="mini-12-d-r3c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1609.73">15</tspan></text>
+<text id="mini-12-d-r3c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1609.73">16</tspan></text>
+<text id="mini-12-d-r3c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1609.73">17</tspan></text>
+<text id="mini-12-d-r3c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1609.73">18</tspan></text>
+<text id="mini-12-d-r3c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1609.73">19</tspan></text>
+<text id="mini-12-d-r3c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1609.73">20</tspan></text>
+<text id="mini-12-d-r4c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1663.06">21</tspan></text>
+<text id="mini-12-d-r4c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1663.06">22</tspan></text>
+<text id="mini-12-d-r4c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1663.06">23</tspan></text>
+<text id="mini-12-d-r4c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1663.06">24</tspan></text>
+<text id="mini-12-d-r4c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1211.55" y="1663.06">25</tspan></text>
+<text id="mini-12-d-r4c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1263.69" y="1663.06">26</tspan></text>
+<text id="mini-12-d-r4c7" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1315.83" y="1663.06">27</tspan></text>
+<text id="mini-12-d-r5c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1002.98" y="1716.4">28</tspan></text>
+<text id="mini-12-d-r5c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1055.12" y="1716.4">29</tspan></text>
+<text id="mini-12-d-r5c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1107.26" y="1716.4">30</tspan></text>
+<text id="mini-12-d-r5c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1159.41" y="1716.4">31</tspan></text>
+<text id="mini-12-d-r5c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1716.4">.</tspan></text>
+<text id="mini-12-d-r5c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1716.4">.</tspan></text>
+<text id="mini-12-d-r5c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1716.4">.</tspan></text>
+<text id="mini-12-d-r6c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1007.02" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c2" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1059.17" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c3" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1111.31" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c4" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1163.45" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c5" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1215.6" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c6" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1267.74" y="1769.73">.</tspan></text>
+<text id="mini-12-d-r6c7" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="1319.88" y="1769.73">.</tspan></text>
+</g>
+</g>
+<text id="footer-left" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="132" y="1836.38">YEAR 2026</tspan></text>
+<text id="footer-right" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="1248.67" y="1836.38">tap a month &#x2192;</tspan></text>
+<g id="hdr">
+<path id="hdr-datebox-frame" d="M497.618 54H147.382C138.887 54 132 59.8203 132 67V139C132 146.18 138.887 152 147.382 152H497.618C506.113 152 513 146.18 513 139V67C513 59.8203 506.113 54 497.618 54Z" stroke="#CFD5DD"/>
+<path id="Vector_16" d="M230 55V151" stroke="#E2DFDA"/>
+<path id="Vector_17" d="M428 54V152" stroke="#E2DFDA"/>
+<text id="hdr-big-label" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" letter-spacing="0em"><tspan x="163.012" y="122.625">YEAR</tspan></text>
+<path id="Vector_18" d="M433 103H513" stroke="#E2DFDA"/>
+<text id="hdr-meta-top" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" letter-spacing="0em"><tspan x="456.009" y="91.625">JAN</tspan></text>
+<text id="hdr-meta-bottom" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" letter-spacing="0em"><tspan x="456.009" y="129.625">DEC</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1404" height="1872" fill="white"/>
+</clipPath>
+</defs>
+</svg>

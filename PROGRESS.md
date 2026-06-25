@@ -42,35 +42,48 @@ Tracked as GitHub issues on the main repo (`Etsum/remarkable-diary`), issues
 **#1–#7** — all code-owned (Figma masters need no changes). They map onto the
 pending fill / blanks / dot-grid / renderer work below.
 
-## Status
+## Status — MVP COMPLETE ✓
 
-Done & tested:
+All modules implemented and tested end-to-end:
+
 - `planner_gen/dates.py` — §6 date helpers + §7 page model + anchor scheme.
-  Self-test passes: full 2026 = 1 year + 12 month + 52+52 week + 365 day + 240
-  category pages; Feb-2026 mini = 5 rows (only Sun=1 in row 1); ISO week 8 etc.
-- `planner_gen/config.py` — §5 config load/validate (range, lang, weeklink,
-  include, categories, pagesPerCategory, coverPage, blanks).
+- `planner_gen/config.py` — §5 config load/validate.
 - `planner_gen/fonts.py` — `@font-face` CSS + CJK fallback chain.
+- `planner_gen/svgutil.py` — lxml mutate helpers + `bbox()` for rect/path/group.
+- `planner_gen/background.py` — §10 dot-grid injection (shared by PDF + blanks).
+- `planner_gen/fill.py` — §8 per-page fill contract + §9 link geometry. Fills all
+  var-ink nodes (dates, week numbers, mini-cal, hour labels, categories, active rail
+  tab). Returns (svg_str, links) where links = [(x,y,w,h,target_anchor), ...].
+  Link geometry uses `svgutil.bbox()` for rects/paths and font-size approximation
+  for text nodes — accurate enough for click targets.
+- `planner_gen/render.py` — §11.1 single-HTML assembly + Playwright PDF print.
+  Also §12 blank write-on PNGs (one per master type). Blanks: var-ink removed,
+  category tabs + nav arrows + footer-right stripped, hdr-meta text cleared,
+  dot-grid present.
+- `planner_gen/build.py` — CLI + §13.1 pre-flight validator + full orchestration.
+  Validates masters (duplicate ids, required nodes, counts) before any build.
 
-Remaining (next session):
-- `svgutil.py` — lxml mutate helpers (set tspan text, set fill, remove, defs).
-- `geometry.py` — §9 link rects derived analytically from named nodes/frames/grids.
-- `background.py` — §10 dot-grid injection (shared by PDF + blanks).
-- `fill.py` — §8 per-page fill contract + active-month restyle + section labels.
-- `render.py` — §11.1 assemble one HTML, `<a>` overlays, `page.pdf()`; PNG screenshots.
-- `blanks.py` + `build.py` (CLI) + §13.1 pre-flight validator.
+### Verified output
 
-## Running what exists
+- Feb-2026 (1 month, 2 cat pages): 46 pages → 21 MB PDF in ~16s
+- All 6 blank write-on PNGs at 1404×1872 with dot-grid, no dates, no category tabs
+- Pre-flight validator passes all six masters
+
+## Running the generator
 
 ```bash
-uv run python - <<'PY'   # date-model sanity
-from planner_gen.config import Config
-from planner_gen import dates as D
-pages, anchors = D.build_pages(Config(start_y=2026, start_m=1, months=12, pages_per_category=5))
-print(len(pages), "pages,", len(anchors), "anchors")
-PY
-```
+# Pre-flight validation only
+uv run python -m planner_gen.build --validate-only
 
-Preview the six masters (writes PNGs to `out/`): render each `templates/*.svg`
-inside an HTML shell with `planner_gen.fonts.font_face_css` and screenshot the
-`<svg>` at 1404×1872.
+# Generate a 1-month PDF (fast test)
+uv run python -m planner_gen.build --start 2026-02 --months 1 --output out/feb2026.pdf
+
+# Full year PDF + blank PNGs
+uv run python -m planner_gen.build --start 2026-01 --months 12 --output out/planner-2026.pdf
+
+# Blank PNGs only
+uv run python -m planner_gen.build --blanks-only --output out/foo.pdf
+
+# Via JSON config
+uv run python -m planner_gen.build --config config.json
+```

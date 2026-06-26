@@ -147,12 +147,9 @@ def _fill_rail(
 # ---------------------------------------------------------------------------
 
 def _month_grid(y: int, m: int):
-    first = date(y, m, 1)
-    start = first - timedelta(days=first.weekday())  # Monday of first week
-    fw = first_weekday(y, m)
-    n_rows = (fw + dim(y, m) + 6) // 7
+    start = date(y, m, 1) - timedelta(days=first_weekday(y, m))
     d = start
-    for r in range(n_rows):
+    for r in range(6):
         for c in range(7):
             yield (r + 1, c + 1, d, d.month == m)
             d += timedelta(days=1)
@@ -162,19 +159,75 @@ def _month_grid(y: int, m: int):
 # Year page (§8.1)
 # ---------------------------------------------------------------------------
 
+def _mini_set(node, value: str) -> None:
+    # ponytail: IBM Plex Mono is monospaced; template x is right-aligned per placeholder digit count
+    tspan = node.find(SU.S + "tspan")
+    if tspan is not None and value:
+        old = tspan.text or ""
+        old_n = len(old.strip()) or 1  # strip to handle whitespace/newline placeholders
+        new_n = len(value)
+        if old_n != new_n:
+            try:
+                cw = float(node.get("font-size", "13.5")) * 0.6
+                tspan.set("x", f"{float(tspan.get('x', '0')) + (old_n - new_n) * cw:.3f}")
+            except (ValueError, TypeError):
+                pass
+    SU.set_text(node, value)
+
+
+def _meta_set(node, value: str) -> None:
+    # ponytail: center-align text at the placeholder's visual center point
+    tspan = node.find(SU.S + "tspan")
+    if tspan is not None:
+        old_n = len((tspan.text or "").strip()) or 1
+        new_n = len(value) or 1
+        if old_n != new_n:
+            try:
+                cw = float(node.get("font-size", "14")) * 0.6
+                x = float(tspan.get("x", "0"))
+                tspan.set("x", f"{x + (old_n - new_n) * cw / 2:.3f}")
+            except (ValueError, TypeError):
+                pass
+    SU.set_text(node, value)
+
+
 def _fill_year(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Link]:
     links: list[Link] = []
     window = page.window or []
     start_y = window[0][0] if window else 0
 
-    SU.set_text(idm["hdr-big"], str(start_y))
-    SU.set_text(idm["hdr-month-name"], "Overview")
-
     first_abbr = EN_MON_A[window[0][1] - 1]  if window else ""
     last_abbr  = EN_MON_A[window[-1][1] - 1] if window else ""
-    if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    first_abbr)
-    if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], last_abbr)
+    if "hdr-meta-top"    in idm: _meta_set(idm["hdr-meta-top"],    first_abbr)
+    if "hdr-meta-bottom" in idm: _meta_set(idm["hdr-meta-bottom"], last_abbr)
     if "footer-left"     in idm: SU.set_text(idm["footer-left"], f"YEAR {start_y}")
+
+    # hdr-big: single year or two-line "YYYY\nYYYY" when window spans calendar years
+    if "hdr-big" in idm and window:
+        years = sorted({y for y, _ in window})
+        ts = idm["hdr-big"].find(SU.S + "tspan")
+        if ts is not None:
+            if len(years) == 1:
+                ts.text = str(years[0])
+            else:
+                y0 = float(ts.get("y", "117"))
+                ts.text = str(years[0])
+                ts.set("y", str(y0 - 18))
+                ts1 = etree.SubElement(idm["hdr-big"], SU.S + "tspan")
+                ts1.set("x", ts.get("x", "135.828"))
+                ts1.set("y", str(y0 + 18))
+                ts1.text = str(years[1])
+
+    # Nav arrows → prev/next year window (inert when only one window exists)
+    wi = page.window_index
+    for arrow_id, idx in [("hdr-nav-prev-bg", wi - 1), ("hdr-nav-next-bg", wi + 1)]:
+        node = idm.get(arrow_id)
+        if node is not None and idx >= 0:
+            bb = _el_bbox(node)
+            if bb:
+                tgt = a_year(idx)
+                if tgt in anchors:
+                    links.append((*bb, tgt))
 
     for slot_idx, (my, mm) in enumerate(window):
         nn = slot_idx + 1
@@ -198,7 +251,7 @@ def _fill_year(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Li
                 if node is None:
                     continue
                 if cell["valid"]:
-                    SU.set_text(node, str(cell["d"]))
+                    _mini_set(node, str(cell["d"]))
                     SU.set_fill(node, MAROON if c_idx == 6 else INK)
                     dd = date(my, mm, cell["d"])
                     tgt = a_day(dd)
@@ -240,7 +293,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
     y, m = page.month
 
     SU.set_text(idm["hdr-big"], str(m))
-    SU.set_text(idm["hdr-month-name"], EN_MON[m - 1])
+    _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
     if "hdr-month-jp"    in idm and cfg.lang == "jp-en":
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    "YEAR")
@@ -259,8 +312,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
                 if tgt in anchors:
                     links.append((*bb, tgt))
 
-    # Grid cells — using actual dates to include adjacent-month days
-    n_rows = (first_weekday(y, m) + dim(y, m) + 6) // 7
+    # Grid cells — always 6 rows; adjacent-month days get FAINT fill
     for row, col, d, is_cur in _month_grid(y, m):
         node = idm.get(f"mcell-r{row}c{col}-num")
         if node is None:
@@ -276,32 +328,31 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
         else:
             SU.set_fill(node, FAINT)
 
-    # Week number column
-    row_mondays: dict[int, date] = {}
-    for row, col, d, _ in _month_grid(y, m):
+    # Week number column — FAINT for rows whose Monday is outside the current month
+    row_mondays: dict[int, tuple[date, bool]] = {}
+    for row, col, d, is_cur in _month_grid(y, m):
         if col == 1 and row not in row_mondays:
-            row_mondays[row] = d
-    for row, monday in row_mondays.items():
+            row_mondays[row] = (d, is_cur)
+    for row, (monday, is_cur) in row_mondays.items():
         node = idm.get(f"mrow-{row}-weeknum")
         if node is None:
             continue
         _, iw = iso_week(monday)
         SU.set_text(node, f"W{iw}")
+        if not is_cur:
+            SU.set_fill(node, FAINT)
         tgt = week_existing(anchors, monday, cfg.weeklink)
         if tgt:
             bb = _el_bbox(node)
             if bb:
                 links.append((*bb, tgt))
 
-    # Clear unused rows
-    for r in range(n_rows + 1, 7):
-        node = idm.get(f"mrow-{r}-weeknum")
-        if node is not None:
-            SU.set_text(node, "")
-        for c in range(1, 8):
-            node = idm.get(f"mcell-r{r}c{c}-num")
-            if node is not None:
-                SU.set_text(node, "")
+    # Footer-right → year overview
+    fr = idm.get("footer-right")
+    if fr is not None:
+        bb = _el_bbox(fr)
+        if bb and "year" in anchors:
+            links.append((*bb, "year"))
 
     return links
 
@@ -454,6 +505,7 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
         SU.set_text(idm["hdr-right-weekday"], f"{en_wd}{sep}{jp_wd}")
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    "WEEK")
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], str(iw))
+    if "hdr-big-label"   in idm: SU.set_text(idm["hdr-big-label"],   "DAY")
 
     # Datebox area → year page
     for frame_id in ("hdr-meta", "hdr-datebox-frame"):
@@ -543,8 +595,10 @@ def _fill_category(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> lis
 
     # hdr-big: first letter of category (design intent)
     SU.set_text(idm["hdr-big"], name[0].upper() if name else "")
+    if "hdr-big-label"  in idm: SU.set_text(idm["hdr-big-label"],  "")
     if "hdr-month-name" in idm: SU.set_text(idm["hdr-month-name"], name)
-    if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    f"{EN_MON_A[m-1]} {y}")
+    if "hdr-month-jp"   in idm: SU.set_text(idm["hdr-month-jp"],   "")
+    if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    EN_MON_A[m - 1])
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], f"{idx}/{n_total}")
     if "footer-left"     in idm: SU.set_text(idm["footer-left"], name)  # issue #12
 

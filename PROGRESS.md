@@ -64,6 +64,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
+| [#30](https://github.com/Etsum/remarkable-diary/issues/30) | Support 1–4 categories instead of requiring exactly 4 | `config.py` (relax `==4`), `dates.py` (loop provided slots), `fill.py` `_fill_rail` (blank unused tabs) — design choice noted in issue |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -76,6 +77,7 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#29](https://github.com/Etsum/remarkable-diary/issues/29) | Omit year overview — `--no-year` / `"include": {"year": false}`; gated in `build_pages`, year links inert via existing anchor guards |
 | [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs missing cross-year links — Option 2: fixed JAN–DEC tabs, each links to correct year; every page passes cfg window to `_fill_rail` |
 | [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day 'DAY' label not centred under 2-digit dates — `hdr-big` now via `_meta_set` (all values center at x=179) |
 | [#24](https://github.com/Etsum/remarkable-diary/issues/24) | Day mini-cal dates misaligned — `_fill_day` uses `_mini_set` (code Option A, not Figma) |
@@ -103,7 +105,7 @@ _(none open)_
 
 **Page order** (as of commit `0bf9b9d`):
 ```
-[cover]  Year overview
+[cover]  [Year overview]   (year optional: --no-year / include.year=false, #29)
 For each month M:
   Month overview
   [partial first week: week-block → week-schedule → day pages for days before 1st owned Monday]

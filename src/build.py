@@ -241,6 +241,8 @@ def _make_parser() -> argparse.ArgumentParser:
                    help="Where week-number links point (default: schedule)")
     p.add_argument("--no-blanks", action="store_true",
                    help="Skip blank PNG output")
+    p.add_argument("--no-year", action="store_true",
+                   help="Skip the year overview page")
     p.add_argument("--no-block", action="store_true",
                    help="Skip week-block pages")
     p.add_argument("--no-schedule", action="store_true",
@@ -310,6 +312,7 @@ def main(argv: list[str] | None = None) -> None:
             start_y=int(sy), start_m=int(sm), months=months,
             lang=args.lang, weeklink=args.weeklink,
             include={
+                "year":     not args.no_year,
                 "block":    not args.no_block,
                 "schedule": not args.no_schedule,
                 "days":     not args.no_days,

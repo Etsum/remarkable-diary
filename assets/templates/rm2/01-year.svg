@@ -32,14 +32,7 @@
 <text id="rail-month-11" transform="matrix(0 -1 1 0 25 1340.58)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">NOV</tspan></text>
 <text id="rail-month-12" transform="matrix(0 -1 1 0 25 1449)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">DEC</tspan></text>
 </g>
-<g id="rail-index-chip">
-<g id="Vector">
-<path d="M25 148L58 160.5V54H37.5C31 54 25 59.5 25 67V148Z" fill="#2C2C2C"/>
-<path d="M91 148L58 160.5V54H78.5C85 54 91 59.5 91 67V148Z" fill="#2C2C2C"/>
-</g>
-<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
-</g>
-<path id="Vector_2" d="M25 1449H91" stroke="#E2DFDA"/>
+<path id="Vector" d="M25 1449H91" stroke="#E2DFDA"/>
 <g id="rail-sections-bg">
 <rect id="rail-section-4-bg" opacity="0.2" x="25" y="1740" width="66" height="97" fill="#D9D9D9"/>
 <rect id="rail-section-3-bg" opacity="0.2" x="25" y="1643" width="66" height="97" fill="#D9D9D9"/>
@@ -51,6 +44,10 @@
 <text id="rail-section-2" transform="matrix(0 -1 1 0 25 1643)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="20.0527" y="37.656">PROJECTS</tspan></text>
 <text id="rail-section-3" transform="matrix(0 -1 1 0 25 1740)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="17.791" y="37.656">MEETINGS</tspan></text>
 <text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.875" y="37.656">SCRATCHPAD</tspan></text>
+</g>
+<g id="rail-index-chip">
+<path id="Vector_2" d="M58 160.5L25 148V67C25 59.5 31 54 37.5 54H58H78.5C85 54 91 59.5 91 67V148L58 160.5Z" fill="#2C2C2C"/>
+<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
 </g>
 </g>
 <g id="year-grid">

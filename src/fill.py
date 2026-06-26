@@ -295,7 +295,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
     links: list[Link] = []
     y, m = page.month
 
-    SU.set_text(idm["hdr-big"], str(m))
+    _meta_set(idm["hdr-big"], str(m))  # center in box (1- vs 2-digit months)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
     if "hdr-month-jp"    in idm and cfg.lang == "jp-en":
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
@@ -372,7 +372,7 @@ def _fill_week_header(page: Page, cfg: Config, idm: dict) -> None:
     sunday = monday + timedelta(days=6)
     _, iw = iso_week(monday)
 
-    SU.set_text(idm["hdr-big"], str(m))
+    _meta_set(idm["hdr-big"], str(m))  # center in box (1- vs 2-digit months)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
     if "hdr-month-jp"    in idm and cfg.lang == "jp-en":
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
@@ -499,7 +499,7 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
     _, iw = iso_week(d)
 
     # Header
-    SU.set_text(idm["hdr-big"], str(d.day))  # issue #10: day-of-month, not month number
+    _meta_set(idm["hdr-big"], str(d.day))  # day-of-month (#10), centered in box (#25)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
     if "hdr-month-jp" in idm and cfg.lang == "jp-en":
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
@@ -561,7 +561,7 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 continue
             if cell["valid"]:
                 day_num = cell["d"]
-                SU.set_text(node, str(day_num))
+                _mini_set(node, str(day_num))  # #24: right-align 2-digit dates
                 if day_num == d.day:
                     SU.set_fill(node, NAVY)
                 elif c_idx == 6:

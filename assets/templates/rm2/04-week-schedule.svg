@@ -7,8 +7,6 @@
 <g id="week-schedule-grid">
 <g id="ws-day-1">
 <path id="Vector_2" d="M132 218H306" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-1-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="166" y="206.88">MON</tspan></text>
-<text id="&#230;&#156;&#136;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="204" y="206.656">&#x6708;</tspan></text>
 <g id="ws-day-1-hours">
 <path id="Vector_3" d="M132 218H306" stroke="#ECEBE6"/>
 <path id="Vector_4" d="M132 261.889H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -69,8 +67,6 @@
 <g id="ws-day-2">
 <path id="Vector_39" d="M306 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_40" d="M306 218H480" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-2-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="340" y="206.88">TUE</tspan></text>
-<text id="&#231;&#129;&#171;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="378" y="206.656">&#x706b;</tspan></text>
 <g id="ws-day-2-hours">
 <path id="Vector_41" d="M306 218H480" stroke="#ECEBE6"/>
 <path id="Vector_42" d="M306 261.889H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -113,8 +109,6 @@
 <g id="ws-day-3">
 <path id="Vector_77" d="M480 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_78" d="M480 218H654" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-3-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="514" y="206.88">WED</tspan></text>
-<text id="&#230;&#176;&#180;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="552" y="206.656">&#x6c34;</tspan></text>
 <g id="ws-day-3-hours">
 <path id="Vector_79" d="M480 218H654" stroke="#ECEBE6"/>
 <path id="Vector_80" d="M480 261.889H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -157,8 +151,6 @@
 <g id="ws-day-4">
 <path id="Vector_115" d="M654 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_116" d="M654 218H828" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-4-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="688" y="206.88">THU</tspan></text>
-<text id="&#230;&#156;&#168;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="726" y="206.656">&#x6728;</tspan></text>
 <g id="ws-day-4-hours">
 <path id="Vector_117" d="M654 218H828" stroke="#ECEBE6"/>
 <path id="Vector_118" d="M654 261.889H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -201,8 +193,6 @@
 <g id="ws-day-5">
 <path id="Vector_153" d="M828 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_154" d="M828 218H1002" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-5-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="862" y="206.88">FRI</tspan></text>
-<text id="&#233;&#135;&#145;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="900" y="206.656">&#x91d1;</tspan></text>
 <g id="ws-day-5-hours">
 <path id="Vector_155" d="M828 218H1002" stroke="#ECEBE6"/>
 <path id="Vector_156" d="M828 261.889H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -246,8 +236,6 @@
 <path id="ws-day-6-shade" d="M1176 178H1002V1798H1176V178Z" fill="#DDE0E5" fill-opacity="0.3"/>
 <path id="Vector_191" d="M1002 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_192" d="M1002 218H1176" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-6-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="1036" y="206.88">SAT</tspan></text>
-<text id="&#229;&#156;&#159;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="1074" y="206.656">&#x571f;</tspan></text>
 <g id="ws-day-6-hours">
 <path id="Vector_193" d="M1002 218H1176" stroke="#ECEBE6"/>
 <path id="Vector_194" d="M1002 261.889H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -291,8 +279,6 @@
 <path id="ws-day-7-shade" d="M1350 178H1176V1798H1350V178Z" fill="#DDE0E5" fill-opacity="0.3"/>
 <path id="Vector_229" d="M1176 178V1798" stroke="#E2DFDA"/>
 <path id="Vector_230" d="M1176 218H1350" stroke="#41587C" stroke-width="2"/>
-<text id="ws-day-7-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="1210" y="206.88">SUN</tspan></text>
-<text id="&#230;&#151;&#165;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" letter-spacing="0em"><tspan x="1248" y="206.656">&#x65e5;</tspan></text>
 <g id="ws-day-7-hours">
 <path id="Vector_231" d="M1176 218H1350" stroke="#ECEBE6"/>
 <path id="Vector_232" d="M1176 261.889H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
@@ -332,6 +318,24 @@
 <path id="Vector_266" d="M1176 1754.11H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
 </g>
 </g>
+<g id="ws-day-heading">
+<text id="ws-day-1-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="143" y="206.5">MON</tspan></text>
+<text id="ws-day-2-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="317" y="206.5">TUE</tspan></text>
+<text id="ws-day-3-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="491" y="206.5">WED</tspan></text>
+<text id="ws-day-4-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="665" y="206.5">THU</tspan></text>
+<text id="ws-day-5-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="839" y="206.5">FRI</tspan></text>
+<text id="ws-day-6-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="1013" y="206.5">SAT</tspan></text>
+<text id="ws-day-7-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="1187" y="206.5">SUN</tspan></text>
+</g>
+<g id="ws-day-heading-jp">
+<text id="&#230;&#156;&#136;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="189" y="206.208">&#x6708;</tspan></text>
+<text id="&#231;&#129;&#171;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="363" y="206.208">&#x706b;</tspan></text>
+<text id="&#230;&#176;&#180;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="537" y="206.208">&#x6c34;</tspan></text>
+<text id="&#230;&#156;&#168;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="711" y="206.208">&#x6728;</tspan></text>
+<text id="&#233;&#135;&#145;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="885" y="206.208">&#x91d1;</tspan></text>
+<text id="&#229;&#156;&#159;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="1059" y="206.208">&#x571f;</tspan></text>
+<text id="&#230;&#151;&#165;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="1233" y="206.208">&#x65e5;</tspan></text>
+</g>
 </g>
 <g id="hdr-layout">
 <path id="hdr-datebox-frame" d="M497.618 55H147.382C138.887 55 132 60.8203 132 68V140C132 147.18 138.887 153 147.382 153H497.618C506.113 153 513 147.18 513 140V68C513 60.8203 506.113 55 497.618 55Z" stroke="#CFD5DD"/>
@@ -368,14 +372,7 @@
 <text id="rail-month-11" transform="matrix(0 -1 1 0 25 1340.58)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">NOV</tspan></text>
 <text id="rail-month-12" transform="matrix(0 -1 1 0 25 1449)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">DEC</tspan></text>
 </g>
-<g id="rail-index-chip">
-<g id="Vector_270">
-<path d="M25 148L58 160.5V54H37.5C31 54 25 59.5 25 67V148Z" fill="#2C2C2C"/>
-<path d="M91 148L58 160.5V54H78.5C85 54 91 59.5 91 67V148Z" fill="#2C2C2C"/>
-</g>
-<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
-</g>
-<path id="Vector_271" d="M25 1449H91" stroke="#E2DFDA"/>
+<path id="Vector_270" d="M25 1449H91" stroke="#E2DFDA"/>
 <g id="rail-sections-bg">
 <rect id="rail-section-4-bg" opacity="0.2" x="25" y="1740" width="66" height="97" fill="#D9D9D9"/>
 <rect id="rail-section-3-bg" opacity="0.2" x="25" y="1643" width="66" height="97" fill="#D9D9D9"/>
@@ -387,6 +384,10 @@
 <text id="rail-section-2" transform="matrix(0 -1 1 0 25 1643)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="20.0527" y="37.656">PROJECTS</tspan></text>
 <text id="rail-section-3" transform="matrix(0 -1 1 0 25 1740)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="17.791" y="37.656">MEETINGS</tspan></text>
 <text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.875" y="37.656">SCRATCHPAD</tspan></text>
+</g>
+<g id="rail-index-chip">
+<path id="Vector_271" d="M58 160.5L25 148V67C25 59.5 31 54 37.5 54H58H78.5C85 54 91 59.5 91 67V148L58 160.5Z" fill="#2C2C2C"/>
+<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
 </g>
 </g>
 </g>
@@ -408,13 +409,13 @@
 <path id="Vector_272" d="M132 1812H1350" stroke="#DCD9D4"/>
 </g>
 <g id="week-schedule-nums">
-<text id="ws-day-1-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="142" y="206.625">16</tspan></text>
-<text id="ws-day-2-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="316" y="206.625">17</tspan></text>
-<text id="ws-day-3-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="490" y="206.625">18</tspan></text>
-<text id="ws-day-4-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="664" y="206.625">19</tspan></text>
-<text id="ws-day-5-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="838" y="206.625">20</tspan></text>
-<text id="ws-day-6-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1012" y="206.625">21</tspan></text>
-<text id="ws-day-7-num" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1186" y="206.625">22</tspan></text>
+<text id="ws-day-1-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="268.215" y="205.125">16</tspan></text>
+<text id="ws-day-2-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="442.215" y="205.125">17</tspan></text>
+<text id="ws-day-3-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="616.215" y="205.125">18</tspan></text>
+<text id="ws-day-4-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="790.215" y="205.125">19</tspan></text>
+<text id="ws-day-5-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="964.215" y="205.125">20</tspan></text>
+<text id="ws-day-6-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1138.21" y="205.125">21</tspan></text>
+<text id="ws-day-7-num" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1312.21" y="205.125">22</tspan></text>
 </g>
 <text id="footer-left" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="132" y="1836.38">WEEK 8 &#xb7; 05:00&#x2013;22:00</tspan></text>
 <text id="footer-right" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="1256.46" y="1836.38">&#x21b3; week block</tspan></text>

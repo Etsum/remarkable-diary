@@ -21,7 +21,7 @@ from .config import Config
 from .dates import (
     EN_MON, EN_MON_A, EN_WD, JP_WD,
     Page, a_cat, a_day, a_month, a_week, a_year,
-    dim, first_weekday, iso_week, mini_rows, week_existing,
+    dim, first_weekday, iso_week, mini_rows, month_range, week_existing,
 )
 
 # Colour tokens (§4)
@@ -86,9 +86,8 @@ def _fill_rail(
     idm: dict,
     cfg: Config,
     active_month: tuple[int, int] | None,
-    rail_year: int | None,
     anchors: set[str],
-    window: list[tuple[int, int]] | None = None,
+    window: list[tuple[int, int]],
 ) -> list[Link]:
     links: list[Link] = []
 
@@ -117,18 +116,17 @@ def _fill_rail(
         if bb and "year" in anchors:
             links.append((*bb, "year"))
 
-    # Month tabs → month-YYYY-MM
-    if rail_year or window:
-        month_to_year = ({mm: yy for yy, mm in window} if window
-                         else {mm: rail_year for mm in range(1, 13)})
-        for mm, yy in month_to_year.items():
-            bg = idm.get(f"rail-month-{mm:02d}-bg")
-            if bg is not None:
-                bb = _el_bbox(bg)
-                if bb:
-                    tgt = a_month(yy, mm)
-                    if tgt in anchors:
-                        links.append((*bb, tgt))
+    # Month tabs → month-YYYY-MM. Keep the baked JAN–DEC labels; link each tab to
+    # whichever year that month falls in within the planner window (#27). Months
+    # is capped at 12, so each month number maps to exactly one year.
+    for yy, mm in window:
+        bg = idm.get(f"rail-month-{mm:02d}-bg")
+        if bg is not None:
+            bb = _el_bbox(bg)
+            if bb:
+                tgt = a_month(yy, mm)
+                if tgt in anchors:
+                    links.append((*bb, tgt))
 
     # Section tabs → first cat page of current month (if pages_per_category > 0)
     if active_month and cfg.pages_per_category > 0:
@@ -661,28 +659,20 @@ def fill_page(
 
     links: list[Link] = []
 
-    rail_window = None
     if page.kind == "year":
         links.extend(_fill_year(page, cfg, idm, anchors))
-        rail_year = page.window[0][0] if page.window else None
-        rail_window = page.window
     elif page.kind == "month":
         links.extend(_fill_month(page, cfg, idm, anchors))
-        rail_year = page.month[0]
     elif page.kind == "week-block":
         links.extend(_fill_week_block(page, cfg, idm, anchors))
-        rail_year = page.month[0]
     elif page.kind == "week-schedule":
         links.extend(_fill_week_schedule(page, cfg, idm, anchors))
-        rail_year = page.month[0]
     elif page.kind == "day":
         links.extend(_fill_day(page, cfg, idm, anchors))
-        rail_year = page.month[0]
     elif page.kind == "category":
         links.extend(_fill_category(page, cfg, idm, anchors))
-        rail_year = page.month[0]
-    else:
-        rail_year = None
 
-    links.extend(_fill_rail(idm, cfg, page.active_month, rail_year, anchors, window=rail_window))
+    # Rail is identical on every page: link all in-range months to their year (#27)
+    rail_window = month_range(cfg.start_y, cfg.start_m, cfg.months)
+    links.extend(_fill_rail(idm, cfg, page.active_month, anchors, rail_window))
     return SU.tostring(root), links

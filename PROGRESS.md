@@ -65,6 +65,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 | # | Title | File |
 |---|-------|------|
 | [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs on non-year pages missing cross-year month links | `fill.py` `fill_page()` — pass window from cfg to `_fill_rail` |
+| [#28](https://github.com/Etsum/remarkable-diary/issues/28) | Year page: mini-cal labels for months beyond planner window shown but unlinked | `fill.py` `_fill_year()` — `full_win` always 12 months, anchors only has generated months; design decision needed |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)

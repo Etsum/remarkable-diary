@@ -126,18 +126,12 @@ def _render_html_to_pdf(browser, html_str: str, output: Path) -> None:
 
 
 def _merge_pdfs(parts: list[Path], output: Path) -> None:
-    import subprocess
-    for exe, args in [
-        ("qpdf", ["qpdf", "--empty", "--pages", *[str(p) for p in parts], "--", str(output)]),
-        ("gs",   ["gs", "-dBATCH", "-dNOPAUSE", "-q", "-sDEVICE=pdfwrite",
-                  f"-sOutputFile={output}", *[str(p) for p in parts]]),
-    ]:
-        try:
-            subprocess.run(args, check=True, capture_output=True)
-            return
-        except FileNotFoundError:
-            continue
-    raise RuntimeError("PDF chunk merge requires qpdf or ghostscript (gs); install either.")
+    from pypdf import PdfWriter
+    writer = PdfWriter()
+    for p in parts:
+        writer.append(str(p))
+    with open(output, "wb") as f:
+        writer.write(f)
 
 
 def render_pdf(

@@ -64,6 +64,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
+| [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs on non-year pages missing cross-year month links | `fill.py` `fill_page()` — pass window from cfg to `_fill_rail` |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -128,6 +129,6 @@ For each month M:
 - `_meta_set(node, value)` — center-aligns text within placeholder width; used for month names, date ranges, week numbers, hdr-big-label
 - `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
 - `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
-- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window=page.window` for year pages to handle cross-year planners
+- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window` to handle cross-year planners; currently only year pages pass window (see #27)
 
 **var-ink gotcha:** `var-ink` group is present on ALL six masters (including `06-category`). Removed entirely in blank PNG mode. Everything that changes per-page lives inside it.

@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 .venv/
 
+# Build artifacts (setuptools editable install)
+build/
+*.egg-info/
+
 # Generated output — produced client-side at build time, never committed.
 # (PDFs + blank/preview PNGs.)
 out/

@@ -64,7 +64,6 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
-| [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs on non-year pages missing cross-year month links | `fill.py` `fill_page()` — pass window from cfg to `_fill_rail` (assessment + options posted in issue) |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -77,6 +76,7 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs missing cross-year links — Option 2: fixed JAN–DEC tabs, each links to correct year; every page passes cfg window to `_fill_rail` |
 | [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day 'DAY' label not centred under 2-digit dates — `hdr-big` now via `_meta_set` (all values center at x=179) |
 | [#24](https://github.com/Etsum/remarkable-diary/issues/24) | Day mini-cal dates misaligned — `_fill_day` uses `_mini_set` (code Option A, not Figma) |
 | [#28](https://github.com/Etsum/remarkable-diary/issues/28) | Year page mini-cal months beyond window unlinked — closed as intended (can't link ungenerated pages; full 12-mo grid is #8's design) |
@@ -139,6 +139,6 @@ whose target anchor lands in another chunk (most rail/year links).
 - `_meta_set(node, value)` — center-aligns text on the placeholder's box center; used for hdr-big (month/week/day number), month names, date ranges, week numbers, hdr-big-label. **Use this, not `set_text`, for any variable-width value in a centered box** (left-aligned `set_text` de-centers 2-digit values — was #25)
 - `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
 - `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
-- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window` to handle cross-year planners; currently only year pages pass window (see #27 — assessment + fix options posted: set `rail_window = month_range(cfg.start_y, cfg.start_m, cfg.months)` for all page kinds)
+- `_fill_rail(idm, cfg, active_month, anchors, window)` — `window` is the cfg-derived planner month list (`month_range(cfg.start_y, cfg.start_m, cfg.months)`), passed on **every** page; each baked JAN–DEC tab links to whichever year that month falls in (#27, Option 2). Months capped at 12 ⇒ each month number maps to one year.
 
 **var-ink gotcha:** `var-ink` group is present on ALL six masters (including `06-category`). Removed entirely in blank PNG mode. Everything that changes per-page lives inside it.

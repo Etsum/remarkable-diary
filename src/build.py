@@ -235,8 +235,6 @@ def _make_parser() -> argparse.ArgumentParser:
                    help="Number of months (alternative to --end, default 12)")
     p.add_argument("--output", metavar="PATH", default="out/planner.pdf",
                    help="Output PDF path (default: out/planner.pdf)")
-    p.add_argument("--lang", choices=["jp-en", "en"], default="jp-en",
-                   help="Language mode (default: jp-en)")
     p.add_argument("--weeklink", choices=["schedule", "block"], default="schedule",
                    help="Where week-number links point (default: schedule)")
     p.add_argument("--no-blanks", action="store_true",
@@ -291,7 +289,6 @@ def main(argv: list[str] | None = None) -> None:
         # Blanks-only needs no date range — use a dummy single month
         cfg = Config(
             start_y=2026, start_m=1, months=1,
-            lang=args.lang,
             categories=DEFAULT_CATEGORIES,
             pages_per_category=args.pages_per_category,
             output=args.output,
@@ -310,7 +307,7 @@ def main(argv: list[str] | None = None) -> None:
             months = args.months
         cfg = Config(
             start_y=int(sy), start_m=int(sm), months=months,
-            lang=args.lang, weeklink=args.weeklink,
+            weeklink=args.weeklink,
             include={
                 "year":     not args.no_year,
                 "block":    not args.no_block,

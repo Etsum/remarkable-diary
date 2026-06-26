@@ -64,7 +64,6 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
-| [#31](https://github.com/Etsum/remarkable-diary/issues/31) | `lang="en"` leaves baked JP month labels on month/week/day/year pages | `fill.py` — blank `hdr-month-jp` / `mini-NN-label-jp` when not `jp-en` (mirror `_fill_category`) |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -77,6 +76,7 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#31](https://github.com/Etsum/remarkable-diary/issues/31) | Closed not-a-bug — JP labels are stylistic decoration, always rendered; removed the `lang` option entirely (English calendar + JP accents) |
 | [#30](https://github.com/Etsum/remarkable-diary/issues/30) | 1–4 categories — relaxed validation; generate only provided slots; `_fill_rail` blanks unused tabs (clear label + hide chip) |
 | [#29](https://github.com/Etsum/remarkable-diary/issues/29) | Omit year overview — `--no-year` / `"include": {"year": false}`; gated in `build_pages`, year links inert via existing anchor guards |
 | [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs missing cross-year links — Option 2: fixed JAN–DEC tabs, each links to correct year; every page passes cfg window to `_fill_rail` |

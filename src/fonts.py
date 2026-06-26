@@ -14,12 +14,12 @@ import pathlib
 
 # (css family name, weight, repo-relative ttf path)
 _FACES = [
-    ("IBM Plex Mono", "normal", "fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf"),
-    ("IBM Plex Mono", "bold", "fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf"),
-    ("Noto Sans", "normal", "fonts/Noto_Sans/static/NotoSans-Regular.ttf"),
-    ("Noto Sans", "bold", "fonts/Noto_Sans/static/NotoSans-Bold.ttf"),
-    ("Noto Sans JP", "normal", "fonts/Noto_Sans_JP/static/NotoSansJP-Regular.ttf"),
-    ("Noto Sans JP", "bold", "fonts/Noto_Sans_JP/static/NotoSansJP-Bold.ttf"),
+    ("IBM Plex Mono", "normal", "assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf"),
+    ("IBM Plex Mono", "bold", "assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf"),
+    ("Noto Sans", "normal", "assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf"),
+    ("Noto Sans", "bold", "assets/fonts/Noto_Sans/static/NotoSans-Bold.ttf"),
+    ("Noto Sans JP", "normal", "assets/fonts/Noto_Sans_JP/static/NotoSansJP-Regular.ttf"),
+    ("Noto Sans JP", "bold", "assets/fonts/Noto_Sans_JP/static/NotoSansJP-Bold.ttf"),
 ]
 
 # Families that already cover CJK — no JP fallback needed/wanted.

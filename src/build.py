@@ -20,8 +20,7 @@ from pathlib import Path
 from .config import DEFAULT_CATEGORIES
 
 REPO_ROOT      = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR  = REPO_ROOT / "templates"
-FONTS_DIR      = REPO_ROOT / "fonts"
+TEMPLATES_DIR  = REPO_ROOT / "assets" / "templates"
 
 # ---------------------------------------------------------------------------
 # Pre-flight validator (§13.1)

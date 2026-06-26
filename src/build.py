@@ -20,7 +20,7 @@ from pathlib import Path
 from .config import DEFAULT_CATEGORIES
 
 REPO_ROOT      = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR  = REPO_ROOT / "assets" / "templates"
+TEMPLATES_DIR  = REPO_ROOT / "assets" / "templates" / "rm2"
 
 # ---------------------------------------------------------------------------
 # Pre-flight validator (§13.1)
@@ -29,8 +29,7 @@ TEMPLATES_DIR  = REPO_ROOT / "assets" / "templates"
 # Per-master expected element counts and required ids
 _REQUIRED: dict[str, dict] = {
     "01-year": {
-        "text_ids": ["hdr-big", "hdr-month-name", "hdr-meta-top", "hdr-meta-bottom",
-                     "footer-left"],
+        "text_ids": ["hdr-big", "hdr-meta-top", "hdr-meta-bottom", "footer-left"],
         "groups":   ["background", "var-ink"],
         # regex pattern → minimum count
         "counts":   {r"mini-\d{2}-d-r": 504},

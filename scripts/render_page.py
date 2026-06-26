@@ -57,7 +57,7 @@ def main() -> None:
     from src.fonts import font_face_css
     from src.render import _PAGE_CSS, W, H, render_blanks
 
-    templates = REPO / "assets" / "templates"
+    templates = REPO / "assets" / "templates" / "rm2"
     out_dir = REPO / "tmp"
     out_dir.mkdir(exist_ok=True)
     sy, sm = (int(x) for x in args.start.split("-"))

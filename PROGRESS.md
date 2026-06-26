@@ -64,6 +64,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
+| [#32](https://github.com/Etsum/remarkable-diary/issues/32) | Separate PDF/PNG output; selectable format (default PDF) | `build.py`, `config.py` — `--format pdf\|png\|both`, default PDF; PNGs are static so stop regenerating them every build |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)

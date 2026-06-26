@@ -443,7 +443,7 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
     _, iw = iso_week(d)
 
     # Header
-    SU.set_text(idm["hdr-big"], str(m))  # month number (design intent per masters)
+    SU.set_text(idm["hdr-big"], str(d.day))  # issue #10: day-of-month, not month number
     SU.set_text(idm["hdr-month-name"], EN_MON[m - 1])
     if "hdr-month-jp" in idm and cfg.lang == "jp-en":
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
@@ -546,6 +546,7 @@ def _fill_category(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> lis
     if "hdr-month-name" in idm: SU.set_text(idm["hdr-month-name"], name)
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    f"{EN_MON_A[m-1]} {y}")
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], f"{idx}/{n_total}")
+    if "footer-left"     in idm: SU.set_text(idm["footer-left"], name)  # issue #12
 
     # Nav arrows → prev/next category page in same slot/month
     if idx > 1:
@@ -564,6 +565,14 @@ def _fill_category(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> lis
                 tgt = a_cat(y, m, slot, idx + 1)
                 if tgt in anchors:
                     links.append((*bb, tgt))
+
+    # Footer-right → year overview (issue #13)
+    fr = idm.get("footer-right")
+    if fr is not None:
+        SU.set_text(fr, "↳ index")
+        bb = _el_bbox(fr)
+        if bb and "year" in anchors:
+            links.append((*bb, "year"))
 
     return links
 

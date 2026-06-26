@@ -11,78 +11,112 @@ of **blank write-on PNG templates** — same masters, no LLM in the loop.
 - **Blank PNGs** — one per page type, no dates/links, dot-grid present, for
   handwriting directly on the device.
 
-The build contract is **[`PIPELINE_SPEC.md`](PIPELINE_SPEC.md)**; design and
-linking decisions are in [`SPEC.md`](SPEC.md) / [`HANDOVER.md`](HANDOVER.md).
-Current status and design notes live in [`PROGRESS.md`](PROGRESS.md).
+## Requirements
+
+- Python ≥ 3.14
+- [uv](https://docs.astral.sh/uv/) — install with `pip install uv` or `curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+## Quick start
+
+```bash
+git clone git@github.com:Etsum/remarkable-diary.git
+cd remarkable-diary
+
+uv sync                                        # create venv, install deps
+uv run playwright install chromium             # download Chromium (one-time, ~150 MB)
+uv run playwright install-deps chromium        # system libs (one-time, Linux only — needs sudo)
+
+# Pre-flight check (validates all six SVG masters)
+uv run python -m planner_gen.build --validate-only
+
+# Generate a 1-month PDF for quick smoke-testing
+mkdir -p tmp
+uv run python -m planner_gen.build --start 2026-07 --months 1 --output tmp/test.pdf
+
+# Full year
+uv run python -m planner_gen.build --start 2026-07 --months 12 --output tmp/planner.pdf
+
+# Blank write-on PNGs only
+uv run python -m planner_gen.build --blanks-only --output tmp/blanks.pdf
+```
+
+Generated output goes to `tmp/` (not committed).
+
+## CLI reference
+
+```
+--start YYYY-MM        First month (default: current month)
+--months N             Number of months to generate (default: 12)
+--end YYYY-MM          Alternative to --months (inclusive)
+--output PATH          Output PDF path (default: out/planner.pdf)
+--blanks-only          Skip date fill; render one blank PNG per page type
+--validate-only        Pre-flight check only; exit 0 if all masters pass
+--templates-dir PATH   Override SVG master directory (default: assets/templates/)
+```
 
 ## How it works
 
 ```
-Figma ── export ──▶ templates/*.svg   (text NOT outlined, id attrs ON)
-                          │
-                          ▼
-   parse config → compute page list (ported date logic)
+Figma ── export ──▶ assets/templates/*.svg   (text NOT outlined, id attrs ON)
+                              │
+                              ▼
+   parse config → compute page list (date logic)
    → add dot-grid to writable zones → per page: clone master,
      rewrite named <text> by id, restyle active rail, record links
    → render one HTML, print to PDF (internal links) ; + blank PNGs
 ```
 
-The masters are **self-describing**: each value is a real `<text id="…">` node
-and each link source is a named node/frame, so nudging anything in Figma and
-re-exporting keeps the generator in sync — no coordinates hard-coded in Python.
+The masters are **self-describing**: each fillable value is a real `<text id="…">`
+node. Nudge anything in Figma, re-export the SVG, and the generator picks it up
+with no code changes.
 
-## Layout
+## Repository layout
 
 ```
-templates/           the six master SVGs (01-year … 06-category) — generator input
-fonts/               bundled faces: IBM Plex Mono, Noto Sans, Noto Sans JP
-planner_gen/
-  dates.py           date helpers + page model + anchor scheme   (§6/§7)
-  config.py          config load/validate                        (§5)
-  fonts.py           @font-face CSS + CJK fallback chain
-  svgutil.py         lxml mutate helpers + path/group bbox()
-  background.py      dot-grid writing texture                    (§10)
-  # pending: geometry.py (links §9), fill.py (§8), render.py (§11), blanks.py (§12)
-PIPELINE_SPEC.md     the build contract
-PROGRESS.md          decisions, design-intent notes, status
+assets/
+  templates/       six master SVGs (01-year … 06-category) — generator input
+  fonts/           bundled faces: IBM Plex Mono, Noto Sans, Noto Sans JP
+src/               Python package (importable as planner_gen)
+  dates.py         date helpers + page model + anchor scheme   (§6/§7)
+  config.py        config load/validate                        (§5)
+  fonts.py         @font-face CSS + CJK fallback chain
+  svgutil.py       lxml mutate helpers + path/group bbox()
+  background.py    dot-grid writing texture                    (§10)
+  fill.py          per-page fill + link geometry               (§8/§9)
+  render.py        Playwright PDF + blank PNG renderer         (§11/§12)
+  build.py         CLI entry point + pre-flight validator      (§13)
+PIPELINE_SPEC.md   the build contract
+SPEC.md            design intent
+PROGRESS.md        decisions, open issues, architecture notes
 ```
 
-Generated output (PDF/PNG) is written to `out/` and is **not** committed — it is
-produced client-side. The SVG masters in `templates/` are tracked source.
+## Updating the masters
 
-## Requirements
+The six SVGs in `assets/templates/` are exported from Figma (`rm2.fig`).
+Export requirements:
 
-- Python ≥ 3.14, managed with [uv](https://docs.astral.sh/uv/).
-- Chromium for the renderer: `uv run playwright install chromium`.
+- **Do not outline text** — the generator rewrites `<text>` nodes by `id`
+- **Include `id` attributes** — every named layer must carry its Figma id
+- Export as SVG (not optimised / minified)
 
-```bash
-uv sync                              # create env from pyproject.toml / uv.lock
-uv run playwright install chromium   # one-time
-```
+After exporting, run `--validate-only` to confirm all required ids are present.
 
-## Status
+## Page count
 
-Implemented and verified: date logic + page model, config, font loading,
-SVG mutate helpers + bbox, and the dot-grid backgrounds. The fill contract,
-link geometry, renderer and blank-PNG output are in progress — see
-[`PROGRESS.md`](PROGRESS.md) and the issue tracker.
-
-A full calendar year resolves to ~722 pages (1 year + 12 month + 52+52 week +
-365 day + 240 category, default settings).
+A 12-month range resolves to ~722 pages with default settings:
+1 year overview + 12 month + 52 week-block + 52 week-schedule + 365 day + 240 category (4 sections × 5 pages × 12 months).
 
 ## Rendering backend
 
-**Playwright/Chromium**, chosen for fidelity — exact fonts including mixed
-Latin+kanji nodes (e.g. `MON · 月`), and internal links / bounding boxes for
-free. It is kept behind a single swappable module so a future pure-Python
-(cairosvg + pypdf) backend can drop in without touching the date / fill / link
-logic.
+**Playwright/Chromium** — chosen for font fidelity (IBM Plex Mono, mixed Latin+kanji)
+and native internal-link support. Kept behind a single swappable module
+(`render.py`) so a future pure-Python backend can drop in.
 
 > Fonts must be loaded via a real `file://` navigation (`page.goto`), not
 > `set_content` — Chromium blocks `file://` font loads from an `about:blank`
-> origin, which silently falls back to serif.
+> origin, falling back silently to serif.
 
-## Repository & issues
+## Issues
 
-The canonical repo is GitHub `Etsum/remarkable-diary` (mirrored to a private
-Gitea). Bugs and work items are tracked as GitHub issues.
+Bugs and work items are tracked as [GitHub issues](https://github.com/Etsum/remarkable-diary/issues).
+Issues are tagged `owner: code` (fix in `src/`) or `owner: design` (fix in Figma then re-export).

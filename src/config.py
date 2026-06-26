@@ -22,6 +22,7 @@ class Config:
     output: str = "out/planner.pdf"
     blanks: bool = True
     hour_start: int = 5            # week-schedule first hour label (24h); 18 rows fixed (D11)
+    dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
 
     def __post_init__(self):
         if self.lang not in ("jp-en", "en"):
@@ -75,4 +76,5 @@ def load_config(path_or_dict) -> Config:
         output=data.get("output", "out/planner.pdf"),
         blanks=bool(data.get("blanks", True)),
         hour_start=int(data.get("hourStart", 5)),
+        dot_scale=float(data.get("dotScale", 0.8)),
     )

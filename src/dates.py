@@ -145,6 +145,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                           cover_source=cfg.cover_page))
 
     months = month_range(cfg.start_y, cfg.start_m, cfg.months)
+    months_set = set(months)
     windows = [months[i:i + 12] for i in range(0, len(months), 12)]
 
     for wi, win in enumerate(windows):
@@ -157,16 +158,39 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                               master=MASTER["month"], month=(y, m), active_month=am))
             month_mondays = weeks_of_month(y, m)  # sorted list
             month_mondays_set = set(month_mondays)
-            # Days at the start of the month whose week Monday is in the prior month
-            if cfg.include.get("days", True):
-                for d in range(1, dim(y, m) + 1):
-                    dd = date(y, m, d)
-                    if mon_monday(dd) not in month_mondays_set:
+
+            # Partial first week: days before the first Monday owned by this month
+            first_partial_days: list[date] = []
+            for d in range(1, dim(y, m) + 1):
+                dd = date(y, m, d)
+                if mon_monday(dd) not in month_mondays_set:
+                    first_partial_days.append(dd)
+                else:
+                    break
+
+            if first_partial_days:
+                partial_monday = mon_monday(first_partial_days[0])
+                partial_ym = (partial_monday.year, partial_monday.month)
+                # Only emit week pages if the Monday's month isn't already covered
+                if partial_ym not in months_set:
+                    if cfg.include.get("block", True):
+                        pages.append(Page(kind="week-block",
+                                          anchor=a_week(partial_monday, "b"),
+                                          master=MASTER["week-block"],
+                                          monday=partial_monday,
+                                          month=(y, m), active_month=am))
+                    if cfg.include.get("schedule", True):
+                        pages.append(Page(kind="week-schedule",
+                                          anchor=a_week(partial_monday, "s"),
+                                          master=MASTER["week-schedule"],
+                                          monday=partial_monday,
+                                          month=(y, m), active_month=am))
+                if cfg.include.get("days", True):
+                    for dd in first_partial_days:
                         pages.append(Page(kind="day", anchor=a_day(dd),
                                           master=MASTER["day"], day=dd, month=(y, m),
                                           active_month=am))
-                    else:
-                        break  # remaining days are covered inside the week loop
+
             for monday in month_mondays:
                 if cfg.include.get("block", True):
                     pages.append(Page(kind="week-block", anchor=a_week(monday, "b"),

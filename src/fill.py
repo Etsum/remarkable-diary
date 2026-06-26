@@ -249,7 +249,7 @@ def _fill_year(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Li
                 if tgt in anchors:
                     links.append((*bb, tgt))
         lbl_jp = idm.get(f"mini-{nn:02d}-label-jp")
-        if lbl_jp is not None and cfg.lang == "jp-en":
+        if lbl_jp is not None:
             SU.set_text(lbl_jp, f"{mm}月")
 
         rows = mini_rows(my, mm)
@@ -303,7 +303,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
 
     _meta_set(idm["hdr-big"], str(m))  # center in box (1- vs 2-digit months)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
-    if "hdr-month-jp"    in idm and cfg.lang == "jp-en":
+    if "hdr-month-jp"    in idm:
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    "YEAR")
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], str(y))
@@ -380,7 +380,7 @@ def _fill_week_header(page: Page, cfg: Config, idm: dict) -> None:
 
     _meta_set(idm["hdr-big"], str(m))  # center in box (1- vs 2-digit months)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
-    if "hdr-month-jp"    in idm and cfg.lang == "jp-en":
+    if "hdr-month-jp"    in idm:
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
     if "hdr-meta-top"    in idm: _meta_set(idm["hdr-meta-top"],    f"{monday.day}–{sunday.day}")
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], str(monday.year))
@@ -507,13 +507,10 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
     # Header
     _meta_set(idm["hdr-big"], str(d.day))  # day-of-month (#10), centered in box (#25)
     _meta_set(idm["hdr-month-name"], EN_MON[m - 1])
-    if "hdr-month-jp" in idm and cfg.lang == "jp-en":
+    if "hdr-month-jp" in idm:
         SU.set_text(idm["hdr-month-jp"], f"{m}月")
     if "hdr-right-weekday" in idm:
-        en_wd = EN_WD[wd_idx]
-        jp_wd = JP_WD[wd_idx] if cfg.lang == "jp-en" else ""
-        sep   = " · " if cfg.lang == "jp-en" else ""
-        SU.set_text(idm["hdr-right-weekday"], f"{en_wd}{sep}{jp_wd}")
+        SU.set_text(idm["hdr-right-weekday"], f"{EN_WD[wd_idx]} · {JP_WD[wd_idx]}")
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    "WEEK")
     if "hdr-meta-bottom" in idm: _meta_set(idm["hdr-meta-bottom"],   str(iw))
     if "hdr-big-label"   in idm: _meta_set(idm["hdr-big-label"],     "DAY")
@@ -538,12 +535,9 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 if tgt in anchors:
                     links.append((*bb, tgt))
 
-    # Footer
+    # Footer (keeps the stylistic 月 glyph; no lang option)
     if "footer-left" in idm:
-        if cfg.lang == "jp-en":
-            SU.set_text(idm["footer-left"], f"{m}月 {d.day}, {y}")
-        else:
-            SU.set_text(idm["footer-left"], f"{EN_MON[m-1]} {d.day}, {y}")
+        SU.set_text(idm["footer-left"], f"{m}月 {d.day}, {y}")
 
     # Footer-right "↳ week" → week page
     monday = d - timedelta(days=d.weekday())

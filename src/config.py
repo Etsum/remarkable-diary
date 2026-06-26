@@ -13,7 +13,6 @@ class Config:
     start_y: int
     start_m: int
     months: int = 12
-    lang: str = "jp-en"            # "jp-en" | "en"
     weeklink: str = "schedule"     # "schedule" | "block"
     include: dict = field(default_factory=lambda: {"year": True, "block": True, "schedule": True, "days": True})
     categories: list[str] = field(default_factory=lambda: list(DEFAULT_CATEGORIES))
@@ -25,8 +24,6 @@ class Config:
     dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
 
     def __post_init__(self):
-        if self.lang not in ("jp-en", "en"):
-            raise ValueError(f"lang must be jp-en|en, got {self.lang!r}")
         if self.weeklink not in ("schedule", "block"):
             raise ValueError(f"weeklink must be schedule|block, got {self.weeklink!r}")
         if not 1 <= len(self.categories) <= 4:
@@ -69,7 +66,6 @@ def load_config(path_or_dict) -> Config:
         start_y=start_y,
         start_m=start_m,
         months=months,
-        lang=data.get("lang", "jp-en"),
         weeklink=data.get("weeklink", "schedule"),
         include=include,
         categories=data.get("categories", list(DEFAULT_CATEGORIES)),

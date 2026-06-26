@@ -50,7 +50,6 @@ Generated output goes to `tmp/` (not committed).
 --months N             Number of months to generate (default: 12)
 --end YYYY-MM          Alternative to --months (inclusive)
 --output PATH          Output PDF path (default: out/planner.pdf)
---lang jp-en|en        Language mode for weekday headers (default: jp-en)
 --weeklink schedule|block  Where week-number links point (default: schedule)
 --hour-start H         First hour on week-schedule pages, 24h (default: 5)
 --pages-per-category N Category pages per slot per month (default: 5)
@@ -65,9 +64,9 @@ Generated output goes to `tmp/` (not committed).
 --templates-dir PATH   Override SVG master directory (default: assets/templates/rm2/)
 ```
 
-JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `lang`, `weeklink`,
+JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `weeklink`,
 `hourStart`, `pagesPerCategory`, `dotScale`, `coverPage`, `blanks`, `include` (object with
-`block`/`schedule`/`days` booleans), `categories` (array of 4 strings).
+`year`/`block`/`schedule`/`days` booleans), `categories` (array of 1–4 strings).
 
 ## How it works
 

@@ -149,9 +149,10 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
     windows = [months[i:i + 12] for i in range(0, len(months), 12)]
 
     for wi, win in enumerate(windows):
-        full_win = month_range(win[0][0], win[0][1], 12)
-        pages.append(Page(kind="year", anchor=a_year(wi), master=MASTER["year"],
-                          window=full_win, window_index=wi))
+        if cfg.include.get("year", True):
+            full_win = month_range(win[0][0], win[0][1], 12)
+            pages.append(Page(kind="year", anchor=a_year(wi), master=MASTER["year"],
+                              window=full_win, window_index=wi))
         for (y, m) in win:
             am = (y, m)
             pages.append(Page(kind="month", anchor=a_month(y, m),

@@ -15,7 +15,7 @@ class Config:
     months: int = 12
     lang: str = "jp-en"            # "jp-en" | "en"
     weeklink: str = "schedule"     # "schedule" | "block"
-    include: dict = field(default_factory=lambda: {"block": True, "schedule": True, "days": True})
+    include: dict = field(default_factory=lambda: {"year": True, "block": True, "schedule": True, "days": True})
     categories: list[str] = field(default_factory=lambda: list(DEFAULT_CATEGORIES))
     pages_per_category: int = 5
     cover_page: str | bool = False  # False | "blank" | path
@@ -62,7 +62,7 @@ def load_config(path_or_dict) -> Config:
         months = int(data.get("months", 12))
 
     inc_in = data.get("include", {})
-    include = {"block": True, "schedule": True, "days": True}
+    include = {"year": True, "block": True, "schedule": True, "days": True}
     include.update({k: bool(v) for k, v in inc_in.items()})
 
     return Config(

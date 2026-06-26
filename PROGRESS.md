@@ -69,10 +69,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 ### Design-owned (waiting on Figma re-export)
 
-| # | Title |
-|---|-------|
-| [#24](https://github.com/Etsum/remarkable-diary/issues/24) | Day page: mini-cal dates misaligned |
-| [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day page: 'DAY' label not centred under 2-digit date numbers |
+_(none open)_
 
 ---
 
@@ -80,6 +77,8 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title |
 |---|-------|
+| [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day 'DAY' label not centred under 2-digit dates — `hdr-big` now via `_meta_set` (all values center at x=179) |
+| [#24](https://github.com/Etsum/remarkable-diary/issues/24) | Day mini-cal dates misaligned — `_fill_day` uses `_mini_set` (code Option A, not Figma) |
 | [#28](https://github.com/Etsum/remarkable-diary/issues/28) | Year page mini-cal months beyond window unlinked — closed as intended (can't link ungenerated pages; full 12-mo grid is #8's design) |
 | [#26](https://github.com/Etsum/remarkable-diary/issues/26) | Page order: weeks appear before days in partial first week |
 | [#22](https://github.com/Etsum/remarkable-diary/issues/22) | Category blank: footer-left shows 'LISTS' |
@@ -137,7 +136,7 @@ Verified: 724-page build, all month/year link rects geometrically exact. **Do NO
 whose target anchor lands in another chunk (most rail/year links).
 
 **Key fill.py helpers:**
-- `_meta_set(node, value)` — center-aligns text within placeholder width; used for month names, date ranges, week numbers, hdr-big-label
+- `_meta_set(node, value)` — center-aligns text on the placeholder's box center; used for hdr-big (month/week/day number), month names, date ranges, week numbers, hdr-big-label. **Use this, not `set_text`, for any variable-width value in a centered box** (left-aligned `set_text` de-centers 2-digit values — was #25)
 - `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
 - `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
 - `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window` to handle cross-year planners; currently only year pages pass window (see #27 — assessment + fix options posted: set `rail_window = month_range(cfg.start_y, cfg.start_m, cfg.months)` for all page kinds)

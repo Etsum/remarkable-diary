@@ -61,7 +61,7 @@ _REQUIRED: dict[str, dict] = {
     },
     "06-category": {
         "text_ids": ["hdr-big", "hdr-month-name", "hdr-meta-top", "hdr-meta-bottom"],
-        "groups":   ["background"],   # no var-ink on category master
+        "groups":   ["background", "var-ink"],
         "counts":   {},
     },
 }

@@ -15,14 +15,14 @@ Active work is closing the open GitHub issues (see below).
 
 | File | Purpose |
 |------|---------|
-| `planner_gen/dates.py` | Date helpers + page model + anchor scheme (§6/§7) |
-| `planner_gen/config.py` | Config load/validate (§5) |
-| `planner_gen/fonts.py` | @font-face CSS + CJK fallback chain |
-| `planner_gen/svgutil.py` | lxml mutate helpers + `bbox()` |
-| `planner_gen/background.py` | Dot-grid injection (§10) |
-| `planner_gen/fill.py` | Per-page fill (§8) + link geometry (§9) |
-| `planner_gen/render.py` | Playwright PDF + blank PNGs (§11/§12) |
-| `planner_gen/build.py` | CLI + pre-flight validator (§13.1) |
+| `src/dates.py` | Date helpers + page model + anchor scheme (§6/§7) |
+| `src/config.py` | Config load/validate (§5) |
+| `src/fonts.py` | @font-face CSS + CJK fallback chain |
+| `src/svgutil.py` | lxml mutate helpers + `bbox()` |
+| `src/background.py` | Dot-grid injection (§10) |
+| `src/fill.py` | Per-page fill (§8) + link geometry (§9) |
+| `src/render.py` | Playwright PDF + blank PNGs (§11/§12) |
+| `src/build.py` | CLI + pre-flight validator (§13.1) |
 
 ### Quick start
 
@@ -31,10 +31,13 @@ uv sync
 uv run playwright install chromium
 uv run playwright install-deps chromium   # one-time system libs
 
-uv run python -m planner_gen.build --validate-only          # pre-flight check
-uv run python -m planner_gen.build --start 2026-02 --months 1 --output out/test.pdf
-uv run python -m planner_gen.build --start 2026-01 --months 12 --output out/planner-2026.pdf
-uv run python -m planner_gen.build --blanks-only --output out/x.pdf
+uv run python -m src.build --validate-only          # pre-flight check
+uv run python -m src.build --start 2026-07 --months 1 --output tmp/test.pdf
+uv run python -m src.build --start 2026-01 --months 12 --output tmp/planner-2026.pdf
+uv run python -m src.build --blanks-only --output tmp/x.pdf
+
+# Single-page render helper (no Playwright — reads from templates dir directly)
+uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.png
 ```
 
 ---
@@ -43,58 +46,67 @@ uv run python -m planner_gen.build --blanks-only --output out/x.pdf
 
 | Decision | Value |
 |----------|-------|
-| Templates | `templates/` (not `uploads/`) |
+| Templates | `assets/templates/rm2/` |
 | Renderer | Playwright/Chromium (swappable module) |
 | `hdr-big` on week pages | Month number (label says "MONTH") |
-| `hdr-big` on day page | **Currently month number** — issue #10 will change to day-of-month |
+| `hdr-big` on day page | Day-of-month number |
 | `hdr-big` on category page | First letter of category name |
 | Link geometry | `svgutil.bbox()` for rects/paths; font-size approximation for text nodes |
 | Background-prepped SVGs | Written to temp dir during build; fill.py reads dot-grid-ready masters |
-| Rail month links | Keyed on `active_month[0]` (year) — correct for 1-year ranges |
+| Rail month links | `page.window` for year pages (handles cross-year planners); `active_month[0]` for all other pages |
+| Dot grid scale | `dot_scale=0.8` default (20% finer than Figma original); configurable via `--dot-scale` or `dotScale` JSON |
 
 ---
 
 ## Open issues (GitHub `Etsum/remarkable-diary`)
 
-### Code-owned — ready to fix
+### Code-owned
 
-| # | Title | Effort | File |
-|---|-------|--------|------|
-| [#10](https://github.com/Etsum/remarkable-diary/issues/10) | Day page: hdr-big should be day-of-month, not month | 1 line | `fill.py` `_fill_day()` |
-| [#12](https://github.com/Etsum/remarkable-diary/issues/12) | Category footer-left shows "LISTS" not section name | 1 line | `fill.py` `_fill_category()` |
-| [#13](https://github.com/Etsum/remarkable-diary/issues/13) | footer-right on category pages not linked | ~5 lines | `fill.py` `_fill_category()` |
-| [#8](https://github.com/Etsum/remarkable-diary/issues/8) | Year overview always 12 months from start date | Medium | `dates.py` + `fill.py` |
-| [#1](https://github.com/Etsum/remarkable-diary/issues/1) | Year overview: rail shows active month (should be neutral) | Small | `fill.py` `_fill_rail()` — skip active-month restyle on year page |
-| [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | Small | `fill.py` — clear unused row cells explicitly |
-| [#5](https://github.com/Etsum/remarkable-diary/issues/5) | Month page: 6th week-number row shows 'W-' placeholder | Small | `fill.py` `_fill_month()` — clear unused mrow nodes |
-| [#7](https://github.com/Etsum/remarkable-diary/issues/7) | All renders use serif fallback instead of correct fonts | Medium | `render.py` / `fonts.py` — font loading path |
-| [#2](https://github.com/Etsum/remarkable-diary/issues/2) | Blank PNGs: strip hdr-nav arrows | Small | `render.py` `_BLANK_REMOVE_IDS` already includes `hdr-nav` — verify |
-| [#4](https://github.com/Etsum/remarkable-diary/issues/4) | Blank PNGs: strip footer-right link text | Small | `render.py` `_BLANK_REMOVE_IDS` already includes `footer-right` — verify |
+| # | Title | File |
+|---|-------|------|
+| [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
 
 | # | Title |
 |---|-------|
-| [#9](https://github.com/Etsum/remarkable-diary/issues/9) | Year page: mini-cal day numbers misaligned — set text-anchor:middle in Figma |
-| [#11](https://github.com/Etsum/remarkable-diary/issues/11) | Category hdr-meta-top overflows right — fix tspan x position in Figma |
+| [#24](https://github.com/Etsum/remarkable-diary/issues/24) | Day page: mini-cal dates misaligned |
+| [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day page: 'DAY' label not centred under 2-digit date numbers |
 
-### Recently closed
+---
 
-| # | Title | Commit |
-|---|-------|--------|
-| [#14](https://github.com/Etsum/remarkable-diary/issues/14) | Page order: days interleaved with weeks | `0855634` |
-| [#6](https://github.com/Etsum/remarkable-diary/issues/6) | Dot-grid backgrounds | `5e8306f` |
+## Recently closed
+
+| # | Title |
+|---|-------|
+| [#26](https://github.com/Etsum/remarkable-diary/issues/26) | Page order: weeks appear before days in partial first week |
+| [#22](https://github.com/Etsum/remarkable-diary/issues/22) | Category blank: footer-left shows 'LISTS' |
+| [#20](https://github.com/Etsum/remarkable-diary/issues/20) | Category: hdr-meta should not show month/year |
+| [#19](https://github.com/Etsum/remarkable-diary/issues/19) | Category: hdr-big-label and hdr-month-jp should be blank |
+| [#18](https://github.com/Etsum/remarkable-diary/issues/18) | Month prev-nav on first month doesn't link to year overview |
+| [#17](https://github.com/Etsum/remarkable-diary/issues/17) | Year rail tabs not all hyperlinked when start ≠ January |
+| [#15](https://github.com/Etsum/remarkable-diary/issues/15) | Day page hdr-meta-bottom (week #) misaligned |
+| [#13](https://github.com/Etsum/remarkable-diary/issues/13) | footer-right on category pages not linked |
+| [#12](https://github.com/Etsum/remarkable-diary/issues/12) | Category footer-left shows "LISTS" not section name |
+| [#11](https://github.com/Etsum/remarkable-diary/issues/11) | Category hdr-meta-top overflows right |
+| [#10](https://github.com/Etsum/remarkable-diary/issues/10) | Day page: hdr-big should be day-of-month |
+| [#9](https://github.com/Etsum/remarkable-diary/issues/9) | Year page: mini-cal day numbers misaligned |
+| [#8](https://github.com/Etsum/remarkable-diary/issues/8) | Year overview always 12 months from start date |
+| [#5](https://github.com/Etsum/remarkable-diary/issues/5) | Month page: 6th week-number row shows placeholder |
+| [#4](https://github.com/Etsum/remarkable-diary/issues/4) | Blank PNGs: strip footer-right link text |
+| [#2](https://github.com/Etsum/remarkable-diary/issues/2) | Blank PNGs: strip hdr-nav arrows |
 
 ---
 
 ## Architecture notes for next agent
 
-**Page order** (as of `0855634`):
+**Page order** (as of commit `0bf9b9d`):
 ```
 [cover]  Year overview
 For each month M:
   Month overview
-  [orphan day pages: days in M whose week-Monday is in prior month]
+  [partial first week: week-block → week-schedule → day pages for days before 1st owned Monday]
+    (week pages only emitted if the partial Monday's month is not already in the planner)
   For each week W with Monday in M:
     Week block → Week schedule → Day pages for days in W that belong to M
   Category pages (slot 1–4, N pages each)
@@ -107,9 +119,15 @@ For each month M:
 **build.py pipeline:**
 1. `validate_masters()` — pre-flight, fails loudly
 2. `build_pages(cfg)` → page list + anchor set
-3. `prepare_background(tree)` per master → write to temp dir
+3. `prepare_background(tree, stem, cfg.dot_scale)` per master → write to temp dir
 4. `fill_page()` per page → `(svg_str, links)`
 5. `render_pdf()` — one HTML doc, Playwright prints PDF
 6. `render_blanks()` — one PNG per master type
 
-**Quick wins for next session:** fix #10, #12, #13 in one commit (all in `_fill_category` / `_fill_day` in `fill.py`) — the issue descriptions contain the exact code.
+**Key fill.py helpers:**
+- `_meta_set(node, value)` — center-aligns text within placeholder width; used for month names, date ranges, week numbers, hdr-big-label
+- `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
+- `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
+- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window=page.window` for year pages to handle cross-year planners
+
+**var-ink gotcha:** `var-ink` group is present on ALL six masters (including `06-category`). Removed entirely in blank PNG mode. Everything that changes per-page lives inside it.

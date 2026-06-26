@@ -64,7 +64,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
-| [#30](https://github.com/Etsum/remarkable-diary/issues/30) | Support 1–4 categories instead of requiring exactly 4 | `config.py` (relax `==4`), `dates.py` (loop provided slots), `fill.py` `_fill_rail` (blank unused tabs) — design choice noted in issue |
+| [#31](https://github.com/Etsum/remarkable-diary/issues/31) | `lang="en"` leaves baked JP month labels on month/week/day/year pages | `fill.py` — blank `hdr-month-jp` / `mini-NN-label-jp` when not `jp-en` (mirror `_fill_category`) |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -77,6 +77,7 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#30](https://github.com/Etsum/remarkable-diary/issues/30) | 1–4 categories — relaxed validation; generate only provided slots; `_fill_rail` blanks unused tabs (clear label + hide chip) |
 | [#29](https://github.com/Etsum/remarkable-diary/issues/29) | Omit year overview — `--no-year` / `"include": {"year": false}`; gated in `build_pages`, year links inert via existing anchor guards |
 | [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs missing cross-year links — Option 2: fixed JAN–DEC tabs, each links to correct year; every page passes cfg window to `_fill_rail` |
 | [#25](https://github.com/Etsum/remarkable-diary/issues/25) | Day 'DAY' label not centred under 2-digit dates — `hdr-big` now via `_meta_set` (all values center at x=179) |
@@ -112,7 +113,7 @@ For each month M:
     (week pages only emitted if the partial Monday's month is not already in the planner)
   For each week W with Monday in M:
     Week block → Week schedule → Day pages for days in W that belong to M
-  Category pages (slot 1–4, N pages each)
+  Category pages (one slot per category, 1–4 categories, N pages each; #30)
 ```
 
 **fill.py entry point:** `fill_page(page, cfg, anchors, templates_dir) → (svg_str, links)`

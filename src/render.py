@@ -106,6 +106,40 @@ def build_html(
 # Playwright PDF rendering (§11.1)
 # ---------------------------------------------------------------------------
 
+_CHUNK = 200  # pages per render pass; keeps HTML under V8's ~512MB string limit
+
+
+def _render_html_to_pdf(browser, html_str: str, output: Path) -> None:
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".html", encoding="utf-8", delete=False
+    ) as f:
+        f.write(html_str)
+        tmp_path = Path(f.name)
+    try:
+        pg = browser.new_page()
+        pg.goto(tmp_path.as_uri(), wait_until="networkidle")
+        pg.evaluate("document.fonts.ready")
+        pg.pdf(path=str(output), prefer_css_page_size=True, print_background=True)
+        pg.close()
+    finally:
+        tmp_path.unlink(missing_ok=True)
+
+
+def _merge_pdfs(parts: list[Path], output: Path) -> None:
+    import subprocess
+    for exe, args in [
+        ("qpdf", ["qpdf", "--empty", "--pages", *[str(p) for p in parts], "--", str(output)]),
+        ("gs",   ["gs", "-dBATCH", "-dNOPAUSE", "-q", "-sDEVICE=pdfwrite",
+                  f"-sOutputFile={output}", *[str(p) for p in parts]]),
+    ]:
+        try:
+            subprocess.run(args, check=True, capture_output=True)
+            return
+        except FileNotFoundError:
+            continue
+    raise RuntimeError("PDF chunk merge requires qpdf or ghostscript (gs); install either.")
+
+
 def render_pdf(
     pages: list[Page],
     filled: list[tuple[str, list[Link]]],
@@ -116,30 +150,24 @@ def render_pdf(
     """Print the assembled HTML to a PDF via Playwright/Chromium."""
     from playwright.sync_api import sync_playwright
 
-    html_str = build_html(pages, filled, cfg, repo_root)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Write HTML to a temp file so Playwright gets a proper file:// URL
-    with tempfile.NamedTemporaryFile(
-        mode="w", suffix=".html", encoding="utf-8", delete=False
-    ) as f:
-        f.write(html_str)
-        tmp_path = Path(f.name)
-
-    try:
-        with sync_playwright() as pw:
-            browser = pw.chromium.launch()
-            page = browser.new_page()
-            page.goto(tmp_path.as_uri(), wait_until="networkidle")
-            page.evaluate("document.fonts.ready")
-            page.pdf(
-                path=str(output_path),
-                prefer_css_page_size=True,
-                print_background=True,
-            )
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        if len(pages) <= _CHUNK:
+            html_str = build_html(pages, filled, cfg, repo_root)
+            _render_html_to_pdf(browser, html_str, output_path)
             browser.close()
-    finally:
-        tmp_path.unlink(missing_ok=True)
+        else:
+            with tempfile.TemporaryDirectory() as td:
+                parts: list[Path] = []
+                for i in range(0, len(pages), _CHUNK):
+                    chunk_html = build_html(pages[i:i+_CHUNK], filled[i:i+_CHUNK], cfg, repo_root)
+                    part = Path(td) / f"part-{i:04d}.pdf"
+                    _render_html_to_pdf(browser, chunk_html, part)
+                    parts.append(part)
+                browser.close()
+                _merge_pdfs(parts, output_path)
 
 
 # ---------------------------------------------------------------------------

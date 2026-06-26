@@ -106,32 +106,40 @@ def build_html(
 # Playwright PDF rendering (§11.1)
 # ---------------------------------------------------------------------------
 
-_CHUNK = 200  # pages per render pass; keeps HTML under V8's ~512MB string limit
+def _drain_stream(client, handle, fh, size: int = 10 * 1024 * 1024) -> None:
+    """Read a CDP IO stream handle to fh in chunks until eof (base64 or raw)."""
+    import base64
+    while True:
+        r = client.send("IO.read", {"handle": handle, "size": size})
+        data = base64.b64decode(r["data"]) if r.get("base64Encoded") else r["data"].encode()
+        fh.write(data)
+        if r.get("eof"):
+            break
 
 
-def _render_html_to_pdf(browser, html_str: str, output: Path) -> None:
-    with tempfile.NamedTemporaryFile(
-        mode="w", suffix=".html", encoding="utf-8", delete=False
-    ) as f:
-        f.write(html_str)
-        tmp_path = Path(f.name)
+def _stream_pdf(page, output: Path) -> None:
+    """Print via CDP with transferMode=ReturnAsStream, then read the stream.
+
+    Playwright's page.pdf() returns the whole PDF as one base64 string over CDP,
+    which overflows V8's ~512MB string cap on large planners (700+ pages). The
+    stream transfer mode hands back a handle we read in chunks instead. Single
+    document = all cross-page links resolve (chunked rendering drops any link
+    whose target lands in another chunk — i.e. most rail/year links).
+    """
+    client = page.context.new_cdp_session(page)
+    res = client.send("Page.printToPDF", {
+        "printBackground": True,
+        "preferCSSPageSize": True,
+        # explicit zero margins: CDP defaults to non-zero, unlike page.pdf()
+        "marginTop": 0, "marginBottom": 0, "marginLeft": 0, "marginRight": 0,
+        "transferMode": "ReturnAsStream",
+    })
+    handle = res["stream"]
     try:
-        pg = browser.new_page()
-        pg.goto(tmp_path.as_uri(), wait_until="networkidle")
-        pg.evaluate("document.fonts.ready")
-        pg.pdf(path=str(output), prefer_css_page_size=True, print_background=True)
-        pg.close()
+        with open(output, "wb") as f:
+            _drain_stream(client, handle, f)
     finally:
-        tmp_path.unlink(missing_ok=True)
-
-
-def _merge_pdfs(parts: list[Path], output: Path) -> None:
-    from pypdf import PdfWriter
-    writer = PdfWriter()
-    for p in parts:
-        writer.append(str(p))
-    with open(output, "wb") as f:
-        writer.write(f)
+        client.send("IO.close", {"handle": handle})
 
 
 def render_pdf(
@@ -144,24 +152,25 @@ def render_pdf(
     """Print the assembled HTML to a PDF via Playwright/Chromium."""
     from playwright.sync_api import sync_playwright
 
+    html_str = build_html(pages, filled, cfg, repo_root)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch()
-        if len(pages) <= _CHUNK:
-            html_str = build_html(pages, filled, cfg, repo_root)
-            _render_html_to_pdf(browser, html_str, output_path)
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".html", encoding="utf-8", delete=False
+    ) as f:
+        f.write(html_str)
+        tmp_path = Path(f.name)
+
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            page = browser.new_page()
+            page.goto(tmp_path.as_uri(), wait_until="networkidle")
+            page.evaluate("document.fonts.ready")
+            _stream_pdf(page, output_path)
             browser.close()
-        else:
-            with tempfile.TemporaryDirectory() as td:
-                parts: list[Path] = []
-                for i in range(0, len(pages), _CHUNK):
-                    chunk_html = build_html(pages[i:i+_CHUNK], filled[i:i+_CHUNK], cfg, repo_root)
-                    part = Path(td) / f"part-{i:04d}.pdf"
-                    _render_html_to_pdf(browser, chunk_html, part)
-                    parts.append(part)
-                browser.close()
-                _merge_pdfs(parts, output_path)
+    finally:
+        tmp_path.unlink(missing_ok=True)
 
 
 # ---------------------------------------------------------------------------
@@ -257,3 +266,23 @@ def render_blanks(
 
         browser.close()
     return written
+
+
+if __name__ == "__main__":
+    # Self-check for _drain_stream: multi-chunk read, base64 + raw, eof stop.
+    import base64, io
+
+    class _FakeClient:
+        def __init__(self, chunks): self.chunks = list(chunks); self.closed = False
+        def send(self, method, params):
+            assert method == "IO.read"
+            return self.chunks.pop(0)
+
+    buf = io.BytesIO()
+    _drain_stream(_FakeClient([
+        {"data": base64.b64encode(b"%PDF-").decode(), "base64Encoded": True, "eof": False},
+        {"data": "raw-tail", "base64Encoded": False, "eof": False},
+        {"data": base64.b64encode(b"%%EOF").decode(), "base64Encoded": True, "eof": True},
+    ]), "h", buf)
+    assert buf.getvalue() == b"%PDF-" + b"raw-tail" + b"%%EOF", buf.getvalue()
+    print("ok: _drain_stream reassembles chunks and stops on eof")

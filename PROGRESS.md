@@ -64,8 +64,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title | File |
 |---|-------|------|
-| [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs on non-year pages missing cross-year month links | `fill.py` `fill_page()` — pass window from cfg to `_fill_rail` |
-| [#28](https://github.com/Etsum/remarkable-diary/issues/28) | Year page: mini-cal labels for months beyond planner window shown but unlinked | `fill.py` `_fill_year()` — `full_win` always 12 months, anchors only has generated months; design decision needed |
+| [#27](https://github.com/Etsum/remarkable-diary/issues/27) | Rail tabs on non-year pages missing cross-year month links | `fill.py` `fill_page()` — pass window from cfg to `_fill_rail` (assessment + options posted in issue) |
 | [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
 
 ### Design-owned (waiting on Figma re-export)
@@ -81,6 +80,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 | # | Title |
 |---|-------|
+| [#28](https://github.com/Etsum/remarkable-diary/issues/28) | Year page mini-cal months beyond window unlinked — closed as intended (can't link ungenerated pages; full 12-mo grid is #8's design) |
 | [#26](https://github.com/Etsum/remarkable-diary/issues/26) | Page order: weeks appear before days in partial first week |
 | [#22](https://github.com/Etsum/remarkable-diary/issues/22) | Category blank: footer-left shows 'LISTS' |
 | [#20](https://github.com/Etsum/remarkable-diary/issues/20) | Category: hdr-meta should not show month/year |
@@ -123,13 +123,23 @@ For each month M:
 2. `build_pages(cfg)` → page list + anchor set
 3. `prepare_background(tree, stem, cfg.dot_scale)` per master → write to temp dir
 4. `fill_page()` per page → `(svg_str, links)`
-5. `render_pdf()` — one HTML doc, Playwright prints PDF
+5. `render_pdf()` — one HTML doc, Playwright prints PDF via CDP stream (see below)
 6. `render_blanks()` — one PNG per master type
+
+**Large-planner render (render.py):** `render_pdf` keeps ONE HTML document (so every
+cross-page link resolves) and prints via CDP `Page.printToPDF` with
+`transferMode=ReturnAsStream`, draining the handle in 10MB chunks (`_drain_stream`).
+A full 12-month planner is ~724 pages / ~430MB PDF; `page.pdf()` returns the whole
+thing as one base64 string and overflows V8's ~512MB string cap. Streaming sidesteps
+that. CDP margins are set to 0 explicitly (unlike `page.pdf()`, CDP defaults non-zero).
+Verified: 724-page build, all month/year link rects geometrically exact. **Do NOT
+"fix" this by chunking the HTML into multiple PDFs** — separate PDFs drop every link
+whose target anchor lands in another chunk (most rail/year links).
 
 **Key fill.py helpers:**
 - `_meta_set(node, value)` — center-aligns text within placeholder width; used for month names, date ranges, week numbers, hdr-big-label
 - `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
 - `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
-- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window` to handle cross-year planners; currently only year pages pass window (see #27)
+- `_fill_rail(idm, cfg, active_month, rail_year, anchors, window=None)` — pass `window` to handle cross-year planners; currently only year pages pass window (see #27 — assessment + fix options posted: set `rail_window = month_range(cfg.start_y, cfg.start_m, cfg.months)` for all page kinds)
 
 **var-ink gotcha:** `var-ink` group is present on ALL six masters (including `06-category`). Removed entirely in blank PNG mode. Everything that changes per-page lives inside it.

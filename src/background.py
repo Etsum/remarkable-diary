@@ -34,7 +34,6 @@ _PATTERNS = {
 _BOX_HEADER_H = 34       # wb-box-*-header-bg height (sand title bar)
 _WB_DATE_DIV_X = 180     # week-block navy vertical rule: date column | writing band
 _WS_HEADER_H = 40        # week-schedule day-header row (day# + weekday) height
-_DAY_NOTES_TITLE_H = 42  # day-page "NOTES" title band height
 _INSET = 1               # keep dots inside frame strokes
 
 
@@ -97,9 +96,9 @@ def _zones(stem: str, idm: dict) -> list[tuple[float, float, float, float, str]]
 
     elif stem == "05-day":
         frame_inset("day-schedule-frame", "dot30")
-        nx, ny, nw, nh = SU.bbox(idm["day-notes-frame"])
-        top = ny + _DAY_NOTES_TITLE_H  # below the "NOTES" title
-        Z.append((nx + 1, top, nw - 2, (ny + nh) - top - 1, "dot26"))
+        # dots fill the whole notes frame, behind the "NOTES" title (it's plain
+        # text with no fill band, so the grid reads through it)
+        frame_inset("day-notes-frame", "dot26")
 
     elif stem == "06-category":
         frame_inset("cat-grid-frame", "dot30")

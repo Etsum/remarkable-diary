@@ -15,22 +15,22 @@
 <path id="Vector_8" d="M180 178V1798" stroke="#41587C" stroke-width="2"/>
 </g>
 <g id="wb-day">
-<text id="wb-day-1-wd" transform="matrix(0 -1 1 0 146 349.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">MON</tspan></text>
-<text id="wb-day-2-wd" transform="matrix(0 -1 1 0 146 580.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">TUE</tspan></text>
-<text id="wb-day-3-wd" transform="matrix(0 -1 1 0 146 812.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">WED</tspan></text>
-<text id="wb-day-4-wd" transform="matrix(0 -1 1 0 146 1043.71)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">THU</tspan></text>
-<text id="wb-day-5-wd" transform="matrix(0 -1 1 0 146 1275.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">FRI</tspan></text>
-<text id="wb-day-6-wd" transform="matrix(0 -1 1 0 146 1506.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">SAT</tspan></text>
-<text id="wb-day-7-wd" transform="matrix(0 -1 1 0 146 1738)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="18" letter-spacing="0em"><tspan x="0" y="18.25">SUN</tspan></text>
+<text id="wb-day-1-wd" transform="matrix(0 -1 1 0 141 387.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">MON</tspan></text>
+<text id="wb-day-2-wd" transform="matrix(0 -1 1 0 141 618.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">TUE</tspan></text>
+<text id="wb-day-3-wd" transform="matrix(0 -1 1 0 141 850.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">WED</tspan></text>
+<text id="wb-day-4-wd" transform="matrix(0 -1 1 0 141 1081.71)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">THU</tspan></text>
+<text id="wb-day-5-wd" transform="matrix(0 -1 1 0 141 1313.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">FRI</tspan></text>
+<text id="wb-day-6-wd" transform="matrix(0 -1 1 0 141 1544.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">SAT</tspan></text>
+<text id="wb-day-7-wd" transform="matrix(0 -1 1 0 141 1776)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">SUN</tspan></text>
 </g>
 <g id="wb-jp-day">
-<text id="&#230;&#156;&#136;" transform="matrix(0 -1 1 0 142 304.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x6708;</tspan></text>
-<text id="&#231;&#129;&#171;" transform="matrix(0 -1 1 0 142 535.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x706b;</tspan></text>
-<text id="&#230;&#176;&#180;" transform="matrix(0 -1 1 0 142 767.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x6c34;</tspan></text>
-<text id="&#230;&#156;&#168;" transform="matrix(0 -1 1 0 142 998.714)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x6728;</tspan></text>
-<text id="&#233;&#135;&#145;" transform="matrix(0 -1 1 0 142 1230.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x91d1;</tspan></text>
-<text id="&#229;&#156;&#159;" transform="matrix(0 -1 1 0 142 1461.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x571f;</tspan></text>
-<text id="&#230;&#151;&#165;" transform="matrix(0 -1 1 0 142 1693)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="20" letter-spacing="0em"><tspan x="0" y="21.26">&#x65e5;</tspan></text>
+<text id="&#230;&#156;&#136;" transform="matrix(0 -1 1 0 141 324.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6708;</tspan></text>
+<text id="&#231;&#129;&#171;" transform="matrix(0 -1 1 0 141 555.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x706b;</tspan></text>
+<text id="&#230;&#176;&#180;" transform="matrix(0 -1 1 0 141 787.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6c34;</tspan></text>
+<text id="&#230;&#156;&#168;" transform="matrix(0 -1 1 0 141 1018.71)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6728;</tspan></text>
+<text id="&#233;&#135;&#145;" transform="matrix(0 -1 1 0 141 1250.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x91d1;</tspan></text>
+<text id="&#229;&#156;&#159;" transform="matrix(0 -1 1 0 141 1481.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x571f;</tspan></text>
+<text id="&#230;&#151;&#165;" transform="matrix(0 -1 1 0 141 1713)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x65e5;</tspan></text>
 </g>
 </g>
 <g id="wb-right">
@@ -129,13 +129,13 @@
 <text id="hdr-toggle-block" fill="white" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" font-weight="bold" letter-spacing="0em"><tspan x="776.515" y="125.875">BLOCK</tspan></text>
 </g>
 <g id="wb-left-nums">
-<text id="wb-day-1-num" transform="matrix(0 -1 1 0 141 391.429)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">16</tspan></text>
-<text id="wb-day-2-num" transform="matrix(0 -1 1 0 141 622.857)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">17</tspan></text>
-<text id="wb-day-3-num" transform="matrix(0 -1 1 0 141 854.286)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">18</tspan></text>
-<text id="wb-day-4-num" transform="matrix(0 -1 1 0 141 1085.71)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">19</tspan></text>
-<text id="wb-day-5-num" transform="matrix(0 -1 1 0 141 1317.14)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">20</tspan></text>
-<text id="wb-day-6-num" transform="matrix(0 -1 1 0 141 1548.57)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">21</tspan></text>
-<text id="wb-day-7-num" transform="matrix(0 -1 1 0 141 1780)" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="0" y="22.75">22</tspan></text>
+<text id="wb-day-1-num" transform="matrix(0 -1 1 0 141 436.429)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">16</tspan></text>
+<text id="wb-day-2-num" transform="matrix(0 -1 1 0 141 667.857)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">17</tspan></text>
+<text id="wb-day-3-num" transform="matrix(0 -1 1 0 141 899.286)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">18</tspan></text>
+<text id="wb-day-4-num" transform="matrix(0 -1 1 0 141 1130.71)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">19</tspan></text>
+<text id="wb-day-5-num" transform="matrix(0 -1 1 0 141 1362.14)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">20</tspan></text>
+<text id="wb-day-6-num" transform="matrix(0 -1 1 0 141 1593.57)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">21</tspan></text>
+<text id="wb-day-7-num" transform="matrix(0 -1 1 0 141 1825)" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">22</tspan></text>
 </g>
 <text id="footer-left" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="132" y="1836.38">WEEK 8 &#xb7; 2&#x6708; 2026</tspan></text>
 <text id="footer-right" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="1225.28" y="1836.38">&#x21b3; month overview</tspan></text>

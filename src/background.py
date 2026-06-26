@@ -38,13 +38,15 @@ _DAY_NOTES_TITLE_H = 42  # day-page "NOTES" title band height
 _INSET = 1               # keep dots inside frame strokes
 
 
-def _make_defs() -> etree._Element:
+def _make_defs(scale: float = 1.0) -> etree._Element:
     defs = etree.Element(S + "defs", {"id": "dotgrid-defs"})
     for pid, (size, off) in _PATTERNS.items():
+        s = max(4, round(size * scale))
+        o = max(1, round(off * scale))
         pat = etree.SubElement(defs, S + "pattern", {
-            "id": pid, "width": str(size), "height": str(size),
+            "id": pid, "width": str(s), "height": str(s),
             "patternUnits": "userSpaceOnUse",
-            "patternTransform": f"translate({off} {off})",
+            "patternTransform": f"translate({o} {o})",
         })
         etree.SubElement(pat, S + "circle", {
             "cx": "1.1", "cy": "1.1", "r": "1.1", "fill": DOT_COLOR,
@@ -105,7 +107,7 @@ def _zones(stem: str, idm: dict) -> list[tuple[float, float, float, float, str]]
     return Z
 
 
-def prepare_background(tree, stem: str | None = None) -> None:
+def prepare_background(tree, stem: str | None = None, scale: float = 1.0) -> None:
     """Mutate `tree` in place: add dot-pattern defs + patterned rects to #background.
 
     Idempotent: skips if dot-grid already applied."""
@@ -115,7 +117,7 @@ def prepare_background(tree, stem: str | None = None) -> None:
     stem = stem or detect_stem(tree)
     idm = SU.id_map(tree)
 
-    root.insert(0, _make_defs())
+    root.insert(0, _make_defs(scale))
 
     bg = idm["background"]
     zones = _zones(stem, idm)

@@ -222,12 +222,6 @@
 </g>
 </g>
 <g id="var-ink">
-<g id="hdr-nav">
-<path id="hdr-nav-prev-bg" d="M586 86H568C563.582 86 560 89.5817 560 94V112C560 116.418 563.582 120 568 120H586C590.418 120 594 116.418 594 112V94C594 89.5817 590.418 86 586 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#185;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="574.133" y="108.424">&#x2039;</tspan></text>
-<path id="hdr-nav-next-bg" d="M630 86H612C607.582 86 604 89.5817 604 94V112C604 116.418 607.582 120 612 120H630C634.418 120 638 116.418 638 112V94C638 89.5817 634.418 86 630 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#186;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="618.133" y="108.424">&#x203a;</tspan></text>
-</g>
 <g id="year-days">
 <g id="mini-01-days">
 <text id="mini-01-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="159.048" y="265.729">.</tspan></text>
@@ -764,7 +758,7 @@
 <text id="hdr-meta-top" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="14" letter-spacing="0em"><tspan x="435.453" y="89.25">MMM-START</tspan></text>
 <text id="hdr-title" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="23" font-weight="bold" letter-spacing="0em"><tspan x="274.336" y="112.125">Overview</tspan></text>
 <text id="hdr-meta-bottom" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="14" letter-spacing="0em"><tspan x="443.619" y="138.75">MMM-END</tspan></text>
-<text id="hdr-big" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="36" letter-spacing="0em"><tspan x="135.828" y="117">Year</tspan></text>
+<text id="hdr-big" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="36" letter-spacing="0em"><tspan x="135.828" y="117">2026</tspan></text>
 </g>
 </g>
 </g>

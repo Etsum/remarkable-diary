@@ -176,7 +176,7 @@ def build(
                "04-week-schedule", "05-day", "06-category"]
     for stem in masters:
         tree = SU.parse(str(templates_dir / f"{stem}.svg"))
-        prepare_background(tree, stem)
+        prepare_background(tree, stem, cfg.dot_scale)
         # Store the prepped SVG string; fill_page will re-parse from templates_dir
         # (dot-grid is added to templates directly during fill via deepcopy)
         bg_cache[stem] = SU.tostring(tree)
@@ -253,6 +253,8 @@ def _make_parser() -> argparse.ArgumentParser:
                    help="Cover page: 'blank' or path to a PDF/PNG")
     p.add_argument("--hour-start", type=int, default=5, metavar="H",
                    help="First hour label on week-schedule pages (default 5)")
+    p.add_argument("--dot-scale", type=float, default=0.8, metavar="F",
+                   help="Dot-grid tile size scale factor (default: 0.8, 1.0 = original)")
     p.add_argument("--validate-only", action="store_true",
                    help="Run pre-flight validator and exit (no PDF generated)")
     p.add_argument("--blanks-only", action="store_true",
@@ -293,6 +295,7 @@ def main(argv: list[str] | None = None) -> None:
             output=args.output,
             blanks=True,
             hour_start=args.hour_start,
+            dot_scale=args.dot_scale,
         )
     else:
         if not args.start:
@@ -316,6 +319,7 @@ def main(argv: list[str] | None = None) -> None:
             output=args.output,
             blanks=not args.no_blanks,
             hour_start=args.hour_start,
+            dot_scale=args.dot_scale,
         )
 
     # --- Blanks-only mode ---

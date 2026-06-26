@@ -45,14 +45,29 @@ Generated output goes to `tmp/` (not committed).
 ## CLI reference
 
 ```
---start YYYY-MM        First month (default: current month)
+--config PATH          JSON config file (overrides other flags if present)
+--start YYYY-MM        First month (required unless --config given)
 --months N             Number of months to generate (default: 12)
 --end YYYY-MM          Alternative to --months (inclusive)
 --output PATH          Output PDF path (default: out/planner.pdf)
---blanks-only          Skip date fill; render one blank PNG per page type
+--lang jp-en|en        Language mode for weekday headers (default: jp-en)
+--weeklink schedule|block  Where week-number links point (default: schedule)
+--hour-start H         First hour on week-schedule pages, 24h (default: 5)
+--pages-per-category N Category pages per slot per month (default: 5)
+--dot-scale F          Dot-grid tile size scale factor (default: 0.8; 1.0 = original density)
+--cover PATH|blank     Cover page: 'blank' or path to a PDF/PNG
+--no-blanks            Skip blank PNG output
+--no-block             Skip week-block pages
+--no-schedule          Skip week-schedule pages
+--no-days              Skip day pages
+--blanks-only          Render one blank PNG per page type; no PDF
 --validate-only        Pre-flight check only; exit 0 if all masters pass
---templates-dir PATH   Override SVG master directory (default: assets/templates/)
+--templates-dir PATH   Override SVG master directory (default: assets/templates/rm2/)
 ```
+
+JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `lang`, `weeklink`,
+`hourStart`, `pagesPerCategory`, `dotScale`, `coverPage`, `blanks`, `include` (object with
+`block`/`schedule`/`days` booleans), `categories` (array of 4 strings).
 
 ## How it works
 

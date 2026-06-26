@@ -55,8 +55,6 @@
 </g>
 <g id="year-grid">
 <g id="mini-01">
-<text id="mini-01-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="200.9">1&#x6708;</tspan></text>
-<text id="mini-01-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="197.648">Jan</tspan></text>
 <path id="Vector_3" d="M132 208H498" stroke="#E2DFDA"/>
 <text id="M" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="226.768">M</tspan></text>
 <text id="T" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="226.768">T</tspan></text>
@@ -68,8 +66,6 @@
 <path id="mini-01-weekend-cols" d="M498 230H393.429V557.5H498V230Z" fill="#DDE0E5"/>
 </g>
 <g id="mini-02">
-<text id="mini-02-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="200.9">2&#x6708;</tspan></text>
-<text id="mini-02-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="197.648">Feb</tspan></text>
 <path id="Vector_4" d="M558 208H924" stroke="#E2DFDA"/>
 <text id="M_2" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="226.768">M</tspan></text>
 <text id="T_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="226.768">T</tspan></text>
@@ -81,7 +77,6 @@
 <path id="mini-02-weekend-cols" d="M924 230H819.429V557.5H924V230Z" fill="#DDE0E5"/>
 </g>
 <g id="mini-03">
-<text id="mini-03-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="197.648">Mar</tspan></text>
 <path id="Vector_5" d="M984 208H1350" stroke="#E2DFDA"/>
 <text id="M_3" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="226.768">M</tspan></text>
 <text id="T_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="226.768">T</tspan></text>
@@ -91,10 +86,8 @@
 <text id="S_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="226.768">S</tspan></text>
 <text id="S_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="226.768">S</tspan></text>
 <path id="mini-03-weekend-cols" d="M1350 230H1245.43V557.5H1350V230Z" fill="#DDE0E5"/>
-<text id="mini-03-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="200.9">3&#x6708;</tspan></text>
 </g>
 <g id="mini-04">
-<text id="mini-04-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="611.148">Apr</tspan></text>
 <path id="Vector_6" d="M132 621.5H498" stroke="#E2DFDA"/>
 <text id="M_4" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="640.268">M</tspan></text>
 <text id="T_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="640.268">T</tspan></text>
@@ -104,10 +97,8 @@
 <text id="S_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="640.268">S</tspan></text>
 <text id="S_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="640.268">S</tspan></text>
 <path id="mini-04-weekend-cols" d="M498 643.5H393.429V971H498V643.5Z" fill="#DDE0E5"/>
-<text id="mini-04-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="613.9">4&#x6708;</tspan></text>
 </g>
 <g id="mini-05">
-<text id="mini-05-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="611.148">May</tspan></text>
 <path id="Vector_7" d="M558 621.5H924" stroke="#E2DFDA"/>
 <text id="M_5" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="640.268">M</tspan></text>
 <text id="T_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="640.268">T</tspan></text>
@@ -117,10 +108,8 @@
 <text id="S_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="640.268">S</tspan></text>
 <text id="S_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="640.268">S</tspan></text>
 <path id="mini-05-weekend-cols" d="M924 643.5H819.429V971H924V643.5Z" fill="#DDE0E5"/>
-<text id="mini-05-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="613.9">5&#x6708;</tspan></text>
 </g>
 <g id="mini-06">
-<text id="mini-06-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="611.148">Jun</tspan></text>
 <path id="Vector_8" d="M984 621.5H1350" stroke="#E2DFDA"/>
 <text id="M_6" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="640.268">M</tspan></text>
 <text id="T_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="640.268">T</tspan></text>
@@ -130,10 +119,8 @@
 <text id="S_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="640.268">S</tspan></text>
 <text id="S_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="640.268">S</tspan></text>
 <path id="mini-06-weekend-cols" d="M1350 643.5H1245.43V971H1350V643.5Z" fill="#DDE0E5"/>
-<text id="mini-06-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="613.9">6&#x6708;</tspan></text>
 </g>
 <g id="mini-07">
-<text id="mini-07-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1024.65">Jul</tspan></text>
 <path id="Vector_9" d="M132 1035H498" stroke="#E2DFDA"/>
 <text id="M_7" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="1053.77">M</tspan></text>
 <text id="T_13" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="1053.77">T</tspan></text>
@@ -143,10 +130,8 @@
 <text id="S_13" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="1053.77">S</tspan></text>
 <text id="S_14" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="1053.77">S</tspan></text>
 <path id="mini-07-weekend-cols" d="M498 1057H393.429V1384.5H498V1057Z" fill="#DDE0E5"/>
-<text id="mini-07-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="1027.9">7&#x6708;</tspan></text>
 </g>
 <g id="mini-08">
-<text id="mini-08-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1024.65">Aug</tspan></text>
 <path id="Vector_10" d="M558 1035H924" stroke="#E2DFDA"/>
 <text id="M_8" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="1053.77">M</tspan></text>
 <text id="T_15" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="1053.77">T</tspan></text>
@@ -156,10 +141,8 @@
 <text id="S_15" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="1053.77">S</tspan></text>
 <text id="S_16" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="1053.77">S</tspan></text>
 <path id="mini-08-weekend-cols" d="M924 1057H819.429V1384.5H924V1057Z" fill="#DDE0E5"/>
-<text id="mini-08-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="901.062" y="1027.9">8&#x6708;</tspan></text>
 </g>
 <g id="mini-09">
-<text id="mini-09-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1024.65">Sep</tspan></text>
 <path id="Vector_11" d="M984 1035H1350" stroke="#E2DFDA"/>
 <text id="M_9" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="1053.77">M</tspan></text>
 <text id="T_17" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="1053.77">T</tspan></text>
@@ -169,10 +152,8 @@
 <text id="S_17" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="1053.77">S</tspan></text>
 <text id="S_18" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="1053.77">S</tspan></text>
 <path id="mini-09-weekend-cols" d="M1350 1057H1245.43V1384.5H1350V1057Z" fill="#DDE0E5"/>
-<text id="mini-09-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="1027.9">9&#x6708;</tspan></text>
 </g>
 <g id="mini-10">
-<text id="mini-10-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1438.15">Oct</tspan></text>
 <path id="Vector_12" d="M132 1448.5H498" stroke="#E2DFDA"/>
 <text id="M_10" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="153.432" y="1467.27">M</tspan></text>
 <text id="T_19" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="207.544" y="1467.27">T</tspan></text>
@@ -182,10 +163,8 @@
 <text id="S_19" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="416.73" y="1467.27">S</tspan></text>
 <text id="S_20" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="469.016" y="1467.27">S</tspan></text>
 <path id="mini-10-weekend-cols" d="M498 1470.5H393.429V1798H498V1470.5Z" fill="#DDE0E5"/>
-<text id="mini-10-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="464.125" y="1441.9">10&#x6708;</tspan></text>
 </g>
 <g id="mini-11">
-<text id="mini-11-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1438.15">Nov</tspan></text>
 <path id="Vector_13" d="M558 1448.5H924" stroke="#E2DFDA"/>
 <text id="M_11" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="579.432" y="1467.27">M</tspan></text>
 <text id="T_21" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="633.544" y="1467.27">T</tspan></text>
@@ -195,10 +174,8 @@
 <text id="S_21" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="842.73" y="1467.27">S</tspan></text>
 <text id="S_22" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="895.016" y="1467.27">S</tspan></text>
 <path id="mini-11-weekend-cols" d="M924 1470.5H819.429V1798H924V1470.5Z" fill="#DDE0E5"/>
-<text id="mini-11-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="890.125" y="1441.9">11&#x6708;</tspan></text>
 </g>
 <g id="mini-12">
-<text id="mini-12-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1438.15">Dec</tspan></text>
 <path id="Vector_14" d="M984 1448.5H1350" stroke="#E2DFDA"/>
 <text id="M_12" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1005.43" y="1467.27">M</tspan></text>
 <text id="T_23" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1059.54" y="1467.27">T</tspan></text>
@@ -208,7 +185,6 @@
 <text id="S_23" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1268.73" y="1467.27">S</tspan></text>
 <text id="S_24" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="11" letter-spacing="0em"><tspan x="1321.02" y="1467.27">S</tspan></text>
 <path id="mini-12-weekend-cols" d="M1350 1470.5H1245.43V1798H1350V1470.5Z" fill="#DDE0E5"/>
-<text id="mini-12-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1316.12" y="1441.9">12&#x6708;</tspan></text>
 </g>
 </g>
 <g id="footer-rule">
@@ -222,6 +198,32 @@
 </g>
 </g>
 <g id="var-ink">
+<g id="year-grid-mini-label">
+<text id="mini-01-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="197.648">Jan</tspan></text>
+<text id="mini-01-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="200.9">1&#x6708;</tspan></text>
+<text id="mini-02-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="197.648">Feb</tspan></text>
+<text id="mini-02-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="200.9">2&#x6708;</tspan></text>
+<text id="mini-03-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="197.648">Mar</tspan></text>
+<text id="mini-03-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="200.9">3&#x6708;</tspan></text>
+<text id="mini-04-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="611.148">Apr</tspan></text>
+<text id="mini-04-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="613.9">4&#x6708;</tspan></text>
+<text id="mini-05-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="611.148">May</tspan></text>
+<text id="mini-05-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="899.062" y="613.9">5&#x6708;</tspan></text>
+<text id="mini-06-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="611.148">Jun</tspan></text>
+<text id="mini-06-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="613.9">6&#x6708;</tspan></text>
+<text id="mini-07-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1024.65">Jul</tspan></text>
+<text id="mini-07-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="473.062" y="1027.9">7&#x6708;</tspan></text>
+<text id="mini-08-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1024.65">Aug</tspan></text>
+<text id="mini-08-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="901.062" y="1027.9">8&#x6708;</tspan></text>
+<text id="mini-09-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1024.65">Sep</tspan></text>
+<text id="mini-09-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1324.06" y="1027.9">9&#x6708;</tspan></text>
+<text id="mini-10-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="132" y="1438.15">Oct</tspan></text>
+<text id="mini-10-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="464.125" y="1441.9">10&#x6708;</tspan></text>
+<text id="mini-11-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="558" y="1438.15">Nov</tspan></text>
+<text id="mini-11-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="890.125" y="1441.9">11&#x6708;</tspan></text>
+<text id="mini-12-label" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="21" font-weight="bold" letter-spacing="0em"><tspan x="984" y="1438.15">Dec</tspan></text>
+<text id="mini-12-label-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans JP" font-size="16" letter-spacing="0em"><tspan x="1316.12" y="1441.9">12&#x6708;</tspan></text>
+</g>
 <g id="year-days">
 <g id="mini-01-days">
 <text id="mini-01-d-r1c1" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13.5" letter-spacing="0em"><tspan x="159.048" y="265.729">.</tspan></text>

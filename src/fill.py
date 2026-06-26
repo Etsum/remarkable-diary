@@ -88,6 +88,7 @@ def _fill_rail(
     active_month: tuple[int, int] | None,
     rail_year: int | None,
     anchors: set[str],
+    window: list[tuple[int, int]] | None = None,
 ) -> list[Link]:
     links: list[Link] = []
 
@@ -117,13 +118,15 @@ def _fill_rail(
             links.append((*bb, "year"))
 
     # Month tabs → month-YYYY-MM
-    if rail_year:
-        for mm in range(1, 13):
+    if rail_year or window:
+        month_to_year = ({mm: yy for yy, mm in window} if window
+                         else {mm: rail_year for mm in range(1, 13)})
+        for mm, yy in month_to_year.items():
             bg = idm.get(f"rail-month-{mm:02d}-bg")
             if bg is not None:
                 bb = _el_bbox(bg)
                 if bb:
-                    tgt = a_month(rail_year, mm)
+                    tgt = a_month(yy, mm)
                     if tgt in anchors:
                         links.append((*bb, tgt))
 
@@ -658,9 +661,11 @@ def fill_page(
 
     links: list[Link] = []
 
+    rail_window = None
     if page.kind == "year":
         links.extend(_fill_year(page, cfg, idm, anchors))
         rail_year = page.window[0][0] if page.window else None
+        rail_window = page.window
     elif page.kind == "month":
         links.extend(_fill_month(page, cfg, idm, anchors))
         rail_year = page.month[0]
@@ -679,5 +684,5 @@ def fill_page(
     else:
         rail_year = None
 
-    links.extend(_fill_rail(idm, cfg, page.active_month, rail_year, anchors))
+    links.extend(_fill_rail(idm, cfg, page.active_month, rail_year, anchors, window=rail_window))
     return SU.tostring(root), links

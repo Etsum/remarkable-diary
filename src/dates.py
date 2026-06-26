@@ -208,7 +208,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                             pages.append(Page(kind="day", anchor=a_day(dd),
                                               master=MASTER["day"], day=dd, month=(y, m),
                                               active_month=am))
-            for slot in range(1, 5):
+            for slot in range(1, len(cfg.categories) + 1):
                 for nn in range(1, cfg.pages_per_category + 1):
                     pages.append(Page(kind="category", anchor=a_cat(y, m, slot, nn),
                                       master=MASTER["category"], month=(y, m),

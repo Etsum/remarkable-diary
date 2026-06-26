@@ -29,8 +29,8 @@ class Config:
             raise ValueError(f"lang must be jp-en|en, got {self.lang!r}")
         if self.weeklink not in ("schedule", "block"):
             raise ValueError(f"weeklink must be schedule|block, got {self.weeklink!r}")
-        if len(self.categories) != 4:
-            raise ValueError(f"categories must be exactly 4 names, got {len(self.categories)}")
+        if not 1 <= len(self.categories) <= 4:
+            raise ValueError(f"categories must be 1–4 names, got {len(self.categories)}")
         if not 1 <= self.months <= 12:
             raise ValueError(f"months must be 1–12, got {self.months}")
         if self.pages_per_category < 0:

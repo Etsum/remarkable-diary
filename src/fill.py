@@ -91,11 +91,19 @@ def _fill_rail(
 ) -> list[Link]:
     links: list[Link] = []
 
-    # Section labels (F9: all pages use rail-section-{1..4})
-    for i, name in enumerate(cfg.categories, 1):
-        node = idm.get(f"rail-section-{i}")
-        if node is not None:
-            SU.set_text(node, name)
+    # Section labels: fill provided categories; blank unused tabs — clear the
+    # label and hide the chip so the slot reads as empty rail (#30).
+    for i in range(1, 5):
+        lbl = idm.get(f"rail-section-{i}")
+        bg  = idm.get(f"rail-section-{i}-bg")
+        if i <= len(cfg.categories):
+            if lbl is not None:
+                SU.set_text(lbl, cfg.categories[i - 1])
+        else:
+            if lbl is not None:
+                SU.set_text(lbl, "")
+            if bg is not None:
+                SU.set_fill(bg, "none")
 
     # Active month tab highlight (§8.7)
     if active_month:
@@ -131,7 +139,7 @@ def _fill_rail(
     # Section tabs → first cat page of current month (if pages_per_category > 0)
     if active_month and cfg.pages_per_category > 0:
         ay, am = active_month
-        for i in range(1, 5):
+        for i in range(1, len(cfg.categories) + 1):
             bg = idm.get(f"rail-section-{i}-bg")
             if bg is not None:
                 bb = _el_bbox(bg)

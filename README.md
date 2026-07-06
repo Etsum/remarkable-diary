@@ -42,6 +42,23 @@ uv run python -m planner_gen.build --blanks-only --output tmp/blanks.pdf
 
 Generated output goes to `tmp/` (not committed).
 
+## Build in the cloud (manual GitHub Actions run)
+
+The SVG→PDF render (headless Chromium) can be run on GitHub's runners instead of
+on-device, so per-build parameters stay out of committed config files. The
+workflow is **manual-only** — it has a single `workflow_dispatch` trigger and
+never runs on push, PR, or a schedule.
+
+To run it: **Actions ▸ "Build planner (manual)" ▸ Run workflow**, fill in the
+inputs (they map 1:1 onto the CLI flags — `start`, `end`/`months`, `cover`,
+`no-*` toggles, etc., or paste a full JSON config into `config_json` to override
+them), and start it. The PDF and any blank PNGs are uploaded as a
+`planner-build-<run_id>` artifact (14-day retention). CLI equivalent:
+
+```bash
+gh workflow run build-planner.yml -f start=2026-07 -f months=12
+```
+
 ## CLI reference
 
 ```

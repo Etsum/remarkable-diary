@@ -1,0 +1,213 @@
+name: Build planner (manual)
+
+# Manual-only. This workflow NEVER runs automatically — it has a single
+# `workflow_dispatch` trigger and no `push` / `pull_request` / `schedule`
+# events. It is started on demand from the Actions tab (or `gh workflow run`),
+# where the inputs below map onto the `planner_gen.build` CLI flags. This keeps
+# per-build parameters (which are meant to vary) out of committed config files.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First month, YYYY-MM (required unless config_json or validate_only is used)"
+        required: false
+        type: string
+      end:
+        description: "Last month, YYYY-MM (inclusive). Overrides 'months' if set."
+        required: false
+        type: string
+      months:
+        description: "Number of months (used when 'end' is empty)"
+        required: false
+        default: "12"
+        type: string
+      output:
+        description: "Output PDF path — keep it inside a folder (e.g. out/…) so the artifact upload is scoped"
+        required: false
+        default: "out/planner.pdf"
+        type: string
+      weeklink:
+        description: "Where week-number links point"
+        required: false
+        default: "schedule"
+        type: choice
+        options:
+          - schedule
+          - block
+      cover:
+        description: "Cover page: 'blank' or a path to a PDF/PNG (leave empty for none)"
+        required: false
+        type: string
+      pages_per_category:
+        description: "Category pages per slot per month"
+        required: false
+        default: "5"
+        type: string
+      hour_start:
+        description: "First hour label on week-schedule pages"
+        required: false
+        default: "5"
+        type: string
+      dot_scale:
+        description: "Dot-grid tile size scale factor (1.0 = original)"
+        required: false
+        default: "0.8"
+        type: string
+      no_blanks:
+        description: "Skip blank PNG output"
+        required: false
+        default: false
+        type: boolean
+      no_year:
+        description: "Skip the year overview page"
+        required: false
+        default: false
+        type: boolean
+      no_block:
+        description: "Skip week-block pages"
+        required: false
+        default: false
+        type: boolean
+      no_schedule:
+        description: "Skip week-schedule pages"
+        required: false
+        default: false
+        type: boolean
+      no_days:
+        description: "Skip day pages"
+        required: false
+        default: false
+        type: boolean
+      blanks_only:
+        description: "Render blank PNGs only (no PDF)"
+        required: false
+        default: false
+        type: boolean
+      validate_only:
+        description: "Run the pre-flight master validator and exit (no build)"
+        required: false
+        default: false
+        type: boolean
+      config_json:
+        description: "Optional: paste a full JSON config. If set, it overrides all the flags above (mirrors --config)."
+        required: false
+        type: string
+
+# Least privilege: a manual build only needs to read the repo.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Generous ceiling for large ranges; still under the 6h hosted-runner cap.
+    timeout-minutes: 350
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up uv (Python 3.14 via .python-version)
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
+      - name: Install Chromium (+ system libs) for Playwright
+        run: uv run playwright install --with-deps chromium
+
+      - name: Build planner
+        id: build
+        env:
+          IN_CONFIG_JSON: ${{ inputs.config_json }}
+          IN_START: ${{ inputs.start }}
+          IN_END: ${{ inputs.end }}
+          IN_MONTHS: ${{ inputs.months }}
+          IN_OUTPUT: ${{ inputs.output }}
+          IN_WEEKLINK: ${{ inputs.weeklink }}
+          IN_COVER: ${{ inputs.cover }}
+          IN_PAGES_PER_CATEGORY: ${{ inputs.pages_per_category }}
+          IN_HOUR_START: ${{ inputs.hour_start }}
+          IN_DOT_SCALE: ${{ inputs.dot_scale }}
+          IN_NO_BLANKS: ${{ inputs.no_blanks }}
+          IN_NO_YEAR: ${{ inputs.no_year }}
+          IN_NO_BLOCK: ${{ inputs.no_block }}
+          IN_NO_SCHEDULE: ${{ inputs.no_schedule }}
+          IN_NO_DAYS: ${{ inputs.no_days }}
+          IN_BLANKS_ONLY: ${{ inputs.blanks_only }}
+          IN_VALIDATE_ONLY: ${{ inputs.validate_only }}
+        run: |
+          set -euo pipefail
+          args=()
+
+          if [ "$IN_VALIDATE_ONLY" = "true" ]; then
+            args+=(--validate-only)
+            echo "out_dir=" >> "$GITHUB_OUTPUT"
+          else
+            if [ -n "$IN_CONFIG_JSON" ]; then
+              printf '%s' "$IN_CONFIG_JSON" > ci-config.json
+              echo "Using inline JSON config:"
+              cat ci-config.json
+              echo
+              args+=(--config ci-config.json)
+              out_dir="out"
+            else
+              if [ -z "$IN_START" ]; then
+                echo "::error::'start' (YYYY-MM) is required unless 'config_json' or 'validate_only' is used"
+                exit 1
+              fi
+              args+=(--start "$IN_START")
+              if [ -n "$IN_END" ]; then args+=(--end "$IN_END"); fi
+              if [ -n "$IN_MONTHS" ]; then args+=(--months "$IN_MONTHS"); fi
+              if [ -n "$IN_WEEKLINK" ]; then args+=(--weeklink "$IN_WEEKLINK"); fi
+              if [ -n "$IN_COVER" ]; then args+=(--cover "$IN_COVER"); fi
+              if [ -n "$IN_PAGES_PER_CATEGORY" ]; then args+=(--pages-per-category "$IN_PAGES_PER_CATEGORY"); fi
+              if [ -n "$IN_HOUR_START" ]; then args+=(--hour-start "$IN_HOUR_START"); fi
+              if [ -n "$IN_DOT_SCALE" ]; then args+=(--dot-scale "$IN_DOT_SCALE"); fi
+              if [ "$IN_NO_BLANKS" = "true" ]; then args+=(--no-blanks); fi
+              if [ "$IN_NO_YEAR" = "true" ]; then args+=(--no-year); fi
+              if [ "$IN_NO_BLOCK" = "true" ]; then args+=(--no-block); fi
+              if [ "$IN_NO_SCHEDULE" = "true" ]; then args+=(--no-schedule); fi
+              if [ "$IN_NO_DAYS" = "true" ]; then args+=(--no-days); fi
+              args+=(--output "$IN_OUTPUT")
+              out_dir="$(dirname "$IN_OUTPUT")"
+            fi
+
+            if [ "$IN_BLANKS_ONLY" = "true" ]; then args+=(--blanks-only); fi
+
+            if [ -z "$out_dir" ] || [ "$out_dir" = "." ]; then out_dir="out"; fi
+            mkdir -p "$out_dir"
+            echo "out_dir=$out_dir" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "Running: uv run python -m planner_gen.build ${args[*]}"
+          uv run python -m planner_gen.build "${args[@]}"
+
+      - name: Upload build output
+        if: ${{ steps.build.outputs.out_dir != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: planner-build-${{ github.run_id }}
+          path: ${{ steps.build.outputs.out_dir }}/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Summary
+        if: ${{ always() }}
+        run: |
+          {
+            echo "### Planner build"
+            echo ""
+            echo "- Mode: ${{ inputs.validate_only == true && 'validate-only' || (inputs.blanks_only == true && 'blanks-only' || 'full build') }}"
+            echo "- Output dir: \`${{ steps.build.outputs.out_dir }}\`"
+            echo "- Artifact: \`planner-build-${{ github.run_id }}\` (if produced)"
+          } >> "$GITHUB_STEP_SUMMARY"

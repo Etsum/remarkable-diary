@@ -41,7 +41,7 @@ WHITE  = BASE                # inverse text on dark chips
 
 Link = tuple[float, float, float, float, str]   # (x, y, w, h, target_anchor)
 
-_WS_HOUR_IDS = [f"ws-hour-{h}" for h in range(5, 23)]  # 18 fixed ids, in row order
+_WS_HOUR_IDS = [f"ws-hour-pos-{i:02d}" for i in range(1, 19)]  # 18 positional rows, in order (labels set from cfg.hour_start)
 
 
 # ---------------------------------------------------------------------------

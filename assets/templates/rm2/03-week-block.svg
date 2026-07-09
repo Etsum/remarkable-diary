@@ -5,145 +5,139 @@
 <g id="background">
 <g id="wb-left">
 <g id="wb-layout">
-<path id="Vector" d="M923 178H136C133.791 178 132 179.791 132 182V1794C132 1796.21 133.791 1798 136 1798H923C925.209 1798 927 1796.21 927 1794V182C927 179.791 925.209 178 923 178Z" stroke="#D7D4CF"/>
-<path id="Vector_2" d="M132 409.429H927" stroke="#E2DFDA"/>
-<path id="Vector_3" d="M132 640.857H927" stroke="#E2DFDA"/>
-<path id="Vector_4" d="M132 872.286H927" stroke="#E2DFDA"/>
-<path id="Vector_5" d="M132 1103.71H927" stroke="#E2DFDA"/>
-<path id="Vector_6" d="M132 1335.14H927" stroke="#E2DFDA"/>
-<path id="Vector_7" d="M132 1566.57H927" stroke="#E2DFDA"/>
-<path id="Vector_8" d="M180 178V1798" stroke="#41587C" stroke-width="2"/>
+<path id="Vector" d="M923 178H136C133.791 178 132 179.791 132 182V1794C132 1796.21 133.791 1798 136 1798H923C925.209 1798 927 1796.21 927 1794V182C927 179.791 925.209 178 923 178Z" stroke="#B8B8B8"/>
+<path id="Vector_2" d="M132 409.429H927" stroke="#B8B8B8"/>
+<path id="Vector_3" d="M132 640.857H927" stroke="#B8B8B8"/>
+<path id="Vector_4" d="M132 872.286H927" stroke="#B8B8B8"/>
+<path id="Vector_5" d="M132 1103.71H927" stroke="#B8B8B8"/>
+<path id="Vector_6" d="M132 1335.14H927" stroke="#B8B8B8"/>
+<path id="Vector_7" d="M132 1566.57H927" stroke="#B8B8B8"/>
+<path id="Vector_8" d="M180 178V1798" stroke="#B8B8B8" stroke-width="2"/>
 </g>
 <g id="wb-day">
-<text id="wb-day-1-wd" transform="matrix(0 -1 1 0 141 387.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">MON</tspan></text>
-<text id="wb-day-2-wd" transform="matrix(0 -1 1 0 141 618.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">TUE</tspan></text>
-<text id="wb-day-3-wd" transform="matrix(0 -1 1 0 141 850.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">WED</tspan></text>
-<text id="wb-day-4-wd" transform="matrix(0 -1 1 0 141 1081.71)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">THU</tspan></text>
-<text id="wb-day-5-wd" transform="matrix(0 -1 1 0 141 1313.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">FRI</tspan></text>
-<text id="wb-day-6-wd" transform="matrix(0 -1 1 0 141 1544.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">SAT</tspan></text>
-<text id="wb-day-7-wd" transform="matrix(0 -1 1 0 141 1776)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="24" letter-spacing="0em"><tspan x="0" y="24.5">SUN</tspan></text>
+<text id="wb-day-1-wd" transform="matrix(0 -1 1 0 141 400.429)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">MON</tspan></text>
+<text id="wb-day-2-wd" transform="matrix(0 -1 1 0 141 631.857)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">TUE</tspan></text>
+<text id="wb-day-3-wd" transform="matrix(0 -1 1 0 141 863.286)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">WED</tspan></text>
+<text id="wb-day-4-wd" transform="matrix(0 -1 1 0 141 1094.71)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">THU</tspan></text>
+<text id="wb-day-5-wd" transform="matrix(0 -1 1 0 141 1326.14)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">FRI</tspan></text>
+<text id="wb-day-6-wd" transform="matrix(0 -1 1 0 141 1557.57)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">SAT</tspan></text>
+<text id="wb-day-7-wd" transform="matrix(0 -1 1 0 141 1789)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">SUN</tspan></text>
 </g>
 <g id="wb-jp-day">
-<text id="&#230;&#156;&#136;" transform="matrix(0 -1 1 0 141 324.429)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6708;</tspan></text>
-<text id="&#231;&#129;&#171;" transform="matrix(0 -1 1 0 141 555.857)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x706b;</tspan></text>
-<text id="&#230;&#176;&#180;" transform="matrix(0 -1 1 0 141 787.286)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6c34;</tspan></text>
-<text id="&#230;&#156;&#168;" transform="matrix(0 -1 1 0 141 1018.71)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x6728;</tspan></text>
-<text id="&#233;&#135;&#145;" transform="matrix(0 -1 1 0 141 1250.14)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x91d1;</tspan></text>
-<text id="&#229;&#156;&#159;" transform="matrix(0 -1 1 0 141 1481.57)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x571f;</tspan></text>
-<text id="&#230;&#151;&#165;" transform="matrix(0 -1 1 0 141 1713)" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" letter-spacing="0em"><tspan x="0" y="25.812">&#x65e5;</tspan></text>
+<text id="&#230;&#156;&#136;" transform="matrix(0 -1 1 0 141 315.429)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x6708;</tspan></text>
+<text id="&#231;&#129;&#171;" transform="matrix(0 -1 1 0 141 546.857)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x706b;</tspan></text>
+<text id="&#230;&#176;&#180;" transform="matrix(0 -1 1 0 141 778.286)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x6c34;</tspan></text>
+<text id="&#230;&#156;&#168;" transform="matrix(0 -1 1 0 141 1009.71)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x6728;</tspan></text>
+<text id="&#233;&#135;&#145;" transform="matrix(0 -1 1 0 141 1241.14)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x91d1;</tspan></text>
+<text id="&#229;&#156;&#159;" transform="matrix(0 -1 1 0 141 1472.57)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x571f;</tspan></text>
+<text id="&#230;&#151;&#165;" transform="matrix(0 -1 1 0 141 1704)" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="0" y="21.312">&#x65e5;</tspan></text>
 </g>
 </g>
 <g id="wb-right">
 <g id="wb-box-carryover">
-<path id="Vector_9" d="M1346 178H957C954.791 178 953 179.791 953 182V492.367C953 494.576 954.791 496.367 957 496.367H1346C1348.21 496.367 1350 494.576 1350 492.367V182C1350 179.791 1348.21 178 1346 178Z" stroke="#E2DFDA"/>
-<path id="wb-box-carryover-header-bg" d="M1350 178H953V212H1350V178Z" fill="#DCCFB0"/>
-<text id="wb-box-carryover-title" fill="#54492A" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="1107.75" y="200.932">CARRY-OVER</tspan></text>
+<path id="Vector_9" d="M1346 178H957C954.791 178 953 179.791 953 182V492.367C953 494.576 954.791 496.367 957 496.367H1346C1348.21 496.367 1350 494.576 1350 492.367V182C1350 179.791 1348.21 178 1346 178Z" stroke="#B8B8B8"/>
+<path id="wb-box-carryover-header-bg" d="M1350 178H953V212H1350V178Z" fill="#DCDCDC"/>
+<text id="wb-box-carryover-title" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="-0.01em"><tspan x="1092.11" y="204.545">CARRY-OVER</tspan></text>
 </g>
 <g id="wb-box-projects">
-<path id="Vector_10" d="M1346 516.367H957C954.791 516.367 953 518.158 953 520.367V974C953 976.209 954.791 978 957 978H1346C1348.21 978 1350 976.209 1350 974V520.367C1350 518.158 1348.21 516.367 1346 516.367Z" stroke="#E2DFDA"/>
-<path id="wb-box-projects-header-bg" d="M1350 516.367H953V550.367H1350V516.367Z" fill="#DCCFB0"/>
-<text id="wb-box-projects-title" fill="#54492A" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="1092.1" y="539.299">ACTIVE PROJECTS</tspan></text>
+<path id="Vector_10" d="M1346 516.367H957C954.791 516.367 953 518.158 953 520.367V974C953 976.209 954.791 978 957 978H1346C1348.21 978 1350 976.209 1350 974V520.367C1350 518.158 1348.21 516.367 1346 516.367Z" stroke="#B8B8B8"/>
+<path id="wb-box-projects-header-bg" d="M1350 516.367H953V550.367H1350V516.367Z" fill="#DCDCDC"/>
+<text id="wb-box-projects-title" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="-0.01em"><tspan x="1069.11" y="542.545">ACTIVE PROJECTS</tspan></text>
 </g>
 <g id="wb-box-tasks">
-<path id="Vector_11" d="M1346 998H957C954.791 998 953 999.791 953 1002V1455.63C953 1457.84 954.791 1459.63 957 1459.63H1346C1348.21 1459.63 1350 1457.84 1350 1455.63V1002C1350 999.791 1348.21 998 1346 998Z" stroke="#E2DFDA"/>
-<path id="wb-box-tasks-header-bg" d="M1350 998H953V1032H1350V998Z" fill="#DCCFB0"/>
-<text id="wb-box-tasks-title" fill="#54492A" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="1130.75" y="1020.93">TASKS</tspan></text>
+<path id="Vector_11" d="M1346 998H957C954.791 998 953 999.791 953 1002V1455.63C953 1457.84 954.791 1459.63 957 1459.63H1346C1348.21 1459.63 1350 1457.84 1350 1455.63V1002C1350 999.791 1348.21 998 1346 998Z" stroke="#B8B8B8"/>
+<path id="wb-box-tasks-header-bg" d="M1350 998H953V1032H1350V998Z" fill="#DCDCDC"/>
+<text id="wb-box-tasks-title" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="-0.01em"><tspan x="1122.12" y="1024.55">TASKS</tspan></text>
 </g>
 <g id="wb-box-discuss">
-<path id="Vector_12" d="M1346 1479.63H957C954.791 1479.63 953 1481.42 953 1483.63V1794C953 1796.21 954.791 1798 957 1798H1346C1348.21 1798 1350 1796.21 1350 1794V1483.63C1350 1481.42 1348.21 1479.63 1346 1479.63Z" stroke="#E2DFDA"/>
-<path id="wb-box-discuss-header-bg" d="M1350 1479.63H953V1513.63H1350V1479.63Z" fill="#DCCFB0"/>
-<text id="wb-box-discuss-title" fill="#54492A" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="1075.25" y="1502.56">DISCUSS &#xb7; FOLLOW-UP</tspan></text>
+<path id="Vector_12" d="M1346 1479.63H957C954.791 1479.63 953 1481.42 953 1483.63V1794C953 1796.21 954.791 1798 957 1798H1346C1348.21 1798 1350 1796.21 1350 1794V1483.63C1350 1481.42 1348.21 1479.63 1346 1479.63Z" stroke="#B8B8B8"/>
+<path id="wb-box-discuss-header-bg" d="M1350 1479.63H953V1513.63H1350V1479.63Z" fill="#DCDCDC"/>
+<text id="wb-box-discuss-title" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="-0.01em"><tspan x="1051.37" y="1506.55">DISCUSS &#xb7; FOLLOW-UP</tspan></text>
 </g>
 </g>
 <g id="footer-rule">
-<path id="Vector_13" d="M132 1812H1350" stroke="#DCD9D4"/>
+<path id="Vector_13" d="M132 1812H1350" stroke="#808080"/>
 </g>
 <g id="rail">
 <g id="rail-months-bg">
-<rect id="rail-month-01-bg" x="25" y="148" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-02-bg" x="25" y="256.417" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-03-bg" x="25" y="364.833" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-04-bg" x="25" y="473.25" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-05-bg" x="25" y="581.667" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-06-bg" x="25" y="690.083" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-07-bg" x="25" y="798.5" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-08-bg" x="25" y="906.917" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-09-bg" x="25" y="1015.33" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-10-bg" x="25" y="1123.75" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-11-bg" x="25" y="1232.17" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-12-bg" x="25" y="1340.58" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-01-bg" x="25" y="187" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-02-bg" x="25" y="285.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-03-bg" x="25" y="384.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-04-bg" x="25" y="483.25" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-05-bg" x="25" y="582" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-06-bg" x="25" y="680.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-07-bg" x="25" y="779.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-08-bg" x="25" y="878.25" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-09-bg" x="25" y="977" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-10-bg" x="25" y="1075.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-11-bg" x="25" y="1174.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-12-bg" x="25" y="1273.25" width="66" height="98.75" fill="#DCDCDC"/>
 </g>
 <g id="rail-months">
-<text id="rail-month-01" transform="matrix(0 -1 1 0 25 256.417)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JAN</tspan></text>
-<text id="rail-month-02" transform="matrix(0 -1 1 0 25 364.833)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">FEB</tspan></text>
-<text id="rail-month-03" transform="matrix(0 -1 1 0 25 473.25)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAR</tspan></text>
-<text id="rail-month-04" transform="matrix(0 -1 1 0 25 581.667)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">APR</tspan></text>
-<text id="rail-month-05" transform="matrix(0 -1 1 0 25 690.083)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAY</tspan></text>
-<text id="rail-month-06" transform="matrix(0 -1 1 0 25 798.5)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUN</tspan></text>
-<text id="rail-month-07" transform="matrix(0 -1 1 0 25 906.917)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUL</tspan></text>
-<text id="rail-month-08" transform="matrix(0 -1 1 0 25 1015.33)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">AUG</tspan></text>
-<text id="rail-month-09" transform="matrix(0 -1 1 0 25 1123.75)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">SEP</tspan></text>
-<text id="rail-month-10" transform="matrix(0 -1 1 0 25 1232.17)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">OCT</tspan></text>
-<text id="rail-month-11" transform="matrix(0 -1 1 0 25 1340.58)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">NOV</tspan></text>
-<text id="rail-month-12" transform="matrix(0 -1 1 0 25 1449)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">DEC</tspan></text>
+<text id="rail-month-01" transform="matrix(0 -1 1 0 25 286.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.2848" y="39.5455">JAN</tspan></text>
+<text id="rail-month-02" transform="matrix(0 -1 1 0 25 385.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.8581" y="39.5455">FEB</tspan></text>
+<text id="rail-month-03" transform="matrix(0 -1 1 0 25 484)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="28.9909" y="39.5455">MAR</tspan></text>
+<text id="rail-month-04" transform="matrix(0 -1 1 0 25 582.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.3551" y="39.5455">APR</tspan></text>
+<text id="rail-month-05" transform="matrix(0 -1 1 0 25 681.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.1754" y="39.5455">MAY</tspan></text>
+<text id="rail-month-06" transform="matrix(0 -1 1 0 25 780)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.1969" y="39.5455">JUN</tspan></text>
+<text id="rail-month-07" transform="matrix(0 -1 1 0 25 878.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.7702" y="39.5455">JUL</tspan></text>
+<text id="rail-month-08" transform="matrix(0 -1 1 0 25 977.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.6061" y="39.5455">AUG</tspan></text>
+<text id="rail-month-09" transform="matrix(0 -1 1 0 25 1076)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.4098" y="39.5455">SEP</tspan></text>
+<text id="rail-month-10" transform="matrix(0 -1 1 0 25 1174.67)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.9137" y="39.5455">OCT</tspan></text>
+<text id="rail-month-11" transform="matrix(0 -1 1 0 25 1273.33)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.7116" y="39.5455">NOV</tspan></text>
+<text id="rail-month-12" transform="matrix(0 -1 1 0 25 1372)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="30.8366" y="39.5455">DEC</tspan></text>
 </g>
-<path id="Vector_14" d="M25 1449H91" stroke="#E2DFDA"/>
+<path id="Vector_14" d="M25 1372H91" stroke="#B8B8B8"/>
 <g id="rail-sections-bg">
-<rect id="rail-section-4-bg" opacity="0.2" x="25" y="1740" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-3-bg" opacity="0.2" x="25" y="1643" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-2-bg" opacity="0.2" x="25" y="1546" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-1-bg" opacity="0.2" x="25" y="1449" width="66" height="97" fill="#D9D9D9"/>
+<rect id="rail-section-4-bg" opacity="0.2" x="25" y="1720.75" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-3-bg" opacity="0.2" x="25" y="1604.5" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-2-bg" opacity="0.2" x="25" y="1488.25" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-1-bg" opacity="0.2" x="25" y="1372" width="66" height="116.25" fill="#DCDCDC"/>
 </g>
 <g id="rail-sections">
-<text id="rail-section-1" transform="matrix(0 -1 1 0 25 1546)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="32.6914" y="37.656">LISTS</tspan></text>
-<text id="rail-section-2" transform="matrix(0 -1 1 0 25 1643)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="20.0527" y="37.656">PROJECTS</tspan></text>
-<text id="rail-section-3" transform="matrix(0 -1 1 0 25 1740)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="17.791" y="37.656">MEETINGS</tspan></text>
-<text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.875" y="37.656">SCRATCHPAD</tspan></text>
+<text id="rail-section-1" transform="matrix(0 -1 1 0 25 1488.25)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="36.4919" y="38.8182">LISTS</tspan></text>
+<text id="rail-section-2" transform="matrix(0 -1 1 0 25 1604.5)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="17.2163" y="38.8182">PROJECTS</tspan></text>
+<text id="rail-section-3" transform="matrix(0 -1 1 0 25 1720.75)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="17.685" y="38.8182">MEETINGS</tspan></text>
+<text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="21.2066" y="38.8182">SCRATCH</tspan></text>
 </g>
 <g id="rail-index-chip">
-<path id="Vector_15" d="M58 160.5L25 148V67C25 59.5 31 54 37.5 54H58H78.5C85 54 91 59.5 91 67V148L58 160.5Z" fill="#2C2C2C"/>
-<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
+<path id="Vector_15" d="M58 199.5L25 187V106C25 98.5 31 93 37.5 93H58H78.5C85 93 91 98.5 91 106V187L58 199.5Z" fill="black"/>
+<text id="rail-index-label" transform="matrix(0 -1 1 0 45 199)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="26.0172" y="19.0455">INDEX</tspan></text>
 </g>
-</g>
-<g id="hdr-nav">
-<path id="hdr-nav-prev-bg" d="M586 86H568C563.582 86 560 89.5817 560 94V112C560 116.418 563.582 120 568 120H586C590.418 120 594 116.418 594 112V94C594 89.5817 590.418 86 586 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#185;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="574.133" y="108.424">&#x2039;</tspan></text>
-<path id="hdr-nav-next-bg" d="M630 86H612C607.582 86 604 89.5817 604 94V112C604 116.418 607.582 120 612 120H630C634.418 120 638 116.418 638 112V94C638 89.5817 634.418 86 630 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#186;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="618.133" y="108.424">&#x203a;</tspan></text>
 </g>
 <g id="hdr-layout">
-<path id="hdr-datebox-frame" d="M497.618 55H147.382C138.887 55 132 60.8203 132 68V140C132 147.18 138.887 153 147.382 153H497.618C506.113 153 513 147.18 513 140V68C513 60.8203 506.113 55 497.618 55Z" stroke="#CFD5DD"/>
-<path id="Vector_16" d="M225.957 56V152" stroke="#E2DFDA"/>
-<path id="Vector_17" d="M433 55V153" stroke="#E2DFDA"/>
-<path id="Vector_18" d="M433 104H513" stroke="#E2DFDA"/>
+<path id="Vector_16" d="M261.468 56V152" stroke="#DCDCDC"/>
+<path id="Vector_17" d="M546.764 55V153" stroke="#DCDCDC"/>
+<path id="Vector_18" d="M546.764 104H657" stroke="#DCDCDC"/>
+<rect id="hdr-datebox-frame" x="132.5" y="55.5" width="524" height="97" rx="7.5" stroke="#B8B8B8"/>
 </g>
 </g>
 <g id="var-ink">
 <g id="hdr-toggle">
-<path id="hdr-toggle-schedule-bg" d="M878 103.5V78.8878C878 73.9792 875.144 70 871.621 70H726.379C722.856 70 720 73.9792 720 78.8878V103.5H878Z" stroke="#CFD5DD"/>
-<path id="hdr-toggle-block-bg" d="M720 128.112C720 133.021 722.856 137 726.379 137H871.621C875.144 137 878 133.021 878 128.112V103.5H720V128.112Z" fill="#41587C" stroke="#CFD5DD"/>
-<text id="hdr-toggle-schedule" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" font-weight="bold" letter-spacing="0em"><tspan x="763.023" y="92.375">SCHEDULE</tspan></text>
-<text id="hdr-toggle-block" fill="white" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" font-weight="bold" letter-spacing="0em"><tspan x="776.515" y="125.875">BLOCK</tspan></text>
+<path id="hdr-toggle-schedule-bg" d="M1160 105V77.0816C1160 71.5137 1157.14 67 1153.62 67H1008.38C1004.86 67 1002 71.5137 1002 77.0816V105H1160Z" fill="#F2F2F2" stroke="#B8B8B8"/>
+<path id="hdr-toggle-block-bg" d="M1002 132.918C1002 138.486 1004.86 143 1008.38 143H1153.62C1157.14 143 1160 138.486 1160 132.918V105H1002V132.918Z" fill="#B8B8B8" stroke="#B8B8B8"/>
+<text id="hdr-toggle-schedule" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1032.98" y="92.829">SCHEDULE</tspan></text>
+<text id="hdr-toggle-block" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1050.09" y="130.262">BLOCK</tspan></text>
 </g>
 <g id="wb-left-nums">
-<text id="wb-day-1-num" transform="matrix(0 -1 1 0 141 436.429)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">16</tspan></text>
-<text id="wb-day-2-num" transform="matrix(0 -1 1 0 141 667.857)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">17</tspan></text>
-<text id="wb-day-3-num" transform="matrix(0 -1 1 0 141 899.286)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">18</tspan></text>
-<text id="wb-day-4-num" transform="matrix(0 -1 1 0 141 1130.71)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">19</tspan></text>
-<text id="wb-day-5-num" transform="matrix(0 -1 1 0 141 1362.14)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">20</tspan></text>
-<text id="wb-day-6-num" transform="matrix(0 -1 1 0 141 1593.57)" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">21</tspan></text>
-<text id="wb-day-7-num" transform="matrix(0 -1 1 0 141 1825)" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="22" letter-spacing="0em"><tspan x="205.046" y="22.75">22</tspan></text>
+<text id="wb-day-1-num" transform="matrix(0 -1 1 0 141 423.429)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">16</tspan></text>
+<text id="wb-day-2-num" transform="matrix(0 -1 1 0 141 654.857)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">17</tspan></text>
+<text id="wb-day-3-num" transform="matrix(0 -1 1 0 141 886.286)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">18</tspan></text>
+<text id="wb-day-4-num" transform="matrix(0 -1 1 0 141 1117.71)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">19</tspan></text>
+<text id="wb-day-5-num" transform="matrix(0 -1 1 0 141 1349.14)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">20</tspan></text>
+<text id="wb-day-6-num" transform="matrix(0 -1 1 0 141 1580.57)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">21</tspan></text>
+<text id="wb-day-7-num" transform="matrix(0 -1 1 0 141 1812)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="24" font-weight="600" letter-spacing="-0.01em"><tspan x="204.2" y="21.312">22</tspan></text>
 </g>
-<text id="footer-left" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="132" y="1836.38">WEEK 8 &#xb7; 2&#x6708; 2026</tspan></text>
-<text id="footer-right" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="1225.28" y="1836.38">&#x21b3; month overview</tspan></text>
+<text id="footer-left" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="132" y="1835.09">WEEK 8 &#xb7; 2&#x6708; 2026</tspan></text>
+<text id="footer-right" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="1226.95" y="1835.09">&#x21b3; month overview</tspan></text>
 <g id="hdr-meta">
-<text id="hdr-big-label" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="159.513" y="129.375">MONTH</tspan></text>
-<text id="hdr-meta-top" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="457.638" y="88.875">YEAR</tspan></text>
-<text id="hdr-month-name" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="23" font-weight="bold" letter-spacing="0em"><tspan x="274.16" y="109.625">February</tspan></text>
-<text id="hdr-month-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="310.822" y="137.208">2&#x6708;</tspan></text>
-<text id="hdr-meta-bottom" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" letter-spacing="0em"><tspan x="455.012" y="139.125">2026</tspan></text>
-<text id="hdr-big" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="52" letter-spacing="0em"><tspan x="163.41" y="108.5">2</tspan></text>
+<text id="hdr-big-label" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="170.397" y="139.091">MONTH</tspan></text>
+<text id="hdr-meta-top" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="583.983" y="84.5909">YEAR</tspan></text>
+<text id="hdr-month-name" fill="black" style="white-space: pre" xml:space="preserve" font-family="Newsreader" font-size="48" font-weight="bold" letter-spacing="-0.02em"><tspan x="303.716" y="114.78">February</tspan></text>
+<text id="hdr-meta-bottom" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="584.537" y="133.091">2026</tspan></text>
+<text id="hdr-big" fill="black" style="white-space: pre" xml:space="preserve" font-family="Newsreader" font-size="64" font-weight="bold" letter-spacing="-0.02em"><tspan x="175.185" y="110.04">2</tspan></text>
 </g>
+<text id="hdr-month-jp" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="64" font-weight="bold" letter-spacing="-0.02em"><tspan x="1254.83" y="128.332">2&#x6708;</tspan></text>
 </g>
 </g>
 <defs>

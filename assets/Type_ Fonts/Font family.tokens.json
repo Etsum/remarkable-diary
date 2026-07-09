@@ -1,0 +1,93 @@
+{
+  "font-serif": {
+    "$type": "string",
+    "$value": "Newsreader",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:426",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-sans": {
+    "$type": "string",
+    "$value": "Inter",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:427",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-code": {
+    "$type": "string",
+    "$value": "SF Mono",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:429",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-script": {
+    "$type": "string",
+    "$value": "Figma Hand",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:430",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-system-mac": {
+    "$type": "string",
+    "$value": "SF Pro Text",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:431",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-system-ios": {
+    "$type": "string",
+    "$value": "SF Pro",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:432",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-system-android": {
+    "$type": "string",
+    "$value": "Roboto",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:433",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "font-system-windows": {
+    "$type": "string",
+    "$value": "Segoe UI",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4:444",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Font family"
+  }
+}

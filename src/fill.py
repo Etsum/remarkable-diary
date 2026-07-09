@@ -27,6 +27,8 @@ from .dates import (
 # Colour tokens — e-ink palette (assets/e-ink-palette.tokens.json).
 # The palette is greyscale-only for e-ink, so the former navy/maroon accents
 # collapse onto Text/Primary (emphasis) vs Text/Secondary (regular text).
+# These constants only restyle data-dependent states (active tab, Sunday, faded
+# adjacent months); the SVG export is the style source of truth — PIPELINE_SPEC §3.5.
 TEXT_PRIMARY   = "#000000"   # Text/Primary   — headers, today, active tab, weekend emphasis
 TEXT_SECONDARY = "#4d4d4d"   # Text/Secondary — regular grid & mini-cal numbers
 GRID_PRIMARY   = "#b8b8b8"   # Grid/Primary   — de-emphasised (adjacent-month) numbers

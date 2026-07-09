@@ -147,9 +147,49 @@ text with reportlab from a hard-coded per-field style/coordinate table (ported f
 `Planner.html`) over the SVG `#background`. Works, but every Figma nudge silently desyncs.
 Not the chosen path.
 
+### 3.5 Style & typography — the SVG export is the source of truth
+
+Design is authored **only in Figma**. Colour and type are defined there as variables and
+text styles and **exported** into the repo — the six master SVGs plus the token JSONs
+(`assets/e-ink-palette.tokens.json`, `assets/Type_ Fonts/`, `assets/Type_ Properties/`).
+There should **never** be a need to hand-edit the exported JSON or bake a style decision
+into code; when a style changes, re-export from Figma.
+
+Consequences for the generator:
+
+- **The per-node SVG attributes are authoritative, not the token JSON.** Figma bakes each
+  text element's full style (`font-family`, `font-size`, `font-weight`, `letter-spacing`,
+  `fill`) onto its exported `<text>` node. The token JSON is design *reference*: it may
+  declare font/colour variables that no text style actually uses, so it cannot tell you
+  what is rendered. Treat `assets/*.tokens.json` as definitions; treat the master SVGs as
+  the truth for how each element looks.
+- **Code follows the design automatically — do not maintain a "which style" table.**
+  `set_text()` rewrites only a node's text content and preserves every style attribute
+  (`svgutil.py`). So filling a template node keeps its Figma style for free. Binding style
+  by node id, by placeholder text, or by parsing the `.fig` are all the wrong direction:
+  the export already carries it. (If a semantic style *name* is ever needed for validation,
+  generate an `id → text-style` manifest from the Figma API — never hand-author one.)
+- **The only explicit styling in code is data-dependent restyling** of an existing node —
+  active rail tab, Sunday emphasis, adjacent-month fade, dot-grid texture. Those few
+  overrides (`fill.py`, `background.py`) map onto the exported e-ink palette (§4). When the
+  palette changes in Figma, update the export and these constants together; the SVG export
+  stays the reference.
+
+Fonts are served to the renderer from the bundled TTFs in `assets/fonts/` via
+`fonts.py` `@font-face`, keyed by the exact family names the SVGs declare — so whatever
+family Figma exports must have a matching bundled face, or it silently falls back
+(issue #52).
+
 ---
 
 ## 4. What the OWNER must provide (action items)
+
+> **⚠️ Superseded by the e-ink redesign (2026-07).** The specific faces and hex tokens in
+> the tables below are historical owner-provided context from the original build. Type is
+> now **Inter** (UI / labels / numbers), **Newsreader** (display headers) and **EB Garamond**
+> (mini-cal month names); colour is the greyscale e-ink palette in
+> `assets/e-ink-palette.tokens.json`. The authoritative style is always the Figma export per
+> **§3.5** — the values below are kept only for provenance.
 
 1. **Re-exported SVGs** per §3.1 with §3.3 (F2, F3) applied. Keep layer names unique.
 2. **Font files (`.ttf`/`.otf`)** in `assets/fonts/` — the exact faces from Figma:

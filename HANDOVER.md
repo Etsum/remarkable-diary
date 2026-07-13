@@ -1,5 +1,12 @@
 # reMarkable 2 Planner System — Handover
 
+> **⚠️ Historical brief.** This is the original handover from the first build. The design
+> and pipeline have since moved on: the live design is the **e-ink greyscale palette**
+> (`assets/e-ink-palette.tokens.json`) with **Inter / Newsreader / EB Garamond** type — not
+> the navy/maroon + IBM Plex Mono described below — and the build contract is
+> **`PIPELINE_SPEC.md`** (see §3.5). Read this for background/intent only; trust
+> `PIPELINE_SPEC.md`, `README.md`, and the code for current behaviour.
+
 A working brief for a fresh chat session. Goal: a set of planner templates for the
 reMarkable 2 (and reMarkable Paper Pro), produced two ways:
 

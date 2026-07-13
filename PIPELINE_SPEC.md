@@ -198,12 +198,12 @@ family Figma exports must have a matching bundled face, or it silently falls bac
    |---|---|---|
    | **IBM Plex Mono** | Regular, Bold | every number/date (660+ nodes) |
    | **Noto Sans** *(Display)* | Regular, Bold | headings, weekday names, labels, section/box titles |
-   | **Noto Sans JP** | Regular | kanji (月, 火…) when `lang=jp-en` |
+   | **Noto Sans JP** | Regular | kanji (月, 火…) — always on via the CJK fallback chain (`fonts.py`); the `lang` option was removed (#31) |
 
-   The mono face is **IBM Plex Mono** (not Noto Sans Mono — retuned in Figma). EB Garamond
-   is **unused** — skip. "Noto Sans Display" is an optical variant; plain Noto Sans is a
-   near-identical fallback if Display files are hard to source. All are OFL/Apache —
-   redistributable with the output.
+   *(Historical, per the §4 banner: the original build used **IBM Plex Mono** for numbers
+   and called EB Garamond unused. The e-ink redesign replaced this — see the current
+   families in `fonts.py` and the banner above; EB Garamond is now used for mini-cal month
+   names.)* All bundled faces are OFL — redistributable with the output.
 3. **Tokens** — baked into the SVG; the script only needs them for nodes it restyles/draws:
 
    | Token | Hex | Use |
@@ -356,6 +356,13 @@ Clone the master, then set the **content** (and, where listed, the **fill**) of 
 `#background` is untouched (except dot-grid prep, §10). Inherit position/size/font from the
 node; override fill only where stated.
 
+> **Colour override roles (e-ink redesign).** The data-dependent fills below now map onto
+> the greyscale e-ink palette (`assets/e-ink-palette.tokens.json`), not the old navy/maroon.
+> The `fill.py` constants: **Text/Primary `#000000`** (emphasis — active tab, Sunday/weekend,
+> today), **Text/Secondary `#4d4d4d`** (regular day numbers), **Grid/Primary `#b8b8b8`**
+> (faded adjacent-month numbers & dot grid), **Base `#ffffff`** (inverse text on dark chips).
+> Everything else inherits the node's exported Figma style untouched (§3.5).
+
 ### 8.1 Year (`01-year.svg`)
 | Node id(s) | Set to |
 |---|---|
@@ -363,7 +370,7 @@ node; override fill only where stated.
 | `hdr-month-name` | `Overview` |
 | `hdr-meta-top` / `hdr-meta-bottom` | first / last month abbr of range (needs F3) |
 | `mini-{NN}-label` / `-label-jp` | abbr + `M月` for `monthsList[NN-1]` |
-| `mini-{NN}-d-r{R}c{C}` | day number from `mini_rows()` or `""`; **fill** maroon if Sunday (col 6), else inherit ink |
+| `mini-{NN}-d-r{R}c{C}` | day number from `mini_rows()` or `""`; **fill** Text/Primary if Sunday (col 6), else Text/Secondary |
 | `footer-left` `YEAR 2026` · `footer-right` static |
 
 ### 8.2 Month (`02-month.svg`)
@@ -372,7 +379,7 @@ node; override fill only where stated.
 | `hdr-big` month # · `hdr-month-name` `February` · `hdr-month-jp` `2月` |
 | `hdr-meta-top` `YEAR` (static) · `hdr-meta-bottom` year |
 | `mrow-{R}-weeknum` | `W`+ISO week of that row's Monday; `""` for unused rows |
-| `mcell-r{R}c{C}-num` | day-of-month. **fill:** current month → ink (Sun→maroon); **adjacent month → faint `#cbc9c4`** |
+| `mcell-r{R}c{C}-num` | day-of-month. **fill:** current month → Text/Secondary (Sun→Text/Primary); **adjacent month → Grid/Primary `#b8b8b8`** |
 
 ### 8.3 Week block (`03-week-block.svg`)
 | Node id(s) | Set to |
@@ -380,14 +387,14 @@ node; override fill only where stated.
 | `hdr-big` ISO week # · `hdr-month-name`/`-jp` month of Monday · `hdr-meta-top` range `16–22` · `hdr-meta-bottom` year |
 | `wb-day-{N}-num` | day-of-month (Mon=1…Sun=7) |
 | `wb-day-{N}-wd` | `EN_WD[N-1]` (+JP) — constant; set or leave |
-| toggle | **BLOCK** active: `hdr-toggle-block-bg` fill→navy, `hdr-toggle-block` text→white |
+| toggle | **BLOCK** active: `hdr-toggle-block-bg` fill→Text/Primary `#000`, `hdr-toggle-block` text→white |
 
 ### 8.4 Week schedule (`04-week-schedule.svg`)
 | Node id(s) | Set to |
 |---|---|
 | header | as 8.3 |
 | `ws-day-{N}-num` / `-wd` | day-of-month / weekday |
-| `ws-hour-{H}` | hour labels (relabel only; 18 rows fixed, D11) |
+| `ws-hour-pos-{01..18}` | hour labels — 18 positional-id rows, relabelled from `cfg.hour_start` (the old literal `ws-hour-5..22` ids were renamed in the e-ink redesign; see `_WS_HOUR_IDS`) |
 | toggle | **SCHEDULE** active |
 
 ### 8.5 Day (`05-day.svg`)
@@ -397,8 +404,8 @@ node; override fill only where stated.
 | `hdr-meta-top` `WEEK` (static) · `hdr-meta-bottom` ISO week # |
 | `day-mini-month` / `day-mini-year` | month name / year |
 | `day-mini-r{R}c{C}` | mini-cal day numbers (fill rules as 8.1) |
-| `day-mini-today` *(optional)* | highlight current day: its cell text→white + navy rounded rect behind (from the cell's bbox). Skippable. |
-| `footer-left` `February 16, 2026` · `footer-right` static `↳ week` |
+| `day-mini-today` *(absent)* | not present in the e-ink master — the redesign dropped it; today is emphasised via Text/Primary fill on the cell (see `_fill_day`). Code still guards it via `idm.get`. |
+| `footer-left` `2月 16, 2026` (JP month glyph) · `footer-right` static `↳ week` |
 
 ### 8.6 Category (`06-category.svg`) — per slot/month instance
 | Node id(s) | Set to |
@@ -410,8 +417,8 @@ node; override fill only where stated.
 | Node id(s) | Action |
 |---|---|
 | `rail-index-chip` | link only (§9) |
-| `rail-month-{MM}-bg` + `rail-month-{MM}` | **active month:** bg fill→navy, label→white+bold. Others inherit. (Replaces F4.) |
-| `rail-section-{i}` labels | set text → `categories[i]` on **every** page (D3). ≤10 chars. **id note (F9):** labels are `rail-section-{1..4}` on `06-category` but name-based (`rail-section-lists/-projects/-meetings/-scratchpad`) on the four dated pages — target `rail-section-{i}` and fall back to the name-based id (lists→1, projects→2, meetings→3, scratchpad→4), or standardise the masters. |
+| `rail-month-{MM}-bg` + `rail-month-{MM}` | **active month:** bg fill→Text/Primary `#000`, label→white+bold. Others inherit. (Replaces F4.) |
+| `rail-section-{i}` labels | set text → `categories[i]` on **every** page (D3). ≤10 chars. The masters are now **standardised**: labels are `rail-section-{1..4}` on all six templates (the old name-based `rail-section-lists/-projects/…` ids are gone). Labels are vertically rotated; `_center_rail_label(lbl, bg)` re-centres each along its tab's long axis so any-length name stays centred (#44). Unused tabs are blanked (#30). |
 
 ---
 
@@ -507,8 +514,8 @@ Playwright (`GENERATE_PDF.md`).
 1. Build **one** HTML document (all links resolve in a single print job):
    ```html
    <style>
-     @font-face{font-family:'IBM Plex Mono';src:url(assets/fonts/IBMPlexMono-Regular.ttf)}
-     /* …Bold, Noto Sans, Noto Sans JP… */
+     @font-face{font-family:'Inter';font-weight:400;src:url(assets/fonts/Inter/static/Inter-Regular.ttf)}
+     /* …Inter 500/600/700, Newsreader, EB Garamond, Noto Sans, Noto Sans JP — see fonts.py */
      @page{size:1404px 1872px;margin:0}
      .page{width:1404px;height:1872px;position:relative;page-break-after:always;overflow:hidden}
      a.lnk{position:absolute;display:block}      /* invisible hit overlays */

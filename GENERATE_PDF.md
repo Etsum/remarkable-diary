@@ -4,7 +4,9 @@
 > doc describes the older **HTML route (Route B)** built on `Planner.html`. Keep it as a
 > zero-setup fallback and as the **behavioural reference** for the date logic — and note
 > the Playwright recipe below is exactly the rendering backend the SVG route reuses
-> (§11.1 of the spec), just fed mutated SVGs instead of `Planner.html`.
+> (§11.1 of the spec), just fed mutated SVGs instead of `Planner.html`. Any font names below
+> (IBM Plex Mono, Noto Sans Mono) are the old set — the live faces are Inter / Newsreader /
+> EB Garamond (`fonts.py`); the Playwright mechanics are unchanged.
 
 `Planner.html` is the **behavioural source of truth**: open it in Chrome and it builds every
 page for a date range, with real internal `<a href="#anchor">` links already wired. Two ways

@@ -25,6 +25,11 @@ from .fonts import font_face_css
 # Page dimensions (§3)
 W, H = 1404, 1872
 
+# Minimum link tap target (#41). ~5 mm on the reMarkable 2 (8.9 px/mm) — the
+# Apple/Material minimum. Thin text-derived links (mini-cal cells ~22 px, footer
+# text ~20 px) are grown to this; already-large shape links pass through untouched.
+MIN_TOUCH = 44
+
 # CSS shared by both paths
 _PAGE_CSS = f"""\
 @page{{size:{W}px {H}px;margin:0}}
@@ -41,6 +46,23 @@ a.lnk{{position:absolute;display:block;z-index:10;
 # HTML assembly helpers
 # ---------------------------------------------------------------------------
 
+def _inflate(x: float, y: float, w: float, h: float, target: str) -> Link:
+    """Grow a small link rect to MIN_TOUCH on each axis, centred and clamped to page (#41).
+
+    Large shape links (rail tabs, datebox frames) already exceed MIN_TOUCH and pass
+    through untouched, so adjacent targets keep independent tap zones. The densest grid
+    is the day-page mini-cal at ~43.2 px row pitch → ≤0.8 px overlap at 44 px, harmless
+    (a tap resolves to the nearest centre).
+    """
+    if w >= MIN_TOUCH and h >= MIN_TOUCH:
+        return x, y, w, h, target
+    cx, cy = x + w / 2, y + h / 2
+    w2, h2 = max(w, MIN_TOUCH), max(h, MIN_TOUCH)
+    x2 = min(max(cx - w2 / 2, 0), W - w2)
+    y2 = min(max(cy - h2 / 2, 0), H - h2)
+    return x2, y2, w2, h2, target
+
+
 def _link_tag(x: float, y: float, w: float, h: float, target: str) -> str:
     style = (
         f"left:{x:.2f}px;top:{y:.2f}px;"
@@ -51,7 +73,7 @@ def _link_tag(x: float, y: float, w: float, h: float, target: str) -> str:
 
 def _page_div(anchor: str | None, svg_str: str, links: list[Link]) -> str:
     id_attr = f' id="{html.escape(anchor)}"' if anchor else ""
-    link_tags = "\n".join(_link_tag(*lnk) for lnk in links)
+    link_tags = "\n".join(_link_tag(*_inflate(*lnk)) for lnk in links)
     return (
         f'<div class="page"{id_attr}>\n'
         f'{link_tags}\n'
@@ -181,11 +203,10 @@ _BLANK_REMOVE_IDS = (
     "var-ink",          # all variable content (§12 step 2)
     "rail-sections",    # category tabs (§12 step 3)
     "rail-sections-bg",
-    "hdr-nav",          # nav arrows (§12 step 4)
-    "footer-right",     # link text (§12 step 5)
+    "footer-right",     # link text (§12 step 4)
 )
 _BLANK_CLEAR_TEXT = (
-    "hdr-meta-top",     # keep frame, clear text (§12 step 6)
+    "hdr-meta-top",     # keep frame, clear text (§12 step 5)
     "hdr-meta-bottom",
 )
 

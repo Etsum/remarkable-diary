@@ -62,12 +62,7 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 ### Code-owned
 
-| # | Title | File / area |
-|---|-------|------|
-| [#41](https://github.com/Etsum/remarkable-diary/issues/41) | PDF link touch targets too small to tap reliably | `fill.py` link rects (`links.append((*bb, tgt))`) / `render.py` `_link_tag` — pad or enforce a minimum hit-rect size |
-| [#47](https://github.com/Etsum/remarkable-diary/issues/47) | Configurable number of day pages per day (CLI + JSON) | `dates.py` `build_pages`, `fill.py` `_fill_day`, `config.py`, `build.py` |
-| [#53](https://github.com/Etsum/remarkable-diary/issues/53) | Day footer-left missing `日` after the day number | `fill.py` `_fill_day` (`f"{m}月 {d.day}, {y}"` → `…{d.day}日…`) |
-| [#36](https://github.com/Etsum/remarkable-diary/issues/36) | Make nav rail side (left/right) a parameter | `fill.py` `_fill_rail` geometry mirror + `config.py` flag; approach TBD (code transform vs mirrored master) |
+_(none open)_
 
 ### Design-owned (waiting on Figma re-export)
 
@@ -79,6 +74,10 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#41](https://github.com/Etsum/remarkable-diary/issues/41) | Link tap targets grown to a 44 px minimum — `render.py` `_inflate` centres + clamps thin text links (mini-cal, footers); large shape links untouched. Also removed the dead `hdr-nav` link code (arrows gone in the redesign) (#60) |
+| [#53](https://github.com/Etsum/remarkable-diary/issues/53) | Day footer-left now renders `日` — `_fill_day` footer `…{d.day}日…` (#59) |
+| [#47](https://github.com/Etsum/remarkable-diary/issues/47) | Configurable day pages per day — `dayPagesPerDay` CLI/JSON knob; `build_pages` emits N consecutive day pages, anchor set invariant to N (#59) |
+| [#36](https://github.com/Etsum/remarkable-diary/issues/36) | Closed as satisfied — the rail is already on the **left** (the side the issue asked for); a left/right toggle is YAGNI until someone needs right |
 | [#48](https://github.com/Etsum/remarkable-diary/issues/48) | Cloud build shipped — manual `workflow_dispatch` in `.github/workflows/build-planner.yml`, PDF artifact, README documented (#50) |
 | [#57](https://github.com/Etsum/remarkable-diary/issues/57) | OFL license files added for bundled Inter / Newsreader / EB Garamond (with #56) |
 | [#55](https://github.com/Etsum/remarkable-diary/issues/55) | e-ink greyscale palette adopted for code-injected fills; templates restructured (#56) |

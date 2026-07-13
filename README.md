@@ -83,8 +83,8 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 ```
 
 JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `weeklink`,
-`hourStart`, `pagesPerCategory`, `dotScale`, `coverPage`, `blanks`, `include` (object with
-`year`/`block`/`schedule`/`days` booleans), `categories` (array of 1–4 strings).
+`hourStart`, `pagesPerCategory`, `dotScale`, `dayPagesPerDay`, `coverPage`, `blanks`,
+`include` (object with `year`/`block`/`schedule`/`days` booleans), `categories` (array of 1–4 strings).
 
 ## How it works
 

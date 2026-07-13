@@ -228,11 +228,13 @@ JSON/TOML config + CLI flags. Suggested schema:
   "start": "2026-01",        // YYYY-MM inclusive (calendar/financial year, etc.)
   "end":   "2026-12",        // YYYY-MM inclusive   (or use "months")
   "months": 12,              // alt to "end": count from start
-  "lang": "jp-en",           // "jp-en" (kanji + EN) | "en"
   "weeklink": "schedule",    // "schedule" | "block"  → where month Wn + day "↳ week" point
   "include": { "block": true, "schedule": true, "days": true },
   "categories": ["Lists", "Projects", "Meetings", "Scratchpad"],  // 4 slots, rail order top→bottom
   "pagesPerCategory": 5,     // SAME count for every category, per month (D4). 0 ⇒ none + tab unlinked
+  "dayPagesPerDay": 1,       // #47: consecutive day pages per calendar day; links land on the first
+  "hourStart": 5,            // week-schedule first hour label, 24h (18 rows fixed, D11)
+  "dotScale": 0.8,           // dot-grid tile size scale (1.0 = original density)
   "coverPage": false,        // false | "blank" | "path/to/cover.pdf|png"  (D10)
   "output": "planner-2026.pdf",
   "blanks": true             // also emit the 6 *-blank.png
@@ -248,6 +250,9 @@ JSON/TOML config + CLI flags. Suggested schema:
   `["Lists","Projects","Meetings","Scratchpad"]`. Keep ≤ ~10 chars (rotated rail tabs).
 - **`pagesPerCategory`** = one integer applied to all four (D4), default **5**. (If you
   ever want per-category counts, accept an int *or* a 4-array — but uniform is the spec.)
+- **`dayPagesPerDay`** (#47) = consecutive day pages emitted per calendar day, default **1**
+  (must be ≥ 1). Only the **first** sub-page owns the `day-YYYY-MM-DD` anchor, so every
+  inbound day link still lands on the first page (the rest get no anchor).
 - **`coverPage`**: `false` = none; `"blank"` = one truly blank leading page to customise;
   a file path = use that PDF/PNG as page 1. Never changes anchors.
 

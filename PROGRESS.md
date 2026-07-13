@@ -68,7 +68,6 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 | [#47](https://github.com/Etsum/remarkable-diary/issues/47) | Configurable number of day pages per day (CLI + JSON) | `dates.py` `build_pages`, `fill.py` `_fill_day`, `config.py`, `build.py` |
 | [#53](https://github.com/Etsum/remarkable-diary/issues/53) | Day footer-left missing `日` after the day number | `fill.py` `_fill_day` (`f"{m}月 {d.day}, {y}"` → `…{d.day}日…`) |
 | [#36](https://github.com/Etsum/remarkable-diary/issues/36) | Make nav rail side (left/right) a parameter | `fill.py` `_fill_rail` geometry mirror + `config.py` flag; approach TBD (code transform vs mirrored master) |
-| [#48](https://github.com/Etsum/remarkable-diary/issues/48) | Run the build in the cloud (**shipped — pending close**) | `.github/workflows/build-planner.yml`: manual `workflow_dispatch`, PDF artifact, README documented |
 
 ### Design-owned (waiting on Figma re-export)
 
@@ -80,6 +79,7 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#48](https://github.com/Etsum/remarkable-diary/issues/48) | Cloud build shipped — manual `workflow_dispatch` in `.github/workflows/build-planner.yml`, PDF artifact, README documented (#50) |
 | [#57](https://github.com/Etsum/remarkable-diary/issues/57) | OFL license files added for bundled Inter / Newsreader / EB Garamond (with #56) |
 | [#55](https://github.com/Etsum/remarkable-diary/issues/55) | e-ink greyscale palette adopted for code-injected fills; templates restructured (#56) |
 | [#54](https://github.com/Etsum/remarkable-diary/issues/54) | `hdr-big-label` size unified — the redesign standardised on 16 across pages (#56) |

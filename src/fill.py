@@ -21,7 +21,7 @@ from . import svgutil as SU
 from .config import Config
 from .dates import (
     EN_MON, EN_MON_A, EN_WD, JP_WD,
-    Page, a_cat, a_day, a_month, a_week, a_year,
+    Page, a_cat, a_day, a_month, a_week,
     dim, first_weekday, iso_week, mini_rows, month_range, week_existing,
 )
 
@@ -264,17 +264,6 @@ def _fill_year(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Li
                 ts1.set("y", str(y0 + 18))
                 ts1.text = str(years[1])
 
-    # Nav arrows → prev/next year window (inert when only one window exists)
-    wi = page.window_index
-    for arrow_id, idx in [("hdr-nav-prev-bg", wi - 1), ("hdr-nav-next-bg", wi + 1)]:
-        node = idm.get(arrow_id)
-        if node is not None and idx >= 0:
-            bb = _el_bbox(node)
-            if bb:
-                tgt = a_year(idx)
-                if tgt in anchors:
-                    links.append((*bb, tgt))
-
     for slot_idx, (my, mm) in enumerate(window):
         nn = slot_idx + 1
         lbl = idm.get(f"mini-{nn:02d}-label")
@@ -345,20 +334,6 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    "YEAR")
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], str(y))
     if "footer-left"     in idm: SU.set_text(idm["footer-left"], f"{EN_MON[m-1]} {y}")
-
-    # Nav: prev/next month; prev on first month falls back to year overview
-    prev_ym = (y - 1, 12) if m == 1 else (y, m - 1)
-    next_ym = (y + 1,  1) if m == 12 else (y, m + 1)
-    for arrow_id, (ny, nm) in [("hdr-nav-prev-bg", prev_ym), ("hdr-nav-next-bg", next_ym)]:
-        node = idm.get(arrow_id)
-        if node is not None:
-            bb = _el_bbox(node)
-            if bb:
-                tgt = a_month(ny, nm)
-                if tgt in anchors:
-                    links.append((*bb, tgt))
-                elif arrow_id == "hdr-nav-prev-bg" and "year" in anchors:
-                    links.append((*bb, "year"))
 
     # Grid cells — always 6 rows; adjacent-month days get FAINT fill
     for row, col, d, is_cur in _month_grid(y, m):
@@ -561,17 +536,6 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 links.append((*bb, "year"))
             break  # prefer hdr-meta; fallback to frame
 
-    # Nav arrows → prev/next day
-    prev_d, next_d = d - timedelta(days=1), d + timedelta(days=1)
-    for arrow_id, tgt_d in [("hdr-nav-prev-bg", prev_d), ("hdr-nav-next-bg", next_d)]:
-        node = idm.get(arrow_id)
-        if node is not None:
-            bb = _el_bbox(node)
-            if bb:
-                tgt = a_day(tgt_d)
-                if tgt in anchors:
-                    links.append((*bb, tgt))
-
     # Footer (keeps the stylistic 月/日 glyphs; no lang option) — #53
     if "footer-left" in idm:
         SU.set_text(idm["footer-left"], f"{m}月 {d.day}日, {y}")
@@ -643,24 +607,6 @@ def _fill_category(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> lis
     if "hdr-meta-top"    in idm: SU.set_text(idm["hdr-meta-top"],    EN_MON_A[m - 1])
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], f"{idx}/{n_total}")
     if "footer-left"     in idm: SU.set_text(idm["footer-left"], name)  # issue #12
-
-    # Nav arrows → prev/next category page in same slot/month
-    if idx > 1:
-        node = idm.get("hdr-nav-prev-bg")
-        if node is not None:
-            bb = _el_bbox(node)
-            if bb:
-                tgt = a_cat(y, m, slot, idx - 1)
-                if tgt in anchors:
-                    links.append((*bb, tgt))
-    if idx < n_total:
-        node = idm.get("hdr-nav-next-bg")
-        if node is not None:
-            bb = _el_bbox(node)
-            if bb:
-                tgt = a_cat(y, m, slot, idx + 1)
-                if tgt in anchors:
-                    links.append((*bb, tgt))
 
     # Footer-right → year overview (issue #13)
     fr = idm.get("footer-right")

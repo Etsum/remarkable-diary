@@ -24,16 +24,26 @@ from .dates import (
     dim, first_weekday, iso_week, mini_rows, month_range, week_existing,
 )
 
-# Colour tokens (§4)
-NAVY   = "#41587c"
-MAROON = "#9e5563"
-INK    = "#23262d"
-FAINT  = "#cbc9c4"
-WHITE  = "#ffffff"
+# Colour tokens — e-ink palette (assets/e-ink-palette.tokens.json).
+# The palette is greyscale-only for e-ink, so the former navy/maroon accents
+# collapse onto Text/Primary (emphasis) vs Text/Secondary (regular text).
+# These constants only restyle data-dependent states (active tab, Sunday, faded
+# adjacent months); the SVG export is the style source of truth — PIPELINE_SPEC §3.5.
+TEXT_PRIMARY   = "#000000"   # Text/Primary   — headers, today, active tab, weekend emphasis
+TEXT_SECONDARY = "#4d4d4d"   # Text/Secondary — regular grid & mini-cal numbers
+GRID_PRIMARY   = "#b8b8b8"   # Grid/Primary   — de-emphasised (adjacent-month) numbers
+BASE           = "#ffffff"   # Other/Base     — inverse text on dark chips
+
+# Fill-contract roles (§4)
+ACCENT = TEXT_PRIMARY        # active rail tab / toolbar chip background (inverse text on it)
+SUNDAY = TEXT_PRIMARY        # Sunday / weekend day-number emphasis
+INK    = TEXT_SECONDARY      # regular day numbers
+FAINT  = GRID_PRIMARY        # adjacent-month / out-of-range numbers
+WHITE  = BASE                # inverse text on dark chips
 
 Link = tuple[float, float, float, float, str]   # (x, y, w, h, target_anchor)
 
-_WS_HOUR_IDS = [f"ws-hour-{h}" for h in range(5, 23)]  # 18 fixed ids, in row order
+_WS_HOUR_IDS = [f"ws-hour-pos-{i:02d}" for i in range(1, 19)]  # 18 positional rows, in order (labels set from cfg.hour_start)
 
 
 # ---------------------------------------------------------------------------
@@ -112,7 +122,7 @@ def _fill_rail(
             bg  = idm.get(f"rail-month-{mm:02d}-bg")
             lbl = idm.get(f"rail-month-{mm:02d}")
             if mm == am:
-                if bg  is not None: SU.set_fill(bg, NAVY)
+                if bg  is not None: SU.set_fill(bg, ACCENT)
                 if lbl is not None:
                     SU.set_fill(lbl, WHITE)
                     SU.set_font_weight(lbl, "bold")
@@ -261,7 +271,7 @@ def _fill_year(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Li
                     continue
                 if cell["valid"]:
                     _mini_set(node, str(cell["d"]))
-                    SU.set_fill(node, MAROON if c_idx == 6 else INK)
+                    SU.set_fill(node, SUNDAY if c_idx == 6 else INK)
                     dd = date(my, mm, cell["d"])
                     tgt = a_day(dd)
                     if tgt in anchors:
@@ -330,7 +340,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
             continue
         SU.set_text(node, str(d.day))
         if is_cur:
-            SU.set_fill(node, MAROON if col == 7 else INK)  # col is 1-based, Sunday=7
+            SU.set_fill(node, SUNDAY if col == 7 else INK)  # col is 1-based, Sunday=7
             tgt = a_day(d)
             if tgt in anchors:
                 bb = _el_bbox(node)
@@ -400,7 +410,7 @@ def _fill_week_block(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> l
     # Toggle: BLOCK active
     tb_bg = idm.get("hdr-toggle-block-bg")
     tb    = idm.get("hdr-toggle-block")
-    if tb_bg is not None: SU.set_fill(tb_bg, NAVY)
+    if tb_bg is not None: SU.set_fill(tb_bg, ACCENT)
     if tb    is not None: SU.set_fill(tb,    WHITE)
 
     # Schedule toggle → sibling schedule page
@@ -450,7 +460,7 @@ def _fill_week_schedule(page: Page, cfg: Config, idm: dict, anchors: set[str]) -
     # Toggle: SCHEDULE active
     ts_bg = idm.get("hdr-toggle-schedule-bg")
     ts    = idm.get("hdr-toggle-schedule")
-    if ts_bg is not None: SU.set_fill(ts_bg, NAVY)
+    if ts_bg is not None: SU.set_fill(ts_bg, ACCENT)
     if ts    is not None: SU.set_fill(ts,    WHITE)
 
     # Block toggle → sibling block page
@@ -563,9 +573,9 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 day_num = cell["d"]
                 _mini_set(node, str(day_num))  # #24: right-align 2-digit dates
                 if day_num == d.day:
-                    SU.set_fill(node, NAVY)
+                    SU.set_fill(node, ACCENT)
                 elif c_idx == 6:
-                    SU.set_fill(node, MAROON)
+                    SU.set_fill(node, SUNDAY)
                 else:
                     SU.set_fill(node, INK)
                 tgt = a_day(date(y, m, day_num))

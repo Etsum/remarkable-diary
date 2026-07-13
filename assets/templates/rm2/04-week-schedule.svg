@@ -3,430 +3,423 @@
 <g id="04-week-schedule" clip-path="url(#clip0_0_1)">
 <path id="page-bg" d="M1404 0H0V1872H1404V0Z" fill="white"/>
 <g id="background">
-<path id="Vector" d="M1346 178H136C133.791 178 132 179.791 132 182V1794C132 1796.21 133.791 1798 136 1798H1346C1348.21 1798 1350 1796.21 1350 1794V182C1350 179.791 1348.21 178 1346 178Z" stroke="#D7D4CF"/>
+<path id="Vector" d="M1346 178H136C133.791 178 132 179.791 132 182V1794C132 1796.21 133.791 1798 136 1798H1346C1348.21 1798 1350 1796.21 1350 1794V182C1350 179.791 1348.21 178 1346 178Z" stroke="#B8B8B8"/>
 <g id="week-schedule-grid">
 <g id="ws-day-1">
-<path id="Vector_2" d="M132 218H306" stroke="#41587C" stroke-width="2"/>
+<path id="Vector_2" d="M132 218H306" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-1-hours">
-<path id="Vector_3" d="M132 218H306" stroke="#ECEBE6"/>
-<path id="Vector_4" d="M132 261.889H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-5" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="231.88">5</tspan></text>
-<path id="Vector_5" d="M132 305.778H306" stroke="#ECEBE6"/>
-<path id="Vector_6" d="M132 349.667H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-6" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="319.658">6</tspan></text>
-<path id="Vector_7" d="M132 393.556H306" stroke="#ECEBE6"/>
-<path id="Vector_8" d="M132 437.444H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-7" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="407.436">7</tspan></text>
-<path id="Vector_9" d="M132 481.333H306" stroke="#ECEBE6"/>
-<path id="Vector_10" d="M132 525.222H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-8" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="495.213">8</tspan></text>
-<path id="Vector_11" d="M132 569.111H306" stroke="#ECEBE6"/>
-<path id="Vector_12" d="M132 613H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-9" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="582.991">9</tspan></text>
-<path id="Vector_13" d="M132 656.889H306" stroke="#ECEBE6"/>
-<path id="Vector_14" d="M132 700.778H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-10" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="670.769">10</tspan></text>
-<path id="Vector_15" d="M132 744.667H306" stroke="#ECEBE6"/>
-<path id="Vector_16" d="M132 788.556H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-11" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="758.547">11</tspan></text>
-<path id="Vector_17" d="M132 832.444H306" stroke="#ECEBE6"/>
-<path id="Vector_18" d="M132 876.333H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-12" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="846.324">12</tspan></text>
-<path id="Vector_19" d="M132 920.222H306" stroke="#ECEBE6"/>
-<path id="Vector_20" d="M132 964.111H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-13" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="934.102">1</tspan></text>
-<path id="Vector_21" d="M132 1008H306" stroke="#ECEBE6"/>
-<path id="Vector_22" d="M132 1051.89H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-14" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1021.88">2</tspan></text>
-<path id="Vector_23" d="M132 1095.78H306" stroke="#ECEBE6"/>
-<path id="Vector_24" d="M132 1139.67H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-15" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1109.66">3</tspan></text>
-<path id="Vector_25" d="M132 1183.56H306" stroke="#ECEBE6"/>
-<path id="Vector_26" d="M132 1227.44H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-16" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1197.44">4</tspan></text>
-<path id="Vector_27" d="M132 1271.33H306" stroke="#ECEBE6"/>
-<path id="Vector_28" d="M132 1315.22H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-17" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1285.21">5</tspan></text>
-<path id="Vector_29" d="M132 1359.11H306" stroke="#ECEBE6"/>
-<path id="Vector_30" d="M132 1403H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-18" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1372.99">6</tspan></text>
-<path id="Vector_31" d="M132 1446.89H306" stroke="#ECEBE6"/>
-<path id="Vector_32" d="M132 1490.78H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-19" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1460.77">7</tspan></text>
-<path id="Vector_33" d="M132 1534.67H306" stroke="#ECEBE6"/>
-<path id="Vector_34" d="M132 1578.56H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-20" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1548.55">8</tspan></text>
-<path id="Vector_35" d="M132 1622.44H306" stroke="#ECEBE6"/>
-<path id="Vector_36" d="M132 1666.33H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-21" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1636.32">9</tspan></text>
-<path id="Vector_37" d="M132 1710.22H306" stroke="#ECEBE6"/>
-<path id="Vector_38" d="M132 1754.11H306" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<text id="ws-hour-22" fill="#BDBBB4" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="10" letter-spacing="0em"><tspan x="138" y="1724.1">10</tspan></text>
+<path id="Vector_3" d="M132 218H306" stroke="#DCDCDC"/>
+<path id="Vector_4" d="M132 261.889H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_5" d="M132 305.778H306" stroke="#DCDCDC"/>
+<path id="Vector_6" d="M132 349.667H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_7" d="M132 393.556H306" stroke="#DCDCDC"/>
+<path id="Vector_8" d="M132 437.444H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_9" d="M132 481.333H306" stroke="#DCDCDC"/>
+<path id="Vector_10" d="M132 525.222H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_11" d="M132 569.111H306" stroke="#DCDCDC"/>
+<path id="Vector_12" d="M132 613H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_13" d="M132 656.889H306" stroke="#DCDCDC"/>
+<path id="Vector_14" d="M132 700.778H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_15" d="M132 744.667H306" stroke="#DCDCDC"/>
+<path id="Vector_16" d="M132 788.556H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_17" d="M132 832.444H306" stroke="#DCDCDC"/>
+<path id="Vector_18" d="M132 876.333H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_19" d="M132 920.222H306" stroke="#DCDCDC"/>
+<path id="Vector_20" d="M132 964.111H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_21" d="M132 1008H306" stroke="#DCDCDC"/>
+<path id="Vector_22" d="M132 1051.89H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_23" d="M132 1095.78H306" stroke="#DCDCDC"/>
+<path id="Vector_24" d="M132 1139.67H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_25" d="M132 1183.56H306" stroke="#DCDCDC"/>
+<path id="Vector_26" d="M132 1227.44H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_27" d="M132 1271.33H306" stroke="#DCDCDC"/>
+<path id="Vector_28" d="M132 1315.22H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_29" d="M132 1359.11H306" stroke="#DCDCDC"/>
+<path id="Vector_30" d="M132 1403H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_31" d="M132 1446.89H306" stroke="#DCDCDC"/>
+<path id="Vector_32" d="M132 1490.78H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_33" d="M132 1534.67H306" stroke="#DCDCDC"/>
+<path id="Vector_34" d="M132 1578.56H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_35" d="M132 1622.44H306" stroke="#DCDCDC"/>
+<path id="Vector_36" d="M132 1666.33H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_37" d="M132 1710.22H306" stroke="#DCDCDC"/>
+<path id="Vector_38" d="M132 1754.11H306" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<g id="ws-hour-text">
+<text id="ws-hour-pos-01" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="238.818">5</tspan></text>
+<text id="ws-hour-pos-02" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="326.596">6</tspan></text>
+<text id="ws-hour-pos-03" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="414.374">7</tspan></text>
+<text id="ws-hour-pos-04" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="502.152">8</tspan></text>
+<text id="ws-hour-pos-05" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="589.929">9</tspan></text>
+<text id="ws-hour-pos-06" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="677.707">10</tspan></text>
+<text id="ws-hour-pos-07" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="765.485">11</tspan></text>
+<text id="ws-hour-pos-08" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="853.263">12</tspan></text>
+<text id="ws-hour-pos-09" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="941.04">1</tspan></text>
+<text id="ws-hour-pos-10" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1028.82">2</tspan></text>
+<text id="ws-hour-pos-11" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1116.6">3</tspan></text>
+<text id="ws-hour-pos-12" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1204.37">4</tspan></text>
+<text id="ws-hour-pos-13" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1292.15">5</tspan></text>
+<text id="ws-hour-pos-14" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1379.93">6</tspan></text>
+<text id="ws-hour-pos-15" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1467.71">7</tspan></text>
+<text id="ws-hour-pos-16" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1555.49">8</tspan></text>
+<text id="ws-hour-pos-17" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1643.26">9</tspan></text>
+<text id="ws-hour-pos-18" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="143" y="1731.04">10</tspan></text>
+</g>
 </g>
 </g>
 <g id="ws-day-2">
-<path id="Vector_39" d="M306 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_40" d="M306 218H480" stroke="#41587C" stroke-width="2"/>
+<path id="Vector_39" d="M306 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_40" d="M306 218H480" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-2-hours">
-<path id="Vector_41" d="M306 218H480" stroke="#ECEBE6"/>
-<path id="Vector_42" d="M306 261.889H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_43" d="M306 305.778H480" stroke="#ECEBE6"/>
-<path id="Vector_44" d="M306 349.667H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_45" d="M306 393.556H480" stroke="#ECEBE6"/>
-<path id="Vector_46" d="M306 437.444H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_47" d="M306 481.333H480" stroke="#ECEBE6"/>
-<path id="Vector_48" d="M306 525.222H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_49" d="M306 569.111H480" stroke="#ECEBE6"/>
-<path id="Vector_50" d="M306 613H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_51" d="M306 656.889H480" stroke="#ECEBE6"/>
-<path id="Vector_52" d="M306 700.778H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_53" d="M306 744.667H480" stroke="#ECEBE6"/>
-<path id="Vector_54" d="M306 788.556H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_55" d="M306 832.444H480" stroke="#ECEBE6"/>
-<path id="Vector_56" d="M306 876.333H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_57" d="M306 920.222H480" stroke="#ECEBE6"/>
-<path id="Vector_58" d="M306 964.111H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_59" d="M306 1008H480" stroke="#ECEBE6"/>
-<path id="Vector_60" d="M306 1051.89H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_61" d="M306 1095.78H480" stroke="#ECEBE6"/>
-<path id="Vector_62" d="M306 1139.67H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_63" d="M306 1183.56H480" stroke="#ECEBE6"/>
-<path id="Vector_64" d="M306 1227.44H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_65" d="M306 1271.33H480" stroke="#ECEBE6"/>
-<path id="Vector_66" d="M306 1315.22H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_67" d="M306 1359.11H480" stroke="#ECEBE6"/>
-<path id="Vector_68" d="M306 1403H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_69" d="M306 1446.89H480" stroke="#ECEBE6"/>
-<path id="Vector_70" d="M306 1490.78H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_71" d="M306 1534.67H480" stroke="#ECEBE6"/>
-<path id="Vector_72" d="M306 1578.56H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_73" d="M306 1622.44H480" stroke="#ECEBE6"/>
-<path id="Vector_74" d="M306 1666.33H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_75" d="M306 1710.22H480" stroke="#ECEBE6"/>
-<path id="Vector_76" d="M306 1754.11H480" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_41" d="M306 218H480" stroke="#DCDCDC"/>
+<path id="Vector_42" d="M306 261.889H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_43" d="M306 305.778H480" stroke="#DCDCDC"/>
+<path id="Vector_44" d="M306 349.667H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_45" d="M306 393.556H480" stroke="#DCDCDC"/>
+<path id="Vector_46" d="M306 437.444H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_47" d="M306 481.333H480" stroke="#DCDCDC"/>
+<path id="Vector_48" d="M306 525.222H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_49" d="M306 569.111H480" stroke="#DCDCDC"/>
+<path id="Vector_50" d="M306 613H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_51" d="M306 656.889H480" stroke="#DCDCDC"/>
+<path id="Vector_52" d="M306 700.778H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_53" d="M306 744.667H480" stroke="#DCDCDC"/>
+<path id="Vector_54" d="M306 788.556H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_55" d="M306 832.444H480" stroke="#DCDCDC"/>
+<path id="Vector_56" d="M306 876.333H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_57" d="M306 920.222H480" stroke="#DCDCDC"/>
+<path id="Vector_58" d="M306 964.111H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_59" d="M306 1008H480" stroke="#DCDCDC"/>
+<path id="Vector_60" d="M306 1051.89H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_61" d="M306 1095.78H480" stroke="#DCDCDC"/>
+<path id="Vector_62" d="M306 1139.67H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_63" d="M306 1183.56H480" stroke="#DCDCDC"/>
+<path id="Vector_64" d="M306 1227.44H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_65" d="M306 1271.33H480" stroke="#DCDCDC"/>
+<path id="Vector_66" d="M306 1315.22H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_67" d="M306 1359.11H480" stroke="#DCDCDC"/>
+<path id="Vector_68" d="M306 1403H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_69" d="M306 1446.89H480" stroke="#DCDCDC"/>
+<path id="Vector_70" d="M306 1490.78H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_71" d="M306 1534.67H480" stroke="#DCDCDC"/>
+<path id="Vector_72" d="M306 1578.56H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_73" d="M306 1622.44H480" stroke="#DCDCDC"/>
+<path id="Vector_74" d="M306 1666.33H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_75" d="M306 1710.22H480" stroke="#DCDCDC"/>
+<path id="Vector_76" d="M306 1754.11H480" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-3">
-<path id="Vector_77" d="M480 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_78" d="M480 218H654" stroke="#41587C" stroke-width="2"/>
+<path id="Vector_77" d="M480 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_78" d="M480 218H654" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-3-hours">
-<path id="Vector_79" d="M480 218H654" stroke="#ECEBE6"/>
-<path id="Vector_80" d="M480 261.889H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_81" d="M480 305.778H654" stroke="#ECEBE6"/>
-<path id="Vector_82" d="M480 349.667H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_83" d="M480 393.556H654" stroke="#ECEBE6"/>
-<path id="Vector_84" d="M480 437.444H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_85" d="M480 481.333H654" stroke="#ECEBE6"/>
-<path id="Vector_86" d="M480 525.222H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_87" d="M480 569.111H654" stroke="#ECEBE6"/>
-<path id="Vector_88" d="M480 613H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_89" d="M480 656.889H654" stroke="#ECEBE6"/>
-<path id="Vector_90" d="M480 700.778H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_91" d="M480 744.667H654" stroke="#ECEBE6"/>
-<path id="Vector_92" d="M480 788.556H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_93" d="M480 832.444H654" stroke="#ECEBE6"/>
-<path id="Vector_94" d="M480 876.333H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_95" d="M480 920.222H654" stroke="#ECEBE6"/>
-<path id="Vector_96" d="M480 964.111H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_97" d="M480 1008H654" stroke="#ECEBE6"/>
-<path id="Vector_98" d="M480 1051.89H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_99" d="M480 1095.78H654" stroke="#ECEBE6"/>
-<path id="Vector_100" d="M480 1139.67H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_101" d="M480 1183.56H654" stroke="#ECEBE6"/>
-<path id="Vector_102" d="M480 1227.44H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_103" d="M480 1271.33H654" stroke="#ECEBE6"/>
-<path id="Vector_104" d="M480 1315.22H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_105" d="M480 1359.11H654" stroke="#ECEBE6"/>
-<path id="Vector_106" d="M480 1403H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_107" d="M480 1446.89H654" stroke="#ECEBE6"/>
-<path id="Vector_108" d="M480 1490.78H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_109" d="M480 1534.67H654" stroke="#ECEBE6"/>
-<path id="Vector_110" d="M480 1578.56H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_111" d="M480 1622.44H654" stroke="#ECEBE6"/>
-<path id="Vector_112" d="M480 1666.33H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_113" d="M480 1710.22H654" stroke="#ECEBE6"/>
-<path id="Vector_114" d="M480 1754.11H654" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_79" d="M480 218H654" stroke="#DCDCDC"/>
+<path id="Vector_80" d="M480 261.889H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_81" d="M480 305.778H654" stroke="#DCDCDC"/>
+<path id="Vector_82" d="M480 349.667H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_83" d="M480 393.556H654" stroke="#DCDCDC"/>
+<path id="Vector_84" d="M480 437.444H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_85" d="M480 481.333H654" stroke="#DCDCDC"/>
+<path id="Vector_86" d="M480 525.222H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_87" d="M480 569.111H654" stroke="#DCDCDC"/>
+<path id="Vector_88" d="M480 613H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_89" d="M480 656.889H654" stroke="#DCDCDC"/>
+<path id="Vector_90" d="M480 700.778H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_91" d="M480 744.667H654" stroke="#DCDCDC"/>
+<path id="Vector_92" d="M480 788.556H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_93" d="M480 832.444H654" stroke="#DCDCDC"/>
+<path id="Vector_94" d="M480 876.333H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_95" d="M480 920.222H654" stroke="#DCDCDC"/>
+<path id="Vector_96" d="M480 964.111H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_97" d="M480 1008H654" stroke="#DCDCDC"/>
+<path id="Vector_98" d="M480 1051.89H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_99" d="M480 1095.78H654" stroke="#DCDCDC"/>
+<path id="Vector_100" d="M480 1139.67H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_101" d="M480 1183.56H654" stroke="#DCDCDC"/>
+<path id="Vector_102" d="M480 1227.44H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_103" d="M480 1271.33H654" stroke="#DCDCDC"/>
+<path id="Vector_104" d="M480 1315.22H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_105" d="M480 1359.11H654" stroke="#DCDCDC"/>
+<path id="Vector_106" d="M480 1403H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_107" d="M480 1446.89H654" stroke="#DCDCDC"/>
+<path id="Vector_108" d="M480 1490.78H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_109" d="M480 1534.67H654" stroke="#DCDCDC"/>
+<path id="Vector_110" d="M480 1578.56H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_111" d="M480 1622.44H654" stroke="#DCDCDC"/>
+<path id="Vector_112" d="M480 1666.33H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_113" d="M480 1710.22H654" stroke="#DCDCDC"/>
+<path id="Vector_114" d="M480 1754.11H654" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-4">
-<path id="Vector_115" d="M654 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_116" d="M654 218H828" stroke="#41587C" stroke-width="2"/>
+<path id="Vector_115" d="M654 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_116" d="M654 218H828" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-4-hours">
-<path id="Vector_117" d="M654 218H828" stroke="#ECEBE6"/>
-<path id="Vector_118" d="M654 261.889H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_119" d="M654 305.778H828" stroke="#ECEBE6"/>
-<path id="Vector_120" d="M654 349.667H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_121" d="M654 393.556H828" stroke="#ECEBE6"/>
-<path id="Vector_122" d="M654 437.444H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_123" d="M654 481.333H828" stroke="#ECEBE6"/>
-<path id="Vector_124" d="M654 525.222H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_125" d="M654 569.111H828" stroke="#ECEBE6"/>
-<path id="Vector_126" d="M654 613H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_127" d="M654 656.889H828" stroke="#ECEBE6"/>
-<path id="Vector_128" d="M654 700.778H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_129" d="M654 744.667H828" stroke="#ECEBE6"/>
-<path id="Vector_130" d="M654 788.556H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_131" d="M654 832.444H828" stroke="#ECEBE6"/>
-<path id="Vector_132" d="M654 876.333H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_133" d="M654 920.222H828" stroke="#ECEBE6"/>
-<path id="Vector_134" d="M654 964.111H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_135" d="M654 1008H828" stroke="#ECEBE6"/>
-<path id="Vector_136" d="M654 1051.89H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_137" d="M654 1095.78H828" stroke="#ECEBE6"/>
-<path id="Vector_138" d="M654 1139.67H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_139" d="M654 1183.56H828" stroke="#ECEBE6"/>
-<path id="Vector_140" d="M654 1227.44H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_141" d="M654 1271.33H828" stroke="#ECEBE6"/>
-<path id="Vector_142" d="M654 1315.22H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_143" d="M654 1359.11H828" stroke="#ECEBE6"/>
-<path id="Vector_144" d="M654 1403H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_145" d="M654 1446.89H828" stroke="#ECEBE6"/>
-<path id="Vector_146" d="M654 1490.78H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_147" d="M654 1534.67H828" stroke="#ECEBE6"/>
-<path id="Vector_148" d="M654 1578.56H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_149" d="M654 1622.44H828" stroke="#ECEBE6"/>
-<path id="Vector_150" d="M654 1666.33H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_151" d="M654 1710.22H828" stroke="#ECEBE6"/>
-<path id="Vector_152" d="M654 1754.11H828" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_117" d="M654 218H828" stroke="#DCDCDC"/>
+<path id="Vector_118" d="M654 261.889H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_119" d="M654 305.778H828" stroke="#DCDCDC"/>
+<path id="Vector_120" d="M654 349.667H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_121" d="M654 393.556H828" stroke="#DCDCDC"/>
+<path id="Vector_122" d="M654 437.444H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_123" d="M654 481.333H828" stroke="#DCDCDC"/>
+<path id="Vector_124" d="M654 525.222H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_125" d="M654 569.111H828" stroke="#DCDCDC"/>
+<path id="Vector_126" d="M654 613H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_127" d="M654 656.889H828" stroke="#DCDCDC"/>
+<path id="Vector_128" d="M654 700.778H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_129" d="M654 744.667H828" stroke="#DCDCDC"/>
+<path id="Vector_130" d="M654 788.556H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_131" d="M654 832.444H828" stroke="#DCDCDC"/>
+<path id="Vector_132" d="M654 876.333H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_133" d="M654 920.222H828" stroke="#DCDCDC"/>
+<path id="Vector_134" d="M654 964.111H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_135" d="M654 1008H828" stroke="#DCDCDC"/>
+<path id="Vector_136" d="M654 1051.89H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_137" d="M654 1095.78H828" stroke="#DCDCDC"/>
+<path id="Vector_138" d="M654 1139.67H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_139" d="M654 1183.56H828" stroke="#DCDCDC"/>
+<path id="Vector_140" d="M654 1227.44H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_141" d="M654 1271.33H828" stroke="#DCDCDC"/>
+<path id="Vector_142" d="M654 1315.22H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_143" d="M654 1359.11H828" stroke="#DCDCDC"/>
+<path id="Vector_144" d="M654 1403H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_145" d="M654 1446.89H828" stroke="#DCDCDC"/>
+<path id="Vector_146" d="M654 1490.78H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_147" d="M654 1534.67H828" stroke="#DCDCDC"/>
+<path id="Vector_148" d="M654 1578.56H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_149" d="M654 1622.44H828" stroke="#DCDCDC"/>
+<path id="Vector_150" d="M654 1666.33H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_151" d="M654 1710.22H828" stroke="#DCDCDC"/>
+<path id="Vector_152" d="M654 1754.11H828" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-5">
-<path id="Vector_153" d="M828 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_154" d="M828 218H1002" stroke="#41587C" stroke-width="2"/>
+<path id="Vector_153" d="M828 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_154" d="M828 218H1002" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-5-hours">
-<path id="Vector_155" d="M828 218H1002" stroke="#ECEBE6"/>
-<path id="Vector_156" d="M828 261.889H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_157" d="M828 305.778H1002" stroke="#ECEBE6"/>
-<path id="Vector_158" d="M828 349.667H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_159" d="M828 393.556H1002" stroke="#ECEBE6"/>
-<path id="Vector_160" d="M828 437.444H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_161" d="M828 481.333H1002" stroke="#ECEBE6"/>
-<path id="Vector_162" d="M828 525.222H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_163" d="M828 569.111H1002" stroke="#ECEBE6"/>
-<path id="Vector_164" d="M828 613H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_165" d="M828 656.889H1002" stroke="#ECEBE6"/>
-<path id="Vector_166" d="M828 700.778H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_167" d="M828 744.667H1002" stroke="#ECEBE6"/>
-<path id="Vector_168" d="M828 788.556H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_169" d="M828 832.444H1002" stroke="#ECEBE6"/>
-<path id="Vector_170" d="M828 876.333H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_171" d="M828 920.222H1002" stroke="#ECEBE6"/>
-<path id="Vector_172" d="M828 964.111H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_173" d="M828 1008H1002" stroke="#ECEBE6"/>
-<path id="Vector_174" d="M828 1051.89H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_175" d="M828 1095.78H1002" stroke="#ECEBE6"/>
-<path id="Vector_176" d="M828 1139.67H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_177" d="M828 1183.56H1002" stroke="#ECEBE6"/>
-<path id="Vector_178" d="M828 1227.44H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_179" d="M828 1271.33H1002" stroke="#ECEBE6"/>
-<path id="Vector_180" d="M828 1315.22H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_181" d="M828 1359.11H1002" stroke="#ECEBE6"/>
-<path id="Vector_182" d="M828 1403H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_183" d="M828 1446.89H1002" stroke="#ECEBE6"/>
-<path id="Vector_184" d="M828 1490.78H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_185" d="M828 1534.67H1002" stroke="#ECEBE6"/>
-<path id="Vector_186" d="M828 1578.56H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_187" d="M828 1622.44H1002" stroke="#ECEBE6"/>
-<path id="Vector_188" d="M828 1666.33H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_189" d="M828 1710.22H1002" stroke="#ECEBE6"/>
-<path id="Vector_190" d="M828 1754.11H1002" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_155" d="M828 218H1002" stroke="#DCDCDC"/>
+<path id="Vector_156" d="M828 261.889H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_157" d="M828 305.778H1002" stroke="#DCDCDC"/>
+<path id="Vector_158" d="M828 349.667H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_159" d="M828 393.556H1002" stroke="#DCDCDC"/>
+<path id="Vector_160" d="M828 437.444H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_161" d="M828 481.333H1002" stroke="#DCDCDC"/>
+<path id="Vector_162" d="M828 525.222H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_163" d="M828 569.111H1002" stroke="#DCDCDC"/>
+<path id="Vector_164" d="M828 613H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_165" d="M828 656.889H1002" stroke="#DCDCDC"/>
+<path id="Vector_166" d="M828 700.778H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_167" d="M828 744.667H1002" stroke="#DCDCDC"/>
+<path id="Vector_168" d="M828 788.556H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_169" d="M828 832.444H1002" stroke="#DCDCDC"/>
+<path id="Vector_170" d="M828 876.333H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_171" d="M828 920.222H1002" stroke="#DCDCDC"/>
+<path id="Vector_172" d="M828 964.111H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_173" d="M828 1008H1002" stroke="#DCDCDC"/>
+<path id="Vector_174" d="M828 1051.89H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_175" d="M828 1095.78H1002" stroke="#DCDCDC"/>
+<path id="Vector_176" d="M828 1139.67H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_177" d="M828 1183.56H1002" stroke="#DCDCDC"/>
+<path id="Vector_178" d="M828 1227.44H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_179" d="M828 1271.33H1002" stroke="#DCDCDC"/>
+<path id="Vector_180" d="M828 1315.22H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_181" d="M828 1359.11H1002" stroke="#DCDCDC"/>
+<path id="Vector_182" d="M828 1403H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_183" d="M828 1446.89H1002" stroke="#DCDCDC"/>
+<path id="Vector_184" d="M828 1490.78H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_185" d="M828 1534.67H1002" stroke="#DCDCDC"/>
+<path id="Vector_186" d="M828 1578.56H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_187" d="M828 1622.44H1002" stroke="#DCDCDC"/>
+<path id="Vector_188" d="M828 1666.33H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_189" d="M828 1710.22H1002" stroke="#DCDCDC"/>
+<path id="Vector_190" d="M828 1754.11H1002" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-6">
-<path id="ws-day-6-shade" d="M1176 178H1002V1798H1176V178Z" fill="#DDE0E5" fill-opacity="0.3"/>
-<path id="Vector_191" d="M1002 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_192" d="M1002 218H1176" stroke="#41587C" stroke-width="2"/>
+<path id="ws-day-6-shade" d="M1176 178H1002V1798H1176V178Z" fill="#F2F2F2"/>
+<path id="Vector_191" d="M1002 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_192" d="M1002 218H1176" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-6-hours">
-<path id="Vector_193" d="M1002 218H1176" stroke="#ECEBE6"/>
-<path id="Vector_194" d="M1002 261.889H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_195" d="M1002 305.778H1176" stroke="#ECEBE6"/>
-<path id="Vector_196" d="M1002 349.667H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_197" d="M1002 393.556H1176" stroke="#ECEBE6"/>
-<path id="Vector_198" d="M1002 437.444H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_199" d="M1002 481.333H1176" stroke="#ECEBE6"/>
-<path id="Vector_200" d="M1002 525.222H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_201" d="M1002 569.111H1176" stroke="#ECEBE6"/>
-<path id="Vector_202" d="M1002 613H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_203" d="M1002 656.889H1176" stroke="#ECEBE6"/>
-<path id="Vector_204" d="M1002 700.778H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_205" d="M1002 744.667H1176" stroke="#ECEBE6"/>
-<path id="Vector_206" d="M1002 788.556H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_207" d="M1002 832.444H1176" stroke="#ECEBE6"/>
-<path id="Vector_208" d="M1002 876.333H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_209" d="M1002 920.222H1176" stroke="#ECEBE6"/>
-<path id="Vector_210" d="M1002 964.111H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_211" d="M1002 1008H1176" stroke="#ECEBE6"/>
-<path id="Vector_212" d="M1002 1051.89H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_213" d="M1002 1095.78H1176" stroke="#ECEBE6"/>
-<path id="Vector_214" d="M1002 1139.67H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_215" d="M1002 1183.56H1176" stroke="#ECEBE6"/>
-<path id="Vector_216" d="M1002 1227.44H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_217" d="M1002 1271.33H1176" stroke="#ECEBE6"/>
-<path id="Vector_218" d="M1002 1315.22H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_219" d="M1002 1359.11H1176" stroke="#ECEBE6"/>
-<path id="Vector_220" d="M1002 1403H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_221" d="M1002 1446.89H1176" stroke="#ECEBE6"/>
-<path id="Vector_222" d="M1002 1490.78H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_223" d="M1002 1534.67H1176" stroke="#ECEBE6"/>
-<path id="Vector_224" d="M1002 1578.56H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_225" d="M1002 1622.44H1176" stroke="#ECEBE6"/>
-<path id="Vector_226" d="M1002 1666.33H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_227" d="M1002 1710.22H1176" stroke="#ECEBE6"/>
-<path id="Vector_228" d="M1002 1754.11H1176" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_193" d="M1002 218H1176" stroke="#DCDCDC"/>
+<path id="Vector_194" d="M1002 261.889H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_195" d="M1002 305.778H1176" stroke="#DCDCDC"/>
+<path id="Vector_196" d="M1002 349.667H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_197" d="M1002 393.556H1176" stroke="#DCDCDC"/>
+<path id="Vector_198" d="M1002 437.444H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_199" d="M1002 481.333H1176" stroke="#DCDCDC"/>
+<path id="Vector_200" d="M1002 525.222H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_201" d="M1002 569.111H1176" stroke="#DCDCDC"/>
+<path id="Vector_202" d="M1002 613H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_203" d="M1002 656.889H1176" stroke="#DCDCDC"/>
+<path id="Vector_204" d="M1002 700.778H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_205" d="M1002 744.667H1176" stroke="#DCDCDC"/>
+<path id="Vector_206" d="M1002 788.556H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_207" d="M1002 832.444H1176" stroke="#DCDCDC"/>
+<path id="Vector_208" d="M1002 876.333H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_209" d="M1002 920.222H1176" stroke="#DCDCDC"/>
+<path id="Vector_210" d="M1002 964.111H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_211" d="M1002 1008H1176" stroke="#DCDCDC"/>
+<path id="Vector_212" d="M1002 1051.89H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_213" d="M1002 1095.78H1176" stroke="#DCDCDC"/>
+<path id="Vector_214" d="M1002 1139.67H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_215" d="M1002 1183.56H1176" stroke="#DCDCDC"/>
+<path id="Vector_216" d="M1002 1227.44H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_217" d="M1002 1271.33H1176" stroke="#DCDCDC"/>
+<path id="Vector_218" d="M1002 1315.22H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_219" d="M1002 1359.11H1176" stroke="#DCDCDC"/>
+<path id="Vector_220" d="M1002 1403H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_221" d="M1002 1446.89H1176" stroke="#DCDCDC"/>
+<path id="Vector_222" d="M1002 1490.78H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_223" d="M1002 1534.67H1176" stroke="#DCDCDC"/>
+<path id="Vector_224" d="M1002 1578.56H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_225" d="M1002 1622.44H1176" stroke="#DCDCDC"/>
+<path id="Vector_226" d="M1002 1666.33H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_227" d="M1002 1710.22H1176" stroke="#DCDCDC"/>
+<path id="Vector_228" d="M1002 1754.11H1176" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-7">
-<path id="ws-day-7-shade" d="M1350 178H1176V1798H1350V178Z" fill="#DDE0E5" fill-opacity="0.3"/>
-<path id="Vector_229" d="M1176 178V1798" stroke="#E2DFDA"/>
-<path id="Vector_230" d="M1176 218H1350" stroke="#41587C" stroke-width="2"/>
+<path id="ws-day-7-shade" d="M1350 178H1176V1798H1350V178Z" fill="#F2F2F2"/>
+<path id="Vector_229" d="M1176 178V1798" stroke="#B8B8B8"/>
+<path id="Vector_230" d="M1176 218H1350" stroke="#808080" stroke-width="2"/>
 <g id="ws-day-7-hours">
-<path id="Vector_231" d="M1176 218H1350" stroke="#ECEBE6"/>
-<path id="Vector_232" d="M1176 261.889H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_233" d="M1176 305.778H1350" stroke="#ECEBE6"/>
-<path id="Vector_234" d="M1176 349.667H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_235" d="M1176 393.556H1350" stroke="#ECEBE6"/>
-<path id="Vector_236" d="M1176 437.444H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_237" d="M1176 481.333H1350" stroke="#ECEBE6"/>
-<path id="Vector_238" d="M1176 525.222H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_239" d="M1176 569.111H1350" stroke="#ECEBE6"/>
-<path id="Vector_240" d="M1176 613H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_241" d="M1176 656.889H1350" stroke="#ECEBE6"/>
-<path id="Vector_242" d="M1176 700.778H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_243" d="M1176 744.667H1350" stroke="#ECEBE6"/>
-<path id="Vector_244" d="M1176 788.556H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_245" d="M1176 832.444H1350" stroke="#ECEBE6"/>
-<path id="Vector_246" d="M1176 876.333H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_247" d="M1176 920.222H1350" stroke="#ECEBE6"/>
-<path id="Vector_248" d="M1176 964.111H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_249" d="M1176 1008H1350" stroke="#ECEBE6"/>
-<path id="Vector_250" d="M1176 1051.89H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_251" d="M1176 1095.78H1350" stroke="#ECEBE6"/>
-<path id="Vector_252" d="M1176 1139.67H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_253" d="M1176 1183.56H1350" stroke="#ECEBE6"/>
-<path id="Vector_254" d="M1176 1227.44H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_255" d="M1176 1271.33H1350" stroke="#ECEBE6"/>
-<path id="Vector_256" d="M1176 1315.22H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_257" d="M1176 1359.11H1350" stroke="#ECEBE6"/>
-<path id="Vector_258" d="M1176 1403H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_259" d="M1176 1446.89H1350" stroke="#ECEBE6"/>
-<path id="Vector_260" d="M1176 1490.78H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_261" d="M1176 1534.67H1350" stroke="#ECEBE6"/>
-<path id="Vector_262" d="M1176 1578.56H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_263" d="M1176 1622.44H1350" stroke="#ECEBE6"/>
-<path id="Vector_264" d="M1176 1666.33H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
-<path id="Vector_265" d="M1176 1710.22H1350" stroke="#ECEBE6"/>
-<path id="Vector_266" d="M1176 1754.11H1350" stroke="#ECEBE6" stroke-dasharray="2 6"/>
+<path id="Vector_231" d="M1176 218H1350" stroke="#DCDCDC"/>
+<path id="Vector_232" d="M1176 261.889H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_233" d="M1176 305.778H1350" stroke="#DCDCDC"/>
+<path id="Vector_234" d="M1176 349.667H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_235" d="M1176 393.556H1350" stroke="#DCDCDC"/>
+<path id="Vector_236" d="M1176 437.444H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_237" d="M1176 481.333H1350" stroke="#DCDCDC"/>
+<path id="Vector_238" d="M1176 525.222H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_239" d="M1176 569.111H1350" stroke="#DCDCDC"/>
+<path id="Vector_240" d="M1176 613H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_241" d="M1176 656.889H1350" stroke="#DCDCDC"/>
+<path id="Vector_242" d="M1176 700.778H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_243" d="M1176 744.667H1350" stroke="#DCDCDC"/>
+<path id="Vector_244" d="M1176 788.556H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_245" d="M1176 832.444H1350" stroke="#DCDCDC"/>
+<path id="Vector_246" d="M1176 876.333H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_247" d="M1176 920.222H1350" stroke="#DCDCDC"/>
+<path id="Vector_248" d="M1176 964.111H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_249" d="M1176 1008H1350" stroke="#DCDCDC"/>
+<path id="Vector_250" d="M1176 1051.89H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_251" d="M1176 1095.78H1350" stroke="#DCDCDC"/>
+<path id="Vector_252" d="M1176 1139.67H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_253" d="M1176 1183.56H1350" stroke="#DCDCDC"/>
+<path id="Vector_254" d="M1176 1227.44H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_255" d="M1176 1271.33H1350" stroke="#DCDCDC"/>
+<path id="Vector_256" d="M1176 1315.22H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_257" d="M1176 1359.11H1350" stroke="#DCDCDC"/>
+<path id="Vector_258" d="M1176 1403H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_259" d="M1176 1446.89H1350" stroke="#DCDCDC"/>
+<path id="Vector_260" d="M1176 1490.78H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_261" d="M1176 1534.67H1350" stroke="#DCDCDC"/>
+<path id="Vector_262" d="M1176 1578.56H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_263" d="M1176 1622.44H1350" stroke="#DCDCDC"/>
+<path id="Vector_264" d="M1176 1666.33H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
+<path id="Vector_265" d="M1176 1710.22H1350" stroke="#DCDCDC"/>
+<path id="Vector_266" d="M1176 1754.11H1350" stroke="#DCDCDC" stroke-dasharray="2 6"/>
 </g>
 </g>
 <g id="ws-day-heading">
-<text id="ws-day-1-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="143" y="206.5">MON</tspan></text>
-<text id="ws-day-2-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="317" y="206.5">TUE</tspan></text>
-<text id="ws-day-3-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="491" y="206.5">WED</tspan></text>
-<text id="ws-day-4-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="665" y="206.5">THU</tspan></text>
-<text id="ws-day-5-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="839" y="206.5">FRI</tspan></text>
-<text id="ws-day-6-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="1013" y="206.5">SAT</tspan></text>
-<text id="ws-day-7-wd" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="20" letter-spacing="0em"><tspan x="1187" y="206.5">SUN</tspan></text>
-</g>
-<g id="ws-day-heading-jp">
-<text id="&#230;&#156;&#136;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="189" y="206.208">&#x6708;</tspan></text>
-<text id="&#231;&#129;&#171;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="363" y="206.208">&#x706b;</tspan></text>
-<text id="&#230;&#176;&#180;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="537" y="206.208">&#x6c34;</tspan></text>
-<text id="&#230;&#156;&#168;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="711" y="206.208">&#x6728;</tspan></text>
-<text id="&#233;&#135;&#145;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="885" y="206.208">&#x91d1;</tspan></text>
-<text id="&#229;&#156;&#159;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="1059" y="206.208">&#x571f;</tspan></text>
-<text id="&#230;&#151;&#165;" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="1233" y="206.208">&#x65e5;</tspan></text>
+<text id="ws-day-1-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="143" y="205.545">MON</tspan></text>
+<text id="&#230;&#156;&#136;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="201" y="205.545">&#x6708;</tspan></text>
+<text id="ws-day-2-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="317" y="205.545">TUE</tspan></text>
+<text id="&#231;&#129;&#171;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="375" y="205.545">&#x706b;</tspan></text>
+<text id="ws-day-3-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="491" y="205.545">WED</tspan></text>
+<text id="&#230;&#176;&#180;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="549" y="205.545">&#x6c34;</tspan></text>
+<text id="ws-day-4-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="665" y="205.545">THU</tspan></text>
+<text id="&#230;&#156;&#168;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="723" y="205.545">&#x6728;</tspan></text>
+<text id="ws-day-5-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="839" y="205.545">FRI</tspan></text>
+<text id="&#233;&#135;&#145;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="897" y="205.545">&#x91d1;</tspan></text>
+<text id="ws-day-6-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1013" y="205.545">SAT</tspan></text>
+<text id="&#229;&#156;&#159;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1071" y="205.545">&#x571f;</tspan></text>
+<text id="ws-day-7-wd" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1187" y="205.545">SUN</tspan></text>
+<text id="&#230;&#151;&#165;" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1245" y="205.545">&#x65e5;</tspan></text>
 </g>
 </g>
 <g id="hdr-layout">
-<path id="hdr-datebox-frame" d="M497.618 55H147.382C138.887 55 132 60.8203 132 68V140C132 147.18 138.887 153 147.382 153H497.618C506.113 153 513 147.18 513 140V68C513 60.8203 506.113 55 497.618 55Z" stroke="#CFD5DD"/>
-<path id="Vector_267" d="M225.957 56V152" stroke="#E2DFDA"/>
-<path id="Vector_268" d="M433 55V153" stroke="#E2DFDA"/>
-<path id="Vector_269" d="M433 104H513" stroke="#E2DFDA"/>
+<path id="Vector_267" d="M261.468 56V152" stroke="#DCDCDC"/>
+<path id="Vector_268" d="M546.764 55V153" stroke="#DCDCDC"/>
+<path id="Vector_269" d="M546.764 104H657" stroke="#DCDCDC"/>
+<rect id="hdr-datebox-frame" x="132.5" y="55.5" width="524" height="97" rx="7.5" stroke="#B8B8B8"/>
 </g>
 <g id="rail">
 <g id="rail-months-bg">
-<rect id="rail-month-01-bg" x="25" y="148" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-02-bg" x="25" y="256.417" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-03-bg" x="25" y="364.833" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-04-bg" x="25" y="473.25" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-05-bg" x="25" y="581.667" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-06-bg" x="25" y="690.083" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-07-bg" x="25" y="798.5" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-08-bg" x="25" y="906.917" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-09-bg" x="25" y="1015.33" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-10-bg" x="25" y="1123.75" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-11-bg" x="25" y="1232.17" width="66" height="108.417" fill="#D9D9D9"/>
-<rect id="rail-month-12-bg" x="25" y="1340.58" width="66" height="108.417" fill="#D9D9D9"/>
+<rect id="rail-month-01-bg" x="25" y="187" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-02-bg" x="25" y="285.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-03-bg" x="25" y="384.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-04-bg" x="25" y="483.25" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-05-bg" x="25" y="582" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-06-bg" x="25" y="680.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-07-bg" x="25" y="779.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-08-bg" x="25" y="878.25" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-09-bg" x="25" y="977" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-10-bg" x="25" y="1075.75" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-11-bg" x="25" y="1174.5" width="66" height="98.75" fill="#DCDCDC"/>
+<rect id="rail-month-12-bg" x="25" y="1273.25" width="66" height="98.75" fill="#DCDCDC"/>
 </g>
 <g id="rail-months">
-<text id="rail-month-01" transform="matrix(0 -1 1 0 25 256.417)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JAN</tspan></text>
-<text id="rail-month-02" transform="matrix(0 -1 1 0 25 364.833)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">FEB</tspan></text>
-<text id="rail-month-03" transform="matrix(0 -1 1 0 25 473.25)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAR</tspan></text>
-<text id="rail-month-04" transform="matrix(0 -1 1 0 25 581.667)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">APR</tspan></text>
-<text id="rail-month-05" transform="matrix(0 -1 1 0 25 690.083)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">MAY</tspan></text>
-<text id="rail-month-06" transform="matrix(0 -1 1 0 25 798.5)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUN</tspan></text>
-<text id="rail-month-07" transform="matrix(0 -1 1 0 25 906.917)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">JUL</tspan></text>
-<text id="rail-month-08" transform="matrix(0 -1 1 0 25 1015.33)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">AUG</tspan></text>
-<text id="rail-month-09" transform="matrix(0 -1 1 0 25 1123.75)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">SEP</tspan></text>
-<text id="rail-month-10" transform="matrix(0 -1 1 0 25 1232.17)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">OCT</tspan></text>
-<text id="rail-month-11" transform="matrix(0 -1 1 0 25 1340.58)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">NOV</tspan></text>
-<text id="rail-month-12" transform="matrix(0 -1 1 0 25 1449)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="16" letter-spacing="0em"><tspan x="39.8177" y="39">DEC</tspan></text>
+<text id="rail-month-01" transform="matrix(0 -1 1 0 25 286.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.2848" y="39.5455">JAN</tspan></text>
+<text id="rail-month-02" transform="matrix(0 -1 1 0 25 385.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.8581" y="39.5455">FEB</tspan></text>
+<text id="rail-month-03" transform="matrix(0 -1 1 0 25 484)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="28.9909" y="39.5455">MAR</tspan></text>
+<text id="rail-month-04" transform="matrix(0 -1 1 0 25 582.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.3551" y="39.5455">APR</tspan></text>
+<text id="rail-month-05" transform="matrix(0 -1 1 0 25 681.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.1754" y="39.5455">MAY</tspan></text>
+<text id="rail-month-06" transform="matrix(0 -1 1 0 25 780)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="31.1969" y="39.5455">JUN</tspan></text>
+<text id="rail-month-07" transform="matrix(0 -1 1 0 25 878.667)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.7702" y="39.5455">JUL</tspan></text>
+<text id="rail-month-08" transform="matrix(0 -1 1 0 25 977.333)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.6061" y="39.5455">AUG</tspan></text>
+<text id="rail-month-09" transform="matrix(0 -1 1 0 25 1076)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="32.4098" y="39.5455">SEP</tspan></text>
+<text id="rail-month-10" transform="matrix(0 -1 1 0 25 1174.67)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.9137" y="39.5455">OCT</tspan></text>
+<text id="rail-month-11" transform="matrix(0 -1 1 0 25 1273.33)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="29.7116" y="39.5455">NOV</tspan></text>
+<text id="rail-month-12" transform="matrix(0 -1 1 0 25 1372)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="30.8366" y="39.5455">DEC</tspan></text>
 </g>
-<path id="Vector_270" d="M25 1449H91" stroke="#E2DFDA"/>
+<path id="Vector_270" d="M25 1372H91" stroke="#B8B8B8"/>
 <g id="rail-sections-bg">
-<rect id="rail-section-4-bg" opacity="0.2" x="25" y="1740" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-3-bg" opacity="0.2" x="25" y="1643" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-2-bg" opacity="0.2" x="25" y="1546" width="66" height="97" fill="#D9D9D9"/>
-<rect id="rail-section-1-bg" opacity="0.2" x="25" y="1449" width="66" height="97" fill="#D9D9D9"/>
+<rect id="rail-section-4-bg" opacity="0.2" x="25" y="1720.75" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-3-bg" opacity="0.2" x="25" y="1604.5" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-2-bg" opacity="0.2" x="25" y="1488.25" width="66" height="116.25" fill="#DCDCDC"/>
+<rect id="rail-section-1-bg" opacity="0.2" x="25" y="1372" width="66" height="116.25" fill="#DCDCDC"/>
 </g>
 <g id="rail-sections">
-<text id="rail-section-1" transform="matrix(0 -1 1 0 25 1546)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="32.6914" y="37.656">LISTS</tspan></text>
-<text id="rail-section-2" transform="matrix(0 -1 1 0 25 1643)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="20.0527" y="37.656">PROJECTS</tspan></text>
-<text id="rail-section-3" transform="matrix(0 -1 1 0 25 1740)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="17.791" y="37.656">MEETINGS</tspan></text>
-<text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="9.875" y="37.656">SCRATCHPAD</tspan></text>
+<text id="rail-section-1" transform="matrix(0 -1 1 0 25 1488.25)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="36.4919" y="38.8182">LISTS</tspan></text>
+<text id="rail-section-2" transform="matrix(0 -1 1 0 25 1604.5)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="17.2163" y="38.8182">PROJECTS</tspan></text>
+<text id="rail-section-3" transform="matrix(0 -1 1 0 25 1720.75)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="17.685" y="38.8182">MEETINGS</tspan></text>
+<text id="rail-section-4" transform="matrix(0 -1 1 0 25 1837)" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="21.2066" y="38.8182">SCRATCH</tspan></text>
 </g>
 <g id="rail-index-chip">
-<path id="Vector_271" d="M58 160.5L25 148V67C25 59.5 31 54 37.5 54H58H78.5C85 54 91 59.5 91 67V148L58 160.5Z" fill="#2C2C2C"/>
-<text id="rail-index-label" transform="matrix(0 -1 1 0 44.9048 127.388)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="0.842468" y="18.7794">INDEX</tspan></text>
+<path id="Vector_271" d="M58 199.5L25 187V106C25 98.5 31 93 37.5 93H58H78.5C85 93 91 98.5 91 106V187L58 199.5Z" fill="black"/>
+<text id="rail-index-label" transform="matrix(0 -1 1 0 45 199)" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="26.0172" y="19.0455">INDEX</tspan></text>
 </g>
 </g>
 </g>
 <g id="var-ink">
-<g id="hdr-toggle">
-<rect width="158" height="67" transform="translate(720 70)" fill="white"/>
-<path id="hdr-toggle-schedule-bg" d="M878 103.5V78.8878C878 73.9792 875.144 70 871.621 70H726.379C722.856 70 720 73.9792 720 78.8878V103.5H878Z" fill="#41587C" stroke="#CFD5DD"/>
-<path id="hdr-toggle-block-bg" d="M720 128.112C720 133.021 722.856 137 726.379 137H871.621C875.144 137 878 133.021 878 128.112V103.5H720V128.112Z" stroke="#CFD5DD"/>
-<text id="hdr-toggle-schedule" fill="white" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" font-weight="bold" letter-spacing="0em"><tspan x="763.023" y="92.375">SCHEDULE</tspan></text>
-<text id="hdr-toggle-block" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" font-weight="bold" letter-spacing="0em"><tspan x="776.515" y="125.875">BLOCK</tspan></text>
-</g>
-<g id="hdr-nav">
-<path id="hdr-nav-prev-bg" d="M586 86H568C563.582 86 560 89.5817 560 94V112C560 116.418 563.582 120 568 120H586C590.418 120 594 116.418 594 112V94C594 89.5817 590.418 86 586 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#185;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="574.133" y="108.424">&#x2039;</tspan></text>
-<path id="hdr-nav-next-bg" d="M630 86H612C607.582 86 604 89.5817 604 94V112C604 116.418 607.582 120 612 120H630C634.418 120 638 116.418 638 112V94C638 89.5817 634.418 86 630 86Z" stroke="#D6E0EE"/>
-<text id="&#226;&#128;&#186;" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="618.133" y="108.424">&#x203a;</tspan></text>
-</g>
 <g id="footer-rule">
-<path id="Vector_272" d="M132 1812H1350" stroke="#DCD9D4"/>
+<path id="Vector_272" d="M132 1812H1350" stroke="#808080"/>
 </g>
 <g id="week-schedule-nums">
-<text id="ws-day-1-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="268.215" y="205.125">16</tspan></text>
-<text id="ws-day-2-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="442.215" y="205.125">17</tspan></text>
-<text id="ws-day-3-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="616.215" y="205.125">18</tspan></text>
-<text id="ws-day-4-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="790.215" y="205.125">19</tspan></text>
-<text id="ws-day-5-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="964.215" y="205.125">20</tspan></text>
-<text id="ws-day-6-num" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1138.21" y="205.125">21</tspan></text>
-<text id="ws-day-7-num" fill="#9E5563" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="19" letter-spacing="0em"><tspan x="1312.21" y="205.125">22</tspan></text>
+<text id="ws-day-1-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="270.86" y="204.545">16</tspan></text>
+<text id="ws-day-2-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="445.967" y="204.545">17</tspan></text>
+<text id="ws-day-3-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="618.912" y="204.545">18</tspan></text>
+<text id="ws-day-4-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="792.86" y="204.545">19</tspan></text>
+<text id="ws-day-5-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="963.994" y="204.545">20</tspan></text>
+<text id="ws-day-6-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1141.35" y="204.545">21</tspan></text>
+<text id="ws-day-7-num" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1312.82" y="204.545">22</tspan></text>
 </g>
-<text id="footer-left" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="132" y="1836.38">WEEK 8 &#xb7; 05:00&#x2013;22:00</tspan></text>
-<text id="footer-right" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="1256.46" y="1836.38">&#x21b3; week block</tspan></text>
+<text id="footer-left" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="132" y="1835.09">WEEK 8 &#xb7; 05:00&#x2013;22:00</tspan></text>
+<text id="footer-right" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="1258.23" y="1835.09">&#x21b3; week block</tspan></text>
 <g id="hdr-meta">
-<text id="hdr-big-label" fill="#8F9298" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="159.513" y="129.375">MONTH</tspan></text>
-<text id="hdr-meta-top" fill="#6B7686" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="13" letter-spacing="0em"><tspan x="457.638" y="88.875">YEAR</tspan></text>
-<text id="hdr-month-name" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="23" font-weight="bold" letter-spacing="0em"><tspan x="274.16" y="109.625">February</tspan></text>
-<text id="hdr-month-jp" fill="#9AA0A8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="16" letter-spacing="0em"><tspan x="310.822" y="137.208">2&#x6708;</tspan></text>
-<text id="hdr-meta-bottom" fill="#41587C" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="15" letter-spacing="0em"><tspan x="455.012" y="139.125">2026</tspan></text>
-<text id="hdr-big" fill="#23262D" style="white-space: pre" xml:space="preserve" font-family="IBM Plex Mono" font-size="52" letter-spacing="0em"><tspan x="163.41" y="108.5">2</tspan></text>
+<text id="hdr-big-label" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="16" letter-spacing="-0.01em"><tspan x="166.795" y="136.818">MONTH</tspan></text>
+<text id="hdr-meta-top" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="583.983" y="84.5909">YEAR</tspan></text>
+<text id="hdr-month-name" fill="black" style="white-space: pre" xml:space="preserve" font-family="Newsreader" font-size="48" font-weight="bold" letter-spacing="-0.02em"><tspan x="303.716" y="114.78">February</tspan></text>
+<text id="hdr-meta-bottom" fill="#4D4D4D" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="-0.01em"><tspan x="584.537" y="133.091">2026</tspan></text>
+<text id="hdr-big" fill="black" style="white-space: pre" xml:space="preserve" font-family="Newsreader" font-size="64" font-weight="bold" letter-spacing="-0.02em"><tspan x="175.185" y="110.04">2</tspan></text>
 </g>
+<g id="hdr-toggle">
+<path id="hdr-toggle-schedule-bg" d="M1160 105V77.0816C1160 71.5137 1157.14 67 1153.62 67H1008.38C1004.86 67 1002 71.5137 1002 77.0816V105H1160Z" fill="#F2F2F2" stroke="#B8B8B8"/>
+<path id="hdr-toggle-block-bg" d="M1002 132.918C1002 138.486 1004.86 143 1008.38 143H1153.62C1157.14 143 1160 138.486 1160 132.918V105H1002V132.918Z" fill="#B8B8B8" stroke="#B8B8B8"/>
+<text id="hdr-toggle-schedule" fill="#808080" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1032.98" y="92.829">SCHEDULE</tspan></text>
+<text id="hdr-toggle-block" fill="white" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="-0.01em"><tspan x="1050.09" y="130.262">BLOCK</tspan></text>
+</g>
+<text id="hdr-month-jp" fill="#B8B8B8" style="white-space: pre" xml:space="preserve" font-family="Noto Sans" font-size="64" font-weight="bold" letter-spacing="-0.02em"><tspan x="1254.83" y="128.332">2&#x6708;</tspan></text>
 </g>
 </g>
 <defs>

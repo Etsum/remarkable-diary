@@ -19,7 +19,7 @@ from lxml import etree
 from . import svgutil as SU
 
 S = SU.S
-DOT_COLOR = "#c7c4be"
+DOT_COLOR = "#b8b8b8"   # Grid/Primary — e-ink palette (assets/e-ink-palette.tokens.json)
 
 # pattern id -> (tile size, translate offset)  — densities from the original HTML (§10)
 _PATTERNS = {

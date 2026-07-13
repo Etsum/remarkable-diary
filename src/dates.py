@@ -131,13 +131,23 @@ MASTER = {
 }
 
 
+def _day_pages(dd: date, ym: tuple[int, int], am: tuple[int, int], n: int) -> list[Page]:
+    """N consecutive day pages for one calendar day (#47). Only the first owns the
+    `day-YYYY-MM-DD` anchor (the rest get `anchor=None`), so every inbound day link
+    — year mini-cals, month grid, week cells, day mini-cal — lands on the first page."""
+    return [Page(kind="day", anchor=(a_day(dd) if i == 0 else None),
+                 master=MASTER["day"], day=dd, month=ym, active_month=am)
+            for i in range(n)]
+
+
 def build_pages(cfg) -> tuple[list[Page], set[str]]:
     """Build the ordered page list and the set of anchors that will exist.
 
     cfg duck-typed: .start_y .start_m .months .include (dict block/schedule/days)
-                    .pages_per_category .cover_page
+                    .pages_per_category .cover_page .day_pages_per_day
     """
     pages: list[Page] = []
+    day_n = getattr(cfg, "day_pages_per_day", 1)
 
     # optional cover (§7.3) — no anchor, never breaks links
     if cfg.cover_page:
@@ -188,9 +198,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                                           month=(y, m), active_month=am))
                 if cfg.include.get("days", True):
                     for dd in first_partial_days:
-                        pages.append(Page(kind="day", anchor=a_day(dd),
-                                          master=MASTER["day"], day=dd, month=(y, m),
-                                          active_month=am))
+                        pages.extend(_day_pages(dd, (y, m), am, day_n))
 
             for monday in month_mondays:
                 if cfg.include.get("block", True):
@@ -205,9 +213,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                     for offset in range(7):
                         dd = monday + timedelta(days=offset)
                         if dd.month == m:
-                            pages.append(Page(kind="day", anchor=a_day(dd),
-                                              master=MASTER["day"], day=dd, month=(y, m),
-                                              active_month=am))
+                            pages.extend(_day_pages(dd, (y, m), am, day_n))
             for slot in range(1, len(cfg.categories) + 1):
                 for nn in range(1, cfg.pages_per_category + 1):
                     pages.append(Page(kind="category", anchor=a_cat(y, m, slot, nn),

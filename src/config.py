@@ -22,6 +22,7 @@ class Config:
     blanks: bool = True
     hour_start: int = 5            # week-schedule first hour label (24h); 18 rows fixed (D11)
     dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
+    day_pages_per_day: int = 1     # #47: consecutive day pages per calendar day (default 1)
 
     def __post_init__(self):
         if self.weeklink not in ("schedule", "block"):
@@ -32,6 +33,8 @@ class Config:
             raise ValueError(f"months must be 1–12, got {self.months}")
         if self.pages_per_category < 0:
             raise ValueError("pagesPerCategory must be >= 0")
+        if self.day_pages_per_day < 1:
+            raise ValueError(f"dayPagesPerDay must be >= 1, got {self.day_pages_per_day}")
         for c in self.categories:
             if len(c) > 12:
                 raise ValueError(f"category name too long for rotated rail tab (<=12): {c!r}")
@@ -75,4 +78,5 @@ def load_config(path_or_dict) -> Config:
         blanks=bool(data.get("blanks", True)),
         hour_start=int(data.get("hourStart", 5)),
         dot_scale=float(data.get("dotScale", 0.8)),
+        day_pages_per_day=int(data.get("dayPagesPerDay", 1)),
     )

@@ -71,6 +71,7 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 --hour-start H         First hour on week-schedule pages, 24h (default: 5)
 --pages-per-category N Category pages per slot per month (default: 5)
 --dot-scale F          Dot-grid tile size scale factor (default: 0.8; 1.0 = original density)
+--day-pages N          Consecutive day pages per calendar day (default: 1; links land on the first)
 --cover PATH|blank     Cover page: 'blank' or path to a PDF/PNG
 --no-blanks            Skip blank PNG output
 --no-block             Skip week-block pages

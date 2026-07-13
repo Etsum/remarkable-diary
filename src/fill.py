@@ -11,6 +11,7 @@ for text nodes (accurate enough for click targets).
 from __future__ import annotations
 
 import copy
+import re
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -92,6 +93,31 @@ def _idm_bbox(idm: dict, *ids: str) -> tuple[float, float, float, float] | None:
 # Rail fill — shared across all pages (§8.7)
 # ---------------------------------------------------------------------------
 
+def _center_rail_label(lbl, bg) -> None:
+    """Centre a vertically-rotated rail section label along its tab's long axis (#44).
+
+    The label transform is ``matrix(0 -1 1 0 e f)``: a local point (lx, ly) maps to
+    device (ly + e, f - lx), so the reading axis (device-y) = f - lx. The labels are
+    start-anchored at a fixed x, so a category name whose length differs from the
+    baked placeholder renders off-centre (clustered at the tab bottom). Re-anchor with
+    ``text-anchor=middle`` and put the tspan x at the tab centre — lx = f - (tab_y +
+    tab_h/2) — so the renderer centres the text using real font metrics (Noto Sans is
+    proportional). Cross-axis (tab width) position is left untouched.
+    """
+    ts = lbl.find(SU.S + "tspan")
+    bb = SU.bbox(bg) if bg is not None else None
+    if ts is None or bb is None:
+        return
+    m = re.match(r"matrix\(([^)]+)\)", lbl.get("transform", ""))
+    parts = m.group(1).replace(",", " ").split() if m else []
+    try:
+        f = float(parts[5])
+    except (IndexError, ValueError):
+        f = bb[1] + bb[3]          # fallback: transform origin at tab bottom
+    ts.set("x", f"{f - (bb[1] + bb[3] / 2):.3f}")
+    lbl.set("text-anchor", "middle")
+
+
 def _fill_rail(
     idm: dict,
     cfg: Config,
@@ -109,6 +135,7 @@ def _fill_rail(
         if i <= len(cfg.categories):
             if lbl is not None:
                 SU.set_text(lbl, cfg.categories[i - 1])
+                _center_rail_label(lbl, bg)   # #44: centre along the tab's long axis
         else:
             if lbl is not None:
                 SU.set_text(lbl, "")

@@ -5,7 +5,7 @@ Figma master SVGs it produces a **hyperlinked PDF** for any date range and a set
 of **blank write-on PNG templates** — same masters, no LLM in the loop.
 
 - **Hyperlinked PDF** — every date, week number and mini-calendar filled in;
-  every navigation link (rail, mini-cal dates, week numbers, nav arrows,
+  every navigation link (rail, mini-cal dates, week numbers,
   footers) wired as a real internal PDF go-to jump. Configurable range,
   week-link target, four category sections, pages-per-category, optional cover.
 - **Blank PNGs** — one per page type, no dates/links, dot-grid present, for

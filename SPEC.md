@@ -66,7 +66,7 @@ pages `cat-YYYY-MM-s{slot}-{NN}`.
 | **Month** | the **Wn** week-number (left gutter) | that **week page** | **schedule by default, configurable** |
 | **Week block** | the rotated **date column** only (not the grid) | that **day page** | hit area = the date column; dot grid fills the rest |
 | **Week schedule** | the **date header cell** | that **day page** | unchanged |
-| **Day** | nav arrows / footer / rail | prev-next / week / index | unchanged |
+| **Day** | footer / rail | week / index | unchanged |
 
 ### Configurable week-number target
 `Planner.html` URL param **`weeklink`** = `sched` (default) | `block`. Controls where the

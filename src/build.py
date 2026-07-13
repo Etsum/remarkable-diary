@@ -17,7 +17,7 @@ import sys
 import time
 from pathlib import Path
 
-from .config import DEFAULT_CATEGORIES
+from .config import DEFAULT_CATEGORIES, _parse_hour
 
 REPO_ROOT      = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR  = REPO_ROOT / "assets" / "templates" / "rm2"
@@ -251,8 +251,11 @@ def _make_parser() -> argparse.ArgumentParser:
                    help="Category pages per slot per month (default 5)")
     p.add_argument("--cover", metavar="PATH|blank",
                    help="Cover page: 'blank' or path to a PDF/PNG")
-    p.add_argument("--hour-start", type=int, default=5, metavar="H",
-                   help="First hour label on week-schedule pages (default 5)")
+    p.add_argument("--hour-start", type=_parse_hour, default=8, metavar="H",
+                   help="First week-schedule row time — hours or H:MM (e.g. 7.25 or 7:15; default 8)")
+    p.add_argument("--hour-increment", type=float, default=0.5, metavar="H",
+                   help="Hours per week-schedule row (0.5 or 1; default 0.5). "
+                        "All rows fill from --hour-start.")
     p.add_argument("--dot-scale", type=float, default=0.8, metavar="F",
                    help="Dot-grid tile size scale factor (default: 0.8, 1.0 = original)")
     p.add_argument("--day-pages", type=int, default=1, metavar="N",
@@ -297,6 +300,7 @@ def main(argv: list[str] | None = None) -> None:
             output=args.output,
             blanks=True,
             hour_start=args.hour_start,
+            hour_increment=args.hour_increment,
             dot_scale=args.dot_scale,
         )
     else:
@@ -322,6 +326,7 @@ def main(argv: list[str] | None = None) -> None:
             output=args.output,
             blanks=not args.no_blanks,
             hour_start=args.hour_start,
+            hour_increment=args.hour_increment,
             dot_scale=args.dot_scale,
             day_pages_per_day=args.day_pages,
         )

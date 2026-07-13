@@ -68,7 +68,8 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 --end YYYY-MM          Alternative to --months (inclusive)
 --output PATH          Output PDF path (default: out/planner.pdf)
 --weeklink schedule|block  Where week-number links point (default: schedule)
---hour-start H         First hour on week-schedule pages, 24h (default: 5)
+--hour-start H         First week-schedule row time — hours or H:MM (e.g. 7.25 or 7:15; default: 8)
+--hour-increment H     Hours per week-schedule row (0.5 or 1; default: 0.5)
 --pages-per-category N Category pages per slot per month (default: 5)
 --dot-scale F          Dot-grid tile size scale factor (default: 0.8; 1.0 = original density)
 --day-pages N          Consecutive day pages per calendar day (default: 1; links land on the first)
@@ -83,8 +84,27 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 ```
 
 JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `weeklink`,
-`hourStart`, `pagesPerCategory`, `dotScale`, `dayPagesPerDay`, `coverPage`, `blanks`,
+`hourStart`, `hourIncrement`, `pagesPerCategory`, `dotScale`, `dayPagesPerDay`, `coverPage`, `blanks`,
 `include` (object with `year`/`block`/`schedule`/`days` booleans), `categories` (array of 1–4 strings).
+
+## Week-schedule hours
+
+Every **week-schedule** page has **18 time rows**. Two settings fill them:
+
+- **`hourStart`** — the first row's time. Give it as decimal hours **or** a `H:MM` clock string, so you can start on a part hour: `7.25` or `"7:15"`, `8.5` or `"8:30"`, `6.75` or `"6:45"`. (Note `7.25` = quarter past seven, **not** `7.15`.)
+- **`hourIncrement`** — hours between rows, typically `0.5` (30 min) or `1`.
+
+All 18 rows fill from `hourStart` in `hourIncrement` steps; labels are block-start times and wrap past midnight. There's no end setting — with a fixed 18 rows the finish time is just `hourStart + 18 × hourIncrement` (the last row's block runs up to it).
+
+| `hourStart` | `hourIncrement` | First row | Last row | Finish |
+|---|---|---|---|---|
+| `8` | `0.5` | 08:00 | 16:30 | 17:00 |
+| `"7:15"` | `0.5` | 07:15 | 15:45 | 16:15 |
+| `"8:30"` | `0.5` | 08:30 | 17:00 | 17:30 |
+| `"6:45"` | `1` | 06:45 | 23:45 | 00:45 |
+| `9` | `1` | 09:00 | 02:00 | 03:00 |
+
+CLI: `--hour-start 7:15 --hour-increment 0.5` — JSON: `"hourStart": "7:15", "hourIncrement": 0.5`
 
 ## How it works
 

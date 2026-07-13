@@ -79,7 +79,7 @@ optional "today" dot.
 | D8 | Date range > 12 months | One Year page per 12-month window |
 | D9 | **Dot-grid writing texture** | **Added at generation** (SVG `<pattern>` on computed writable zones); shared by PDF + blanks. Not authored in Figma. (§10) |
 | D10 | **Cover page** | Not auto-designed. Config option inserts a customisable leading page; anchors are id-based so a cover never breaks links. (§7.3) |
-| D11 | Week-schedule hours | Accept the baked 18-row grid as-is (no custom hour count) |
+| D11 | Week-schedule hours | 18 fixed rows, all filled from `hourStart` (decimal hours or `H:MM`, part-hours OK) stepping `hourIncrement` hours/row (0.5 or 1); labels are HH:MM block-start times and wrap past midnight |
 
 ---
 
@@ -233,7 +233,8 @@ JSON/TOML config + CLI flags. Suggested schema:
   "categories": ["Lists", "Projects", "Meetings", "Scratchpad"],  // 4 slots, rail order top→bottom
   "pagesPerCategory": 5,     // SAME count for every category, per month (D4). 0 ⇒ none + tab unlinked
   "dayPagesPerDay": 1,       // #47: consecutive day pages per calendar day; links land on the first
-  "hourStart": 5,            // week-schedule first hour label, 24h (18 rows fixed, D11)
+  "hourStart": 8,            // first row time — decimal hours or "H:MM" (e.g. 7.25 or "7:15")
+  "hourIncrement": 0.5,      // hours per row (0.5 or 1); all 18 rows fill from hourStart
   "dotScale": 0.8,           // dot-grid tile size scale (1.0 = original density)
   "coverPage": false,        // false | "blank" | "path/to/cover.pdf|png"  (D10)
   "output": "planner-2026.pdf",
@@ -399,7 +400,7 @@ node; override fill only where stated.
 |---|---|
 | header | as 8.3 |
 | `ws-day-{N}-num` / `-wd` | day-of-month / weekday |
-| `ws-hour-pos-{01..18}` | hour labels — 18 positional-id rows, relabelled from `cfg.hour_start` (the old literal `ws-hour-5..22` ids were renamed in the e-ink redesign; see `_WS_HOUR_IDS`) |
+| `ws-hour-pos-{NN}` | hour labels — one per positional-id row (18 in the current design), filled from `hour_start` stepping `hour_increment` hours/row as HH:MM block-start times (wrapping past midnight). Row count is read from the master, not a magic 18 (the old literal `ws-hour-5..22` ids were renamed to positional ids in the e-ink redesign) |
 | toggle | **SCHEDULE** active |
 
 ### 8.5 Day (`05-day.svg`)
@@ -582,7 +583,7 @@ exactly the handwriting template.
 ### 13.1 Pre-flight (on the re-exported SVGs, before generating)
 Assert per file: `#background` (and `#var-ink` where expected) exist; every id in the §8
 tables resolves to `<text>`/`<rect>`; counts match (`mcell`×42, `mrow`×6, `day-mini`×42,
-`mini-*-d`×504, `ws-hour`×18, `wb-day-*`×7, `ws-day-*`×7); **no duplicate ids** (F1). Fail
+`mini-*-d`×504, `ws-hour`≥18, `wb-day-*`×7, `ws-day-*`×7); **no duplicate ids** (F1). Fail
 loudly listing any missing/duplicated id.
 
 ### 13.2 Post-build
@@ -604,7 +605,7 @@ loudly listing any missing/duplicated id.
 - **Outlined text breaks everything** — verify §3.1 each re-export; parse UTF-8 (F8).
 - **Duplicate layer names** → Figma suffixes ids → strict lookups miss them. Keep unique;
   the validator (§13.1) catches it.
-- **Week-schedule hour rows fixed at 18** (D11): relabel only.
+- **Week-schedule hour rows come from the master** (D11): all filled from `hourStart`, stepping `hourIncrement` hours per row (HH:MM block-start labels, wrapping past midnight).
 - **Weeks straddling months** land in the Monday's month (§7.2).
 - **Adjacent-month day numbers** must be recoloured faint (§8.2); the active-month tab
   (§8.7), the dot grid (§10), and the optional "today" dot are the only script-drawn/restyled

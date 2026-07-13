@@ -20,11 +20,13 @@ class Config:
     cover_page: str | bool = False  # False | "blank" | path
     output: str = "out/planner.pdf"
     blanks: bool = True
-    hour_start: int = 5            # week-schedule first hour label (24h); 18 rows fixed (D11)
+    hour_start: float = 8          # week-schedule first row time — decimal hours or "H:MM" (e.g. 7.25 / "7:15")
+    hour_increment: float = 0.5    # hours per schedule row (0.5 or 1); all rows fill from hour_start
     dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
     day_pages_per_day: int = 1     # #47: consecutive day pages per calendar day (default 1)
 
     def __post_init__(self):
+        self.hour_start = _parse_hour(self.hour_start)   # accept "H:MM" or decimal hours
         if self.weeklink not in ("schedule", "block"):
             raise ValueError(f"weeklink must be schedule|block, got {self.weeklink!r}")
         if not 1 <= len(self.categories) <= 4:
@@ -35,6 +37,10 @@ class Config:
             raise ValueError("pagesPerCategory must be >= 0")
         if self.day_pages_per_day < 1:
             raise ValueError(f"dayPagesPerDay must be >= 1, got {self.day_pages_per_day}")
+        if not 0 <= self.hour_start < 24:
+            raise ValueError(f"hourStart must be in [0, 24), got {self.hour_start}")
+        if round(self.hour_increment * 60) < 1:   # < 1 min/row → rows collapse to identical labels
+            raise ValueError(f"hourIncrement must be at least 1 minute, got {self.hour_increment}")
         for c in self.categories:
             if len(c) > 12:
                 raise ValueError(f"category name too long for rotated rail tab (<=12): {c!r}")
@@ -43,6 +49,17 @@ class Config:
 def _parse_ym(s: str) -> tuple[int, int]:
     y, m = s.split("-")
     return int(y), int(m)
+
+
+def _parse_hour(v) -> float:
+    """A clock time as decimal hours (7.25) or a 'H:MM' string ('7:15') → decimal hours."""
+    if isinstance(v, str) and ":" in v:
+        h, m = v.split(":", 1)
+        h, m = int(h), int(m)
+        if not 0 <= m < 60:
+            raise ValueError(f"minutes must be 0–59 in hourStart {v!r}")
+        return h + m / 60
+    return float(v)
 
 
 def load_config(path_or_dict) -> Config:
@@ -76,7 +93,8 @@ def load_config(path_or_dict) -> Config:
         cover_page=data.get("coverPage", False),
         output=data.get("output", "out/planner.pdf"),
         blanks=bool(data.get("blanks", True)),
-        hour_start=int(data.get("hourStart", 5)),
+        hour_start=data.get("hourStart", 8),   # parsed by _parse_hour in __post_init__ ("H:MM" or hours)
+        hour_increment=float(data.get("hourIncrement", 0.5)),
         dot_scale=float(data.get("dotScale", 0.8)),
         day_pages_per_day=int(data.get("dayPagesPerDay", 1)),
     )

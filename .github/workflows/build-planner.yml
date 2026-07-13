@@ -44,9 +44,14 @@ on:
         default: "5"
         type: string
       hour_start:
-        description: "First hour label on week-schedule pages"
+        description: "First week-schedule row time — hours or H:MM (e.g. 7.25 or 7:15)"
         required: false
-        default: "5"
+        default: "8"
+        type: string
+      hour_increment:
+        description: "Hours per week-schedule row (0.5 or 1)"
+        required: false
+        default: "0.5"
         type: string
       dot_scale:
         description: "Dot-grid tile size scale factor (1.0 = original)"
@@ -137,6 +142,7 @@ jobs:
           IN_COVER: ${{ inputs.cover }}
           IN_PAGES_PER_CATEGORY: ${{ inputs.pages_per_category }}
           IN_HOUR_START: ${{ inputs.hour_start }}
+          IN_HOUR_INCREMENT: ${{ inputs.hour_increment }}
           IN_DOT_SCALE: ${{ inputs.dot_scale }}
           IN_NO_BLANKS: ${{ inputs.no_blanks }}
           IN_NO_YEAR: ${{ inputs.no_year }}
@@ -172,6 +178,7 @@ jobs:
               if [ -n "$IN_COVER" ]; then args+=(--cover "$IN_COVER"); fi
               if [ -n "$IN_PAGES_PER_CATEGORY" ]; then args+=(--pages-per-category "$IN_PAGES_PER_CATEGORY"); fi
               if [ -n "$IN_HOUR_START" ]; then args+=(--hour-start "$IN_HOUR_START"); fi
+              if [ -n "$IN_HOUR_INCREMENT" ]; then args+=(--hour-increment "$IN_HOUR_INCREMENT"); fi
               if [ -n "$IN_DOT_SCALE" ]; then args+=(--dot-scale "$IN_DOT_SCALE"); fi
               if [ "$IN_NO_BLANKS" = "true" ]; then args+=(--no-blanks); fi
               if [ "$IN_NO_YEAR" = "true" ]; then args+=(--no-year); fi

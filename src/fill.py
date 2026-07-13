@@ -44,8 +44,6 @@ WHITE  = BASE                # inverse text on dark chips
 
 Link = tuple[float, float, float, float, str]   # (x, y, w, h, target_anchor)
 
-_WS_HOUR_IDS = [f"ws-hour-pos-{i:02d}" for i in range(1, 19)]  # 18 positional rows, in order (labels set from cfg.hour_start)
-
 
 # ---------------------------------------------------------------------------
 # Geometry helpers (§9)
@@ -474,11 +472,16 @@ def _fill_week_schedule(page: Page, cfg: Config, idm: dict, anchors: set[str]) -
             if tgt in anchors:
                 links.append((*bb, tgt))
 
-    # Hour labels (D11: relabel only, 18 rows fixed)
-    for i, hid in enumerate(_WS_HOUR_IDS):
-        node = idm.get(hid)
-        if node is not None:
-            SU.set_text(node, f"{(cfg.hour_start + i) % 24:02d}:00")
+    # Hour labels: fill every physical row from `hour_start`, stepping `hour_increment` hours
+    # per row (labels are block-start times, HH:MM, wrapping past midnight). Row count is read
+    # from the master, so it tracks the design's fixed 18 rows without a magic constant (#63).
+    hour_ids = sorted((k for k in idm if k.startswith("ws-hour-pos-")),
+                      key=lambda k: int(k.rsplit("-", 1)[1]))
+    start = round(cfg.hour_start * 60)             # first row in minutes (part-hours OK, e.g. 7.25 → 07:15)
+    step = round(cfg.hour_increment * 60)          # minutes/row, integer to avoid float drift
+    for i, hid in enumerate(hour_ids):
+        total = start + i * step
+        SU.set_text(idm[hid], f"{(total // 60) % 24:02d}:{total % 60:02d}")
 
     # Day cells
     for n in range(1, 8):

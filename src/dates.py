@@ -111,7 +111,6 @@ class Page:
     master: str | None        # template stem, e.g. '01-year' (None for cover)
     # context (only the relevant fields are set per kind)
     window: list[tuple[int, int]] | None = None   # year page: its <=12 months
-    window_index: int = 0
     month: tuple[int, int] | None = None          # (y, m)
     monday: date | None = None                    # week pages
     day: date | None = None                       # day page
@@ -162,7 +161,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
         if cfg.include.get("year", True):
             full_win = month_range(win[0][0], win[0][1], 12)
             pages.append(Page(kind="year", anchor=a_year(wi), master=MASTER["year"],
-                              window=full_win, window_index=wi))
+                              window=full_win))
         for (y, m) in win:
             am = (y, m)
             pages.append(Page(kind="month", anchor=a_month(y, m),

@@ -572,9 +572,9 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 if tgt in anchors:
                     links.append((*bb, tgt))
 
-    # Footer (keeps the stylistic 月 glyph; no lang option)
+    # Footer (keeps the stylistic 月/日 glyphs; no lang option) — #53
     if "footer-left" in idm:
-        SU.set_text(idm["footer-left"], f"{m}月 {d.day}, {y}")
+        SU.set_text(idm["footer-left"], f"{m}月 {d.day}日, {y}")
 
     # Footer-right "↳ week" → week page
     monday = d - timedelta(days=d.weekday())

@@ -255,6 +255,9 @@ def _make_parser() -> argparse.ArgumentParser:
                    help="First hour label on week-schedule pages (default 5)")
     p.add_argument("--dot-scale", type=float, default=0.8, metavar="F",
                    help="Dot-grid tile size scale factor (default: 0.8, 1.0 = original)")
+    p.add_argument("--day-pages", type=int, default=1, metavar="N",
+                   help="Consecutive day pages per calendar day (default 1). "
+                        "Links land on the first page of each day.")
     p.add_argument("--validate-only", action="store_true",
                    help="Run pre-flight validator and exit (no PDF generated)")
     p.add_argument("--blanks-only", action="store_true",
@@ -320,6 +323,7 @@ def main(argv: list[str] | None = None) -> None:
             blanks=not args.no_blanks,
             hour_start=args.hour_start,
             dot_scale=args.dot_scale,
+            day_pages_per_day=args.day_pages,
         )
 
     # --- Blanks-only mode ---

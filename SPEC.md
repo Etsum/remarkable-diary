@@ -1,5 +1,11 @@
 # reMarkable Planner — design + linking spec
 
+> **⚠️ Historical design notes.** Colour/style references here (navy 2px rule, maroon INDEX
+> chip, etc.) describe the **original** iteration. The live design is the **e-ink greyscale
+> palette** — see `PIPELINE_SPEC.md` §3.5 and `assets/e-ink-palette.tokens.json`. The
+> **link contract** below is still accurate and useful; the colour cues are not. (`NAMING.md`
+> referenced below no longer exists.)
+
 Companion to `HANDOVER.md` / `NAMING.md` / `GENERATE_PDF.md`. Records the decisions made
 about the **year-page calendar cells** and the **page-to-page link contract**, and where
 each lives across the three artifacts.
@@ -60,7 +66,7 @@ pages `cat-YYYY-MM-s{slot}-{NN}`.
 | **Month** | the **Wn** week-number (left gutter) | that **week page** | **schedule by default, configurable** |
 | **Week block** | the rotated **date column** only (not the grid) | that **day page** | hit area = the date column; dot grid fills the rest |
 | **Week schedule** | the **date header cell** | that **day page** | unchanged |
-| **Day** | nav arrows / footer / rail | prev-next / week / index | unchanged |
+| **Day** | footer / rail | week / index | unchanged |
 
 ### Configurable week-number target
 `Planner.html` URL param **`weeklink`** = `sched` (default) | `block`. Controls where the

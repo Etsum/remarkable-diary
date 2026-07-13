@@ -62,10 +62,12 @@ uv run python scripts/render_page.py --anchor month-2026-07 --output tmp/page.pn
 
 ### Code-owned
 
-| # | Title | File |
+| # | Title | File / area |
 |---|-------|------|
-| [#32](https://github.com/Etsum/remarkable-diary/issues/32) | Separate PDF/PNG output; selectable format (default PDF) | `build.py`, `config.py` — `--format pdf\|png\|both`, default PDF; PNGs are static so stop regenerating them every build |
-| [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells | `fill.py` — clear unused row cells explicitly |
+| [#41](https://github.com/Etsum/remarkable-diary/issues/41) | PDF link touch targets too small to tap reliably | `fill.py` link rects (`links.append((*bb, tgt))`) / `render.py` `_link_tag` — pad or enforce a minimum hit-rect size |
+| [#47](https://github.com/Etsum/remarkable-diary/issues/47) | Configurable number of day pages per day (CLI + JSON) | `dates.py` `build_pages`, `fill.py` `_fill_day`, `config.py`, `build.py` |
+| [#53](https://github.com/Etsum/remarkable-diary/issues/53) | Day footer-left missing `日` after the day number | `fill.py` `_fill_day` (`f"{m}月 {d.day}, {y}"` → `…{d.day}日…`) |
+| [#36](https://github.com/Etsum/remarkable-diary/issues/36) | Make nav rail side (left/right) a parameter | `fill.py` `_fill_rail` geometry mirror + `config.py` flag; approach TBD (code transform vs mirrored master) |
 
 ### Design-owned (waiting on Figma re-export)
 
@@ -77,6 +79,16 @@ _(none open)_
 
 | # | Title |
 |---|-------|
+| [#48](https://github.com/Etsum/remarkable-diary/issues/48) | Cloud build shipped — manual `workflow_dispatch` in `.github/workflows/build-planner.yml`, PDF artifact, README documented (#50) |
+| [#57](https://github.com/Etsum/remarkable-diary/issues/57) | OFL license files added for bundled Inter / Newsreader / EB Garamond (with #56) |
+| [#55](https://github.com/Etsum/remarkable-diary/issues/55) | e-ink greyscale palette adopted for code-injected fills; templates restructured (#56) |
+| [#54](https://github.com/Etsum/remarkable-diary/issues/54) | `hdr-big-label` size unified — the redesign standardised on 16 across pages (#56) |
+| [#52](https://github.com/Etsum/remarkable-diary/issues/52) | Cloud builds missing fonts — Inter / Newsreader / EB Garamond bundled + registered in `fonts.py` (#56) |
+| [#45](https://github.com/Etsum/remarkable-diary/issues/45) | Day-page top-right label style replicated across all page types by the redesign (#56) |
+| [#44](https://github.com/Etsum/remarkable-diary/issues/44) | Rail section labels centred along their tab axis — `_center_rail_label` (#49) |
+| [#42](https://github.com/Etsum/remarkable-diary/issues/42) | Dot grid & box borders darkened — `DOT_COLOR`→`#b8b8b8`, borders→`#b8b8b8`/`#808080` (#56) |
+| [#32](https://github.com/Etsum/remarkable-diary/issues/32) | Separate PDF/PNG output; format selectable (default PDF) |
+| [#3](https://github.com/Etsum/remarkable-diary/issues/3) | Mini-calendars: '.' placeholder leaks into empty cells |
 | [#31](https://github.com/Etsum/remarkable-diary/issues/31) | Closed not-a-bug — JP labels are stylistic decoration, always rendered; removed the `lang` option entirely (English calendar + JP accents) |
 | [#30](https://github.com/Etsum/remarkable-diary/issues/30) | 1–4 categories — relaxed validation; generate only provided slots; `_fill_rail` blanks unused tabs (clear label + hide chip) |
 | [#29](https://github.com/Etsum/remarkable-diary/issues/29) | Omit year overview — `--no-year` / `"include": {"year": false}`; gated in `build_pages`, year links inert via existing anchor guards |
@@ -144,5 +156,8 @@ whose target anchor lands in another chunk (most rail/year links).
 - `_mini_set(node, value)` — right-aligns text for mini-cal cells; handles `'.\n'` style placeholders
 - `SU.set_text(node, value)` — raw tspan text replacement (no alignment adjustment)
 - `_fill_rail(idm, cfg, active_month, anchors, window)` — `window` is the cfg-derived planner month list (`month_range(cfg.start_y, cfg.start_m, cfg.months)`), passed on **every** page; each baked JAN–DEC tab links to whichever year that month falls in (#27, Option 2). Months capped at 12 ⇒ each month number maps to one year.
+- `_center_rail_label(lbl, bg)` — the rail section labels are vertically rotated (`matrix(0 -1 1 0 e f)`); this re-anchors each with `text-anchor=middle` and moves its tspan x to the tab centre so any-length category name stays centred on its tab (#44). Called from `_fill_rail` for each filled tab.
+
+**Style (e-ink redesign, #56):** colour is the greyscale e-ink palette (`assets/e-ink-palette.tokens.json`); code only sets data-dependent overrides via the `fill.py` constants (`TEXT_PRIMARY #000`, `TEXT_SECONDARY #4d4d4d`, `GRID_PRIMARY #b8b8b8`, `BASE #fff`) and `background.py` `DOT_COLOR`. Fonts are **Inter / Newsreader / EB Garamond** (+ Noto Sans, Noto Sans JP for kanji) — all bundled and registered in `fonts.py`. The SVG export is the style source of truth (PIPELINE_SPEC §3.5). Note: fonts are now **proportional**, so the `len × 0.6 × font-size` monospace width estimate in `_text_approx_bbox`/`_mini_set` is only approximate (fine for the digit-only mini-cal nudge; would matter for tighter link-rect fits — see #41).
 
 **var-ink gotcha:** `var-ink` group is present on ALL six masters (including `06-category`). Removed entirely in blank PNG mode. Everything that changes per-page lives inside it.

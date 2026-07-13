@@ -5,7 +5,7 @@ Figma master SVGs it produces a **hyperlinked PDF** for any date range and a set
 of **blank write-on PNG templates** — same masters, no LLM in the loop.
 
 - **Hyperlinked PDF** — every date, week number and mini-calendar filled in;
-  every navigation link (rail, mini-cal dates, week numbers, nav arrows,
+  every navigation link (rail, mini-cal dates, week numbers,
   footers) wired as a real internal PDF go-to jump. Configurable range,
   week-link target, four category sections, pages-per-category, optional cover.
 - **Blank PNGs** — one per page type, no dates/links, dot-grid present, for
@@ -106,7 +106,7 @@ with no code changes.
 ```
 assets/
   templates/       six master SVGs (01-year … 06-category) — generator input
-  fonts/           bundled faces: IBM Plex Mono, Noto Sans, Noto Sans JP
+  fonts/           bundled faces: Inter, Newsreader, EB Garamond, Noto Sans, Noto Sans JP
 src/               Python package (importable as planner_gen)
   dates.py         date helpers + page model + anchor scheme   (§6/§7)
   config.py        config load/validate                        (§5)
@@ -139,8 +139,8 @@ A 12-month range resolves to ~722 pages with default settings:
 
 ## Rendering backend
 
-**Playwright/Chromium** — chosen for font fidelity (IBM Plex Mono, mixed Latin+kanji)
-and native internal-link support. Kept behind a single swappable module
+**Playwright/Chromium** — chosen for font fidelity (Inter / Newsreader / EB Garamond,
+mixed Latin+kanji) and native internal-link support. Kept behind a single swappable module
 (`render.py`) so a future pure-Python backend can drop in.
 
 > Fonts must be loaded via a real `file://` navigation (`page.goto`), not

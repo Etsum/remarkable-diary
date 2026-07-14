@@ -58,6 +58,11 @@ on:
         required: false
         default: "0.8"
         type: string
+      day_pages:
+        description: "Consecutive day pages per calendar day (default 1; links land on the first)"
+        required: false
+        default: "1"
+        type: string
       no_blanks:
         description: "Skip blank PNG output"
         required: false
@@ -144,6 +149,7 @@ jobs:
           IN_HOUR_START: ${{ inputs.hour_start }}
           IN_HOUR_INCREMENT: ${{ inputs.hour_increment }}
           IN_DOT_SCALE: ${{ inputs.dot_scale }}
+          IN_DAY_PAGES: ${{ inputs.day_pages }}
           IN_NO_BLANKS: ${{ inputs.no_blanks }}
           IN_NO_YEAR: ${{ inputs.no_year }}
           IN_NO_BLOCK: ${{ inputs.no_block }}
@@ -180,6 +186,7 @@ jobs:
               if [ -n "$IN_HOUR_START" ]; then args+=(--hour-start "$IN_HOUR_START"); fi
               if [ -n "$IN_HOUR_INCREMENT" ]; then args+=(--hour-increment "$IN_HOUR_INCREMENT"); fi
               if [ -n "$IN_DOT_SCALE" ]; then args+=(--dot-scale "$IN_DOT_SCALE"); fi
+              if [ -n "$IN_DAY_PAGES" ]; then args+=(--day-pages "$IN_DAY_PAGES"); fi
               if [ "$IN_NO_BLANKS" = "true" ]; then args+=(--no-blanks); fi
               if [ "$IN_NO_YEAR" = "true" ]; then args+=(--no-year); fi
               if [ "$IN_NO_BLOCK" = "true" ]; then args+=(--no-block); fi

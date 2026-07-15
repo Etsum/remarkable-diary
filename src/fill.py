@@ -70,6 +70,13 @@ def _text_approx_bbox(el) -> tuple[float, float, float, float] | None:
     text = (ts.text or "") if ts is not None else (el.text or "")
     w = max(len(text) * 0.60 * fs, fs * 1.5)
     h = fs * 1.4
+    # `x` is the left edge only for start-anchored text; correct it so the link
+    # rect tracks centred/right-aligned glyphs too (#67, #69 re-anchor to middle).
+    anchor = el.get("text-anchor") or "start"
+    if anchor == "middle":
+        x -= w / 2
+    elif anchor == "end":
+        x -= w
     return (x, y - h + fs * 0.2, w, h)
 
 
@@ -85,6 +92,31 @@ def _union_bbox(*bbs) -> tuple[float, float, float, float] | None:
 
 def _idm_bbox(idm: dict, *ids: str) -> tuple[float, float, float, float] | None:
     return _union_bbox(*[_el_bbox(idm[i]) for i in ids if i in idm])
+
+
+def _center_text(node, cx: float) -> None:
+    """Middle-anchor a text node at device-x `cx` (used for calendar cells #67/#69)."""
+    ts = node.find(SU.S + "tspan")
+    if ts is not None:
+        ts.set("x", f"{cx:.3f}")
+    node.set("text-anchor", "middle")
+
+
+def _index_link(anchors: set[str], active_month: tuple[int, int] | None) -> tuple[str | None, str | None]:
+    """Resolve the 'index / year overview' footer+chip target with a fallback (#71/#73).
+
+    Returns (target_anchor, label). When the year overview page exists it stays the
+    target (label None = keep the baked/caller text). Without it, fall back to the
+    first section page of the active month and relabel '↳ sections'. If neither
+    exists, (None, "") — the caller blanks the now-dead label.
+    """
+    if "year" in anchors:
+        return "year", None
+    if active_month:
+        cand = a_cat(active_month[0], active_month[1], 1, 1)
+        if cand in anchors:
+            return cand, "↳ sections"
+    return None, ""
 
 
 # ---------------------------------------------------------------------------
@@ -152,12 +184,14 @@ def _fill_rail(
                     SU.set_fill(lbl, WHITE)
                     SU.set_font_weight(lbl, "bold")
 
-    # Index chip → year (all pages)
+    # Index chip → year, or first section of the active month when no year page (#71/#73)
     chip = idm.get("rail-index-chip")
     if chip is not None:
-        bb = _el_bbox(chip)
-        if bb and "year" in anchors:
-            links.append((*bb, "year"))
+        tgt, _ = _index_link(anchors, active_month)
+        if tgt:
+            bb = _el_bbox(chip)
+            if bb:
+                links.append((*bb, tgt))
 
     # Month tabs → month-YYYY-MM. Keep the baked JAN–DEC labels; link each tab to
     # whichever year that month falls in within the planner window (#27). Months
@@ -340,7 +374,7 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
             continue
         SU.set_text(node, str(d.day))
         if is_cur:
-            SU.set_fill(node, SUNDAY if col == 7 else INK)  # col is 1-based, Sunday=7
+            SU.set_fill(node, INK)  # #70: Sunday no longer emphasised (weekend shading stays)
             tgt = a_day(d)
             if tgt in anchors:
                 bb = _el_bbox(node)
@@ -349,7 +383,12 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
         else:
             SU.set_fill(node, FAINT)
 
-    # Week number column — FAINT for rows whose Monday is outside the current month
+    # Week number column — FAINT for rows whose Monday is outside the current month.
+    # Centre each W-number in its column (grid left edge → first vertical rule) so it
+    # clears the rule regardless of digit count (#67).
+    hr = SU.bbox(idm["month-horizontal-rules"]) if "month-horizontal-rules" in idm else None
+    vr = SU.bbox(idm["month-vertical-rules"]) if "month-vertical-rules" in idm else None
+    wk_cx = (hr[0] + vr[0]) / 2 if (hr and vr) else None
     row_mondays: dict[int, tuple[date, bool]] = {}
     for row, col, d, is_cur in _month_grid(y, m):
         if col == 1 and row not in row_mondays:
@@ -360,6 +399,8 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
             continue
         _, iw = iso_week(monday)
         SU.set_text(node, f"W{iw}")
+        if wk_cx is not None:
+            _center_text(node, wk_cx)
         if not is_cur:
             SU.set_fill(node, FAINT)
         tgt = week_existing(anchors, monday, cfg.weeklink)
@@ -368,12 +409,16 @@ def _fill_month(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[L
             if bb:
                 links.append((*bb, tgt))
 
-    # Footer-right → year overview
+    # Footer-right → year overview, or first section when no year page (#71)
     fr = idm.get("footer-right")
     if fr is not None:
-        bb = _el_bbox(fr)
-        if bb and "year" in anchors:
-            links.append((*bb, "year"))
+        tgt, label = _index_link(anchors, page.active_month)
+        if label is not None:
+            SU.set_text(fr, label)   # relabel/blank when the baked "year overview" no longer applies
+        if tgt:
+            bb = _el_bbox(fr)
+            if bb:
+                links.append((*bb, tgt))
 
     return links
 
@@ -557,6 +602,11 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
     if "day-mini-month" in idm: SU.set_text(idm["day-mini-month"], EN_MON_A[m - 1])
     if "day-mini-year"  in idm: SU.set_text(idm["day-mini-year"],  str(y))
 
+    # Column centres from the calendar frame → uniform alignment for 1- and 2-digit
+    # dates (the baked per-cell x drifts by row; #69).
+    cal = SU.bbox(idm["day-mini-cal"]) if "day-mini-cal" in idm else None
+    colw = cal[2] / 7 if cal else None
+
     rows = mini_rows(y, m)
     for r_idx, row in enumerate(rows):
         for c_idx, cell in enumerate(row):
@@ -565,13 +615,10 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
                 continue
             if cell["valid"]:
                 day_num = cell["d"]
-                _mini_set(node, str(day_num))  # #24: right-align 2-digit dates
-                if day_num == d.day:
-                    SU.set_fill(node, ACCENT)
-                elif c_idx == 6:
-                    SU.set_fill(node, SUNDAY)
-                else:
-                    SU.set_fill(node, INK)
+                SU.set_text(node, str(day_num))
+                if colw:
+                    _center_text(node, cal[0] + colw * (c_idx + 0.5))
+                SU.set_fill(node, ACCENT if day_num == d.day else INK)  # #70: Sunday not emphasised
                 tgt = a_day(date(y, m, day_num))
                 if tgt in anchors:
                     bb = _el_bbox(node)
@@ -611,13 +658,17 @@ def _fill_category(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> lis
     if "hdr-meta-bottom" in idm: SU.set_text(idm["hdr-meta-bottom"], f"{idx}/{n_total}")
     if "footer-left"     in idm: SU.set_text(idm["footer-left"], name)  # issue #12
 
-    # Footer-right → year overview (issue #13)
+    # Footer-right → year overview, or first section when no year page (#73)
     fr = idm.get("footer-right")
     if fr is not None:
         SU.set_text(fr, "↳ index")
-        bb = _el_bbox(fr)
-        if bb and "year" in anchors:
-            links.append((*bb, "year"))
+        tgt, label = _index_link(anchors, page.active_month)
+        if label is not None:
+            SU.set_text(fr, label)
+        if tgt:
+            bb = _el_bbox(fr)
+            if bb:
+                links.append((*bb, tgt))
 
     return links
 

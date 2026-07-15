@@ -236,6 +236,7 @@ JSON/TOML config + CLI flags. Suggested schema:
   "hourStart": 8,            // first row time — decimal hours or "H:MM" (e.g. 7.25 or "7:15")
   "hourIncrement": 0.5,      // hours per row (0.5 or 1); all 18 rows fill from hourStart
   "dotScale": 0.8,           // dot-grid tile size scale (1.0 = original density)
+  "dotColor": "grid-border", // #68: dot-grid colour — e-ink palette name or "#rrggbb"
   "coverPage": false,        // false | "blank" | "path/to/cover.pdf|png"  (D10)
   "output": "planner-2026.pdf",
   "blanks": true             // also emit the 6 *-blank.png
@@ -254,6 +255,9 @@ JSON/TOML config + CLI flags. Suggested schema:
 - **`dayPagesPerDay`** (#47) = consecutive day pages emitted per calendar day, default **1**
   (must be ≥ 1). Only the **first** sub-page owns the `day-YYYY-MM-DD` anchor, so every
   inbound day link still lands on the first page (the rest get no anchor).
+- **`dotColor`** (#68) = the writing-dot colour, applied to both PDF and blank PNGs. Either an
+  e-ink palette token name (`grid-border` (default), `grid-primary`, `grid-subtle`, `grid-fill`,
+  `text-primary`, `text-secondary`, `base`) or an explicit `"#rrggbb"`.
 - **`coverPage`**: `false` = none; `"blank"` = one truly blank leading page to customise;
   a file path = use that PDF/PNG as page 1. Never changes anchors.
 

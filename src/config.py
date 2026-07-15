@@ -2,10 +2,34 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 DEFAULT_CATEGORIES = ["Lists", "Projects", "Meetings", "Scratchpad"]
+
+# e-ink palette tokens (assets/e-ink-palette.tokens.json) → hex, for --dot-color (#68).
+PALETTE = {
+    "grid-border":    "#808080",
+    "grid-primary":   "#b8b8b8",
+    "grid-subtle":    "#dcdcdc",
+    "grid-fill":      "#f2f2f2",
+    "text-primary":   "#000000",
+    "text-secondary": "#4d4d4d",
+    "base":           "#ffffff",
+}
+
+
+def resolve_color(v: str) -> str:
+    """A palette token name (e.g. 'grid-border') or an explicit '#rrggbb' → hex."""
+    s = str(v).strip().lower()
+    if s in PALETTE:
+        return PALETTE[s]
+    if re.fullmatch(r"#[0-9a-f]{6}", s):
+        return s
+    raise ValueError(
+        f"dotColor must be a palette name {sorted(PALETTE)} or #rrggbb, got {v!r}"
+    )
 
 
 @dataclass
@@ -24,6 +48,7 @@ class Config:
     hour_increment: float = 0.5    # hours per schedule row (0.5 or 1); all rows fill from hour_start
     dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
     day_pages_per_day: int = 1     # #47: consecutive day pages per calendar day (default 1)
+    dot_color: str = "grid-border"  # #68: dot-grid colour — palette name or #rrggbb
 
     def __post_init__(self):
         self.hour_start = _parse_hour(self.hour_start)   # accept "H:MM" or decimal hours
@@ -37,6 +62,7 @@ class Config:
             raise ValueError("pagesPerCategory must be >= 0")
         if self.day_pages_per_day < 1:
             raise ValueError(f"dayPagesPerDay must be >= 1, got {self.day_pages_per_day}")
+        resolve_color(self.dot_color)   # validate the dot-grid colour up front (#68)
         if not 0 <= self.hour_start < 24:
             raise ValueError(f"hourStart must be in [0, 24), got {self.hour_start}")
         if round(self.hour_increment * 60) < 1:   # < 1 min/row → rows collapse to identical labels
@@ -97,4 +123,5 @@ def load_config(path_or_dict) -> Config:
         hour_increment=float(data.get("hourIncrement", 0.5)),
         dot_scale=float(data.get("dotScale", 0.8)),
         day_pages_per_day=int(data.get("dayPagesPerDay", 1)),
+        dot_color=data.get("dotColor", "grid-border"),
     )

@@ -72,6 +72,8 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 --hour-increment H     Hours per week-schedule row (0.5 or 1; default: 0.5)
 --pages-per-category N Category pages per slot per month (default: 5)
 --dot-scale F          Dot-grid tile size scale factor (default: 0.8; 1.0 = original density)
+--dot-color NAME|#hex  Dot-grid colour: e-ink palette name (grid-border, grid-primary, grid-subtle,
+                       grid-fill, text-primary, text-secondary, base) or #rrggbb (default: grid-border)
 --day-pages N          Consecutive day pages per calendar day (default: 1; links land on the first)
 --cover PATH|blank     Cover page: 'blank' or path to a PDF/PNG
 --no-blanks            Skip blank PNG output
@@ -84,7 +86,7 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 ```
 
 JSON config keys mirror the flags: `start`, `end`, `months`, `output`, `weeklink`,
-`hourStart`, `hourIncrement`, `pagesPerCategory`, `dotScale`, `dayPagesPerDay`, `coverPage`, `blanks`,
+`hourStart`, `hourIncrement`, `pagesPerCategory`, `dotScale`, `dotColor`, `dayPagesPerDay`, `coverPage`, `blanks`,
 `include` (object with `year`/`block`/`schedule`/`days` booleans), `categories` (array of 1–4 strings).
 
 ## Week-schedule hours

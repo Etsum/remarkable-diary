@@ -19,7 +19,7 @@ from lxml import etree
 from . import svgutil as SU
 
 S = SU.S
-DOT_COLOR = "#b8b8b8"   # Grid/Primary — e-ink palette (assets/e-ink-palette.tokens.json)
+DOT_COLOR = "#808080"   # default: Grid/Border — e-ink palette (#68); override via --dot-color
 
 # pattern id -> (tile size, translate offset)  — densities from the original HTML (§10)
 _PATTERNS = {
@@ -37,7 +37,7 @@ _WS_HEADER_H = 40        # week-schedule day-header row (day# + weekday) height
 _INSET = 1               # keep dots inside frame strokes
 
 
-def _make_defs(scale: float = 1.0) -> etree._Element:
+def _make_defs(scale: float = 1.0, color: str = DOT_COLOR) -> etree._Element:
     defs = etree.Element(S + "defs", {"id": "dotgrid-defs"})
     for pid, (size, off) in _PATTERNS.items():
         s = max(4, round(size * scale))
@@ -48,7 +48,7 @@ def _make_defs(scale: float = 1.0) -> etree._Element:
             "patternTransform": f"translate({o} {o})",
         })
         etree.SubElement(pat, S + "circle", {
-            "cx": "1.1", "cy": "1.1", "r": "1.1", "fill": DOT_COLOR,
+            "cx": "1.1", "cy": "1.1", "r": "1.1", "fill": color,
         })
     return defs
 
@@ -106,7 +106,8 @@ def _zones(stem: str, idm: dict) -> list[tuple[float, float, float, float, str]]
     return Z
 
 
-def prepare_background(tree, stem: str | None = None, scale: float = 1.0) -> None:
+def prepare_background(tree, stem: str | None = None, scale: float = 1.0,
+                       color: str = DOT_COLOR) -> None:
     """Mutate `tree` in place: add dot-pattern defs + patterned rects to #background.
 
     Idempotent: skips if dot-grid already applied."""
@@ -116,7 +117,7 @@ def prepare_background(tree, stem: str | None = None, scale: float = 1.0) -> Non
     stem = stem or detect_stem(tree)
     idm = SU.id_map(tree)
 
-    root.insert(0, _make_defs(scale))
+    root.insert(0, _make_defs(scale, color))
 
     bg = idm["background"]
     zones = _zones(stem, idm)

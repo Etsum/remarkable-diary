@@ -147,8 +147,11 @@ def build(
     from .dates import build_pages
     from .background import prepare_background
     from . import svgutil as SU
+    from .config import resolve_color
     from .fill import fill_page
     from .render import render_pdf, render_blanks
+
+    dot_hex = resolve_color(cfg.dot_color)
 
     output_path = Path(cfg.output)
     t0 = time.time()
@@ -176,7 +179,7 @@ def build(
                "04-week-schedule", "05-day", "06-category"]
     for stem in masters:
         tree = SU.parse(str(templates_dir / f"{stem}.svg"))
-        prepare_background(tree, stem, cfg.dot_scale)
+        prepare_background(tree, stem, cfg.dot_scale, dot_hex)
         # Store the prepped SVG string; fill_page will re-parse from templates_dir
         # (dot-grid is added to templates directly during fill via deepcopy)
         bg_cache[stem] = SU.tostring(tree)
@@ -258,6 +261,10 @@ def _make_parser() -> argparse.ArgumentParser:
                         "All rows fill from --hour-start.")
     p.add_argument("--dot-scale", type=float, default=0.8, metavar="F",
                    help="Dot-grid tile size scale factor (default: 0.8, 1.0 = original)")
+    p.add_argument("--dot-color", default="grid-border", metavar="NAME|#hex",
+                   help="Dot-grid colour: an e-ink palette name (grid-border, grid-primary, "
+                        "grid-subtle, grid-fill, text-primary, text-secondary, base) or #rrggbb "
+                        "(default: grid-border)")
     p.add_argument("--day-pages", type=int, default=1, metavar="N",
                    help="Consecutive day pages per calendar day (default 1). "
                         "Links land on the first page of each day.")
@@ -302,6 +309,7 @@ def main(argv: list[str] | None = None) -> None:
             hour_start=args.hour_start,
             hour_increment=args.hour_increment,
             dot_scale=args.dot_scale,
+            dot_color=args.dot_color,
         )
     else:
         if not args.start:
@@ -329,6 +337,7 @@ def main(argv: list[str] | None = None) -> None:
             hour_increment=args.hour_increment,
             dot_scale=args.dot_scale,
             day_pages_per_day=args.day_pages,
+            dot_color=args.dot_color,
         )
 
     # --- Blanks-only mode ---

@@ -241,9 +241,11 @@ def render_blanks(
     """Render one blank PNG per master type. Returns list of written paths."""
     from playwright.sync_api import sync_playwright
     from .background import prepare_background
+    from .config import resolve_color
     from . import svgutil as SU
 
     output_dir.mkdir(parents=True, exist_ok=True)
+    dot_hex = resolve_color(cfg.dot_color)
     masters = [
         "01-year", "02-month", "03-week-block",
         "04-week-schedule", "05-day", "06-category",
@@ -256,7 +258,7 @@ def render_blanks(
         browser = pw.chromium.launch()
         for stem in masters:
             tree = SU.parse(str(templates_dir / f"{stem}.svg"))
-            prepare_background(tree, stem)
+            prepare_background(tree, stem, cfg.dot_scale, dot_hex)
             svg_str = _prepare_blank(SU.tostring(tree))
 
             html_str = (

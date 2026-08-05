@@ -233,6 +233,7 @@ JSON/TOML config + CLI flags. Suggested schema:
   "categories": ["Lists", "Projects", "Meetings", "Scratchpad"],  // 4 slots, rail order top→bottom
   "pagesPerCategory": 5,     // SAME count for every category, per month (D4). 0 ⇒ none + tab unlinked
   "dayPagesPerDay": 1,       // #47: consecutive day pages per calendar day; links land on the first
+  "skipWeekends": false,     // #77: skip Sat/Sun day pages (weekday day pages only)
   "hourStart": 8,            // first row time — decimal hours or "H:MM" (e.g. 7.25 or "7:15")
   "hourIncrement": 0.5,      // hours per row (0.5 or 1); all 18 rows fill from hourStart
   "dotScale": 0.8,           // dot-grid tile size scale (1.0 = original density)
@@ -247,7 +248,8 @@ JSON/TOML config + CLI flags. Suggested schema:
   `2025-07..2026-06`; month-to-a-notebook `months:1`.
 - **`weeklink`** = where the month `Wn` gutter + the day-page "↳ week" footer point. If the
   target week type isn't generated, fall back to the other; else render plain (port
-  `Planner.html`'s `weekExisting`).
+  `Planner.html`'s `weekExisting`). Independent of this, the day-page `WEEK <n>` meta indicator
+  always links to that week's **block** page (#76), falling back to schedule when `--no-block`.
 - **`categories`** = exactly 4 names, slot order = rail top→bottom. Default
   `["Lists","Projects","Meetings","Scratchpad"]`. Keep ≤ ~10 chars (rotated rail tabs).
 - **`pagesPerCategory`** = one integer applied to all four (D4), default **5**. (If you
@@ -255,6 +257,10 @@ JSON/TOML config + CLI flags. Suggested schema:
 - **`dayPagesPerDay`** (#47) = consecutive day pages emitted per calendar day, default **1**
   (must be ≥ 1). Only the **first** sub-page owns the `day-YYYY-MM-DD` anchor, so every
   inbound day link still lands on the first page (the rest get no anchor).
+- **`skipWeekends`** (#77) = when `true`, Saturday/Sunday day pages are not generated, default
+  **false**. Only day pages are affected (week/month/year/category pages are unchanged); the
+  dropped days simply own no `day-YYYY-MM-DD` anchor, so inbound weekend links degrade to plain
+  text via the usual `if target in anchors` guard.
 - **`dotColor`** (#68) = the writing-dot colour, applied to both PDF and blank PNGs. Either an
   e-ink palette token name (`grid-border` (default), `grid-primary`, `grid-subtle`, `grid-fill`,
   `text-primary`, `text-secondary`, `base`) or an explicit `"#rrggbb"`.

@@ -268,6 +268,8 @@ def _make_parser() -> argparse.ArgumentParser:
     p.add_argument("--day-pages", type=int, default=1, metavar="N",
                    help="Consecutive day pages per calendar day (default 1). "
                         "Links land on the first page of each day.")
+    p.add_argument("--no-weekend-days", action="store_true",
+                   help="Skip weekend (Sat/Sun) day pages; keep weekday day pages")
     p.add_argument("--validate-only", action="store_true",
                    help="Run pre-flight validator and exit (no PDF generated)")
     p.add_argument("--blanks-only", action="store_true",
@@ -338,6 +340,7 @@ def main(argv: list[str] | None = None) -> None:
             dot_scale=args.dot_scale,
             day_pages_per_day=args.day_pages,
             dot_color=args.dot_color,
+            skip_weekends=args.no_weekend_days,
         )
 
     # --- Blanks-only mode ---

@@ -49,6 +49,7 @@ class Config:
     dot_scale: float = 0.8         # scales all dot-grid tile sizes (1.0 = original density)
     day_pages_per_day: int = 1     # #47: consecutive day pages per calendar day (default 1)
     dot_color: str = "grid-border"  # #68: dot-grid colour — palette name or #rrggbb
+    skip_weekends: bool = False    # #77: skip Sat/Sun day pages (weekday day pages only)
 
     def __post_init__(self):
         self.hour_start = _parse_hour(self.hour_start)   # accept "H:MM" or decimal hours
@@ -124,4 +125,5 @@ def load_config(path_or_dict) -> Config:
         dot_scale=float(data.get("dotScale", 0.8)),
         day_pages_per_day=int(data.get("dayPagesPerDay", 1)),
         dot_color=data.get("dotColor", "grid-border"),
+        skip_weekends=bool(data.get("skipWeekends", False)),
     )

@@ -101,6 +101,11 @@ on:
         required: false
         default: false
         type: boolean
+      no_weekend_days:
+        description: "Skip weekend (Sat/Sun) day pages; keep weekday day pages"
+        required: false
+        default: false
+        type: boolean
       blanks_only:
         description: "Render blank PNGs only (no PDF)"
         required: false
@@ -169,6 +174,7 @@ jobs:
           IN_NO_BLOCK: ${{ inputs.no_block }}
           IN_NO_SCHEDULE: ${{ inputs.no_schedule }}
           IN_NO_DAYS: ${{ inputs.no_days }}
+          IN_NO_WEEKEND_DAYS: ${{ inputs.no_weekend_days }}
           IN_BLANKS_ONLY: ${{ inputs.blanks_only }}
           IN_VALIDATE_ONLY: ${{ inputs.validate_only }}
         run: |
@@ -207,6 +213,7 @@ jobs:
               if [ "$IN_NO_BLOCK" = "true" ]; then args+=(--no-block); fi
               if [ "$IN_NO_SCHEDULE" = "true" ]; then args+=(--no-schedule); fi
               if [ "$IN_NO_DAYS" = "true" ]; then args+=(--no-days); fi
+              if [ "$IN_NO_WEEKEND_DAYS" = "true" ]; then args+=(--no-weekend-days); fi
               args+=(--output "$IN_OUTPUT")
               out_dir="$(dirname "$IN_OUTPUT")"
             fi

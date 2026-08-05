@@ -31,6 +31,11 @@ def first_weekday(y: int, m: int) -> int:
     return date(y, m, 1).weekday()
 
 
+def is_weekend(d: date) -> bool:
+    """True for Saturday/Sunday (weekday 5/6). Used to skip weekend day pages (#77)."""
+    return d.weekday() >= 5
+
+
 def mon_monday(d: date) -> date:
     """Monday of d's week."""
     return d - timedelta(days=d.weekday())
@@ -147,6 +152,7 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
     """
     pages: list[Page] = []
     day_n = getattr(cfg, "day_pages_per_day", 1)
+    skip_weekends = getattr(cfg, "skip_weekends", False)  # #77: drop Sat/Sun day pages
 
     # optional cover (§7.3) — no anchor, never breaks links
     if cfg.cover_page:
@@ -197,6 +203,8 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                                           month=(y, m), active_month=am))
                 if cfg.include.get("days", True):
                     for dd in first_partial_days:
+                        if skip_weekends and is_weekend(dd):
+                            continue
                         pages.extend(_day_pages(dd, (y, m), am, day_n))
 
             for monday in month_mondays:
@@ -211,8 +219,11 @@ def build_pages(cfg) -> tuple[list[Page], set[str]]:
                 if cfg.include.get("days", True):
                     for offset in range(7):
                         dd = monday + timedelta(days=offset)
-                        if dd.month == m:
-                            pages.extend(_day_pages(dd, (y, m), am, day_n))
+                        if dd.month != m:
+                            continue
+                        if skip_weekends and is_weekend(dd):
+                            continue
+                        pages.extend(_day_pages(dd, (y, m), am, day_n))
             for slot in range(1, len(cfg.categories) + 1):
                 for nn in range(1, cfg.pages_per_category + 1):
                     pages.append(Page(kind="category", anchor=a_cat(y, m, slot, nn),

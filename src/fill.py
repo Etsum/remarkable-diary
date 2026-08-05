@@ -575,21 +575,33 @@ def _fill_day(page: Page, cfg: Config, idm: dict, anchors: set[str]) -> list[Lin
     if "hdr-meta-bottom" in idm: _meta_set(idm["hdr-meta-bottom"],   str(iw))
     if "hdr-big-label"   in idm: _meta_set(idm["hdr-big-label"],     "DAY")
 
-    # Datebox area → year page
-    for frame_id in ("hdr-meta", "hdr-datebox-frame"):
-        node = idm.get(frame_id)
-        if node is not None:
-            bb = _el_bbox(node)
-            if bb and "year" in anchors:
-                links.append((*bb, "year"))
-            break  # prefer hdr-meta; fallback to frame
+    monday = d - timedelta(days=wd_idx)
+
+    # Meta-header splits into two disjoint tap zones:
+    #   • the date block (day number + month name) → year overview ("zoom out")
+    #   • the "WEEK <n>" block → this week's block page ("zoom in to the week", #76)
+    # hdr-meta is a text-only <g> (no rect/path → its bbox degenerates), so target the
+    # individual text nodes. The two zones stay horizontally disjoint (date text ends
+    # well left of the right-aligned WEEK meta), so their inflated PDF link rects never
+    # overlap — and this also repairs the previously-degenerate datebox→year link.
+    date_bb = _idm_bbox(idm, "hdr-big", "hdr-big-label", "hdr-month-name")
+    if date_bb and "year" in anchors:
+        links.append((*date_bb, "year"))
+
+    # "WEEK <n>" meta text → the week-block page for this day's week (#76). Prefer the
+    # block page ("week start block"); degrade to the schedule page when block pages
+    # are off, and emit nothing when no week page exists at all.
+    week_bb = _idm_bbox(idm, "hdr-meta-top", "hdr-meta-bottom")
+    if week_bb:
+        tgt = week_existing(anchors, monday, "block")
+        if tgt:
+            links.append((*week_bb, tgt))
 
     # Footer (keeps the stylistic 月/日 glyphs; no lang option) — #53
     if "footer-left" in idm:
         SU.set_text(idm["footer-left"], f"{m}月 {d.day}日, {y}")
 
-    # Footer-right "↳ week" → week page
-    monday = d - timedelta(days=d.weekday())
+    # Footer-right "↳ week" → week page (honours --weeklink)
     fr = idm.get("footer-right")
     if fr is not None:
         bb = _el_bbox(fr)

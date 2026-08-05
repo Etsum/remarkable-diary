@@ -19,7 +19,7 @@ from lxml import etree
 
 from src import svgutil as SU
 from src.config import Config, load_config
-from src.dates import a_day, a_week, build_pages, dim, is_weekend
+from src.dates import a_day, a_week, build_pages, dim, is_weekend, week_existing
 from src.fill import _idm_bbox, fill_page
 
 TPL = Path(__file__).resolve().parent.parent / "assets" / "templates" / "rm2"
@@ -96,6 +96,22 @@ def test_week_meta_falls_back_to_schedule_without_block():
     meta_links = [l for l in links if _matches(l, week_bb)]
     assert len(meta_links) == 1
     assert meta_links[0][4] == a_week(monday, "s")          # points at the schedule page
+
+
+def test_no_dead_week_links_across_full_year():
+    """Every day page's WEEK meta link resolves to its week-block anchor (#76).
+
+    Sweeps a full 12-month span so partial first weeks and ISO year-boundary weeks
+    are covered — the exact cases where a naive Monday→block lookup could dangle.
+    """
+    cfg = Config(start_y=2026, start_m=7, months=12)
+    pages, anchors = build_pages(cfg)
+    day_pages = [p for p in pages if p.kind == "day"]
+    assert len(day_pages) == 365
+    for p in day_pages:
+        monday = p.day - timedelta(days=p.day.weekday())
+        tgt = week_existing(anchors, monday, "block")   # exactly what _fill_day resolves
+        assert tgt == a_week(monday, "b") and tgt in anchors, (p.day, tgt)
 
 
 def test_week_meta_absent_when_no_week_pages():

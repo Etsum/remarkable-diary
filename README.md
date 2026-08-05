@@ -80,6 +80,7 @@ gh workflow run build-planner.yml -f start=2026-07 -f months=12
 --no-block             Skip week-block pages
 --no-schedule          Skip week-schedule pages
 --no-days              Skip day pages
+--no-weekend-days      Skip weekend (Sat/Sun) day pages; keep weekday day pages
 --blanks-only          Render one blank PNG per page type; no PDF
 --validate-only        Pre-flight check only; exit 0 if all masters pass
 --templates-dir PATH   Override SVG master directory (default: assets/templates/rm2/)
